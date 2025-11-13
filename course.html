@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Medha Course Page</title>
+
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/coursePage.css">
+  <link rel="stylesheet" href="./css/footer.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  <div class="page-overlay" id="page-overlay"></div>
+
+  <main class="course-detail-grid">
+
+    <header class="course-hero-bar">
+      <nav class="breadcrumbs">
+        <a href="#">Development</a>
+        <i data-feather="chevron-right"></i>
+        <a href="#">Programming Languages</a>
+        <i data-feather="chevron-right"></i>
+        <a href="#">React JS</a>
+      </nav>
+    </header>
+  
+    <div class="video-preview-mobile">
+      <img src="https://via.placeholder.com/340x200.png?text=Preview+this+course" alt="Course preview" />
+      <div class="video-play-button">
+        <i data-feather="play" fill="currentColor"></i>
+      </div>
+      <span>Preview this course</span>
+    </div>
+
+    <div class="course-main-content">
+      <section class="course-header">
+        <h1>React - The Complete Guide 2025 (incl. Next.js, Redux)</h1>
+        <p class="subtitle">
+          Dive in and learn React.js from scratch! Learn React, Hooks, Redux,
+          React Router, Next.js, Best Practices and way more!
+        </p>
+        <span class="bestseller-tag">Bestseller</span>
+        <div class="ratings-box">
+          <span class="score">4.6</span>
+          <span class="stars">★★★★★</span>
+          <span class="reviews">(235,684 ratings)</span>
+          <span class="learners">993,083 learners</span>
+        </div>
+        <div class="author-info">
+          Created by
+          <a href="#">Academind by Maximilian Schwarzmüller</a>,
+          <a href="#">Maximilian Schwarzmüller</a>
+        </div>
+        <div class="meta-info">
+          <span><i data-feather="alert-circle"></i> Last updated 8/2025</span>
+          <span><i data-feather="globe"></i> English</span>
+          <span><i data-feather="info"></i> English [CC], Arabic [Auto],
+            <a href="#">27 more</a></span>
+        </div>
+      </section>
+
+      <section class="grid-premium-box">
+        <div class="premium-box">
+          <img src="https://via.placeholder.com/40x40.png?text=P" alt="Premium" />
+          <div class="premium-text">
+            Access 26,000+ top-rated courses with a Udemy plan.
+            <a href="#">See Plans & Pricing</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-what-youll-learn">
+        <div class="what-youll-learn">
+          <h2>What you'll learn</h2>
+          <ul id="learning-list">
+            <li>
+              <i data-feather="check"></i>Learn React from the ground up and
+              finish the course as an advanced React developer
+            </li>
+            <li>
+              <i data-feather="check"></i>Build multiple high-quality demo
+              apps, including a fullstack app built with Next.js
+            </li>
+            <li>
+              <i data-feather="check"></i>Join more than 900,000 students in
+              this course & more than 3,000,000 students I taught across all my
+              courses
+            </li>
+            <li>
+              <i data-feather="check"></i>Build fullstack React apps with
+              Next.js 14+
+            </li>
+            <li>
+              <i data-feather="check"></i>Follow along locally or in a cloud
+              development environment
+            </li>
+            <li>
+              <i data-feather="check"></i>Learn all about React Hooks and
+              React Components
+            </li>
+            <li class="hidden-item" style="display: none">
+              <i data-feather="check"></i>Manage complex state efficiently
+              with React's Context API & React Redux
+            </li>
+            <li class="hidden-item" style="display: none">
+              <i data-feather="check"></i>Build standalone React apps &
+              applications connected to a backend via HTTP
+            </li>
+          </ul>
+          <button class="show-more-btn" id="show-more-btn">
+            Show more <i data-feather="chevron-down"></i>
+          </button>
+        </div>
+      </section>
+
+      <section class="grid-explore-topics">
+        <h2>Explore related topics</h2>
+        <div class="explore-topics-list">
+          <a href="#" class="topic-tag">React JS</a>
+          <a href="#" class="topic-tag">Programming Languages</a>
+          <a href="#" class="topic-tag">Development</a>
+        </div>
+      </section>
+    </div>
+
+    <aside class="course-sidebar">
+      <div class="video-preview-desktop">
+        <img src="https://via.placeholder.com/340x200.png?text=Preview+this+course" alt="Course preview" />
+        <div class="video-play-button">
+          <i data-feather="play" fill="currentColor"></i>
+        </div>
+        <span>Preview this course</span>
+      </div>
+
+      <div class="purchase-box">
+        <div class="purchase-tabs">
+          <button class="tab-link is-active">Personal</button>
+          <button class="tab-link">Teams</button>
+        </div>
+        <p>This Premium course is included in plans</p>
+        <div class="price-info">
+          <span class="price-current">₹579</span>
+          <span class="price-original">₹3,459</span>
+          <span class="price-discount">83% off</span>
+        </div>
+        <p class="time-left-promo">
+          <i data-feather="clock"></i> 13 hours left at this price!
+        </p>
+        <button class="btn btn-purple">Add to cart</button>
+        <button class="btn btn-outline" style="margin-top: 8px">Buy now</button>
+
+        <p class="purchase-guarantee">30-Day Money-Back Guarantee</p>
+        <div class="purchase-links">
+          <a href="#">Share</a>
+          <a href="#">Gift this course</a>
+          <a href="#">Apply Coupon</a>
+        </div>
+
+        <form class="coupon-form">
+          <input type="text" placeholder="Enter Coupon" />
+          <button class="btn btn-dark">Apply</button>
+        </form>
+
+        <div class="subscribe-box">
+          <p>Subscribe to Skill Medha's top courses</p>
+          <p class="subscribe-text">
+            Get this course, plus 26,000+ of our top-rated courses, with
+            Personal Plan. <a href="#">Learn more</a>
+          </p>
+          <button class="btn btn-outline">Start subscription</button>
+          <p class="price-small">Starting at ₹500 per month</p>
+          <p class="cancel-small">Cancel anytime</p>
+        </div>
+      </div>
+    </aside>
+  </main>
+  <div id="footer-placeholder"></div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>

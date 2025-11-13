@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Medha Clone</title>
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="../css/globalStyle.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+
+    <!-- for google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <a href="../index.html" class="site-header__logo">
+            <img src="../images/skillmedha_full_logo.png" alt="Skill Medha Logo" />
+        </a>
+        <nav class="site-header__desktop-nav" aria-label="Main navigation">
+            <a href="#" class="site-header__nav-link site-header__nav-link--button js-learn-toggle">
+                Learn <span>▼</span>
+            </a>
+            <a href="#" class="site-header__nav-link">Upskill your College</a>
+            <a href="../aboutPage.html" class="site-header__nav-link">About</a>
+        </nav>
+        <div class="site-header__desktop-auth">
+            <a href="#" class="site-header__nav-link site-header__nav-link--button">Login</a>
+            <a href="#" class="site-header__nav-link site-header__nav-link--button">Apply as Mentor</a>
+        </div>
+        <div class="site-header__mobile-controls">
+            <a href="#" class="site-header__nav-link site-header__nav-link--button js-learn-toggle">
+                Learn <span>▼</span>
+            </a>
+            <button class="site-header__menu-toggle" aria-label="Open menu" id="menu-toggle-btn" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="mobile-nav-panel" id="mobile-nav-panel">
+            <div class="mobile-nav-panel__list">
+                <a href="#" class="mobile-nav-panel__link">Upskill your College</a>
+                <a href="../aboutPage.html" class="mobile-nav-panel__link">About</a>
+                <a href="#" class="mobile-nav-panel__link">Login</a>
+                <a href="#" class="mobile-nav-panel__link">Apply as Mentor</a>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="mega-menu" id="mega-menu-panel">
+        <div class="mega-menu__wrapper">
+            <div class="mega-menu__column">
+                <h3 class="mega-menu__title">Courses</h3>
+                <p class="mega-menu__subtitle">
+                    Leap into a new career with our focused Programs
+                </p>
+                <ul class="mega-menu__list">
+                    <li>
+                        <a href="./course.html" class="mentorship-item">
+                            <img src="./images/digital_marketing.png" alt="Digital Marketing" />
+                            <div class="mentorship-item__content">
+                                <h4>Digital Marketing</h4>
+                                <p>Mentors from Dunzo, Amazon</p>
+                                <div class="mentorship-item__meta">
+                                    <span><i data-feather="calendar"></i> 24 Weeks</span>
+                                    <span><i data-feather="video"></i> Live + Recorded</span>
+                                    <span><i data-feather="clock"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="mentorship-item">
+                            <img src="./images/performance_marketing.png" alt="Performance Marketing" />
+                            <div class="mentorship-item__content">
+                                <h4>Performance Marketing</h4>
+                                <p>Mentors from Google, Amazon</p>
+                                <div class="mentorship-item__meta">
+                                    <span><i data-feather="calendar"></i> 12 Weeks</span>
+                                    <span><i data-feather="video"></i> Live And Recorded</span>
+                                    <span><i data-feather="clock"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="mentorship-item">
+                            <img src="./images/ui_ux_design.png" alt="UI UX Design" />
+                            <div class="mentorship-item__content">
+                                <h4>UI UX Design</h4>
+                                <p>Mentors from Microsoft, Blinkit</p>
+                                <div class="mentorship-item__meta">
+                                    <span><i data-feather="calendar"></i> 16 Weeks</span>
+                                    <span><i data-feather="video"></i> Live And Recorded</span>
+                                    <span><i data-feather="clock"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="mentorship-item">
+                            <img src="./images/product-management.png" alt="Product Management" />
+                            <div class="mentorship-item__content">
+                                <h4>Product Management</h4>
+                                <p>Mentors from Google, Flipkart</p>
+                                <div class="mentorship-item__meta">
+                                    <span><i data-feather="calendar"></i> 12 Weeks</span>
+                                    <span><i data-feather="video"></i> Live And Recorded</span>
+                                    <span><i data-feather="clock"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="mentorship-item">
+                            <img src="./images/management_consulting.png" alt="Management Consulting" />
+                            <div class="mentorship-item__content">
+                                <h4>Management Consulting</h4>
+                                <p>Mentors from Linkedin, Meta</p>
+                                <div class="mentorship-item__meta">
+                                    <span><i data-feather="calendar"></i> 20 Weeks</span>
+                                    <span><i data-feather="video"></i> Live And Recorded</span>
+                                    <span><i data-feather="clock"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mega-menu__column">
+                <h3 class="mega-menu__title">Workshops & Hackathons</h3>
+                <p class="mega-menu__subtitle">
+                    Boost your skills with focused, hands-on Workshops
+                </p>
+                <ul class="mega-menu__list">
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/generative_ai_marketing.png" alt="Generative AI Marketing" />
+                            <div class="workshop-item__content">
+                                <h4>Generative AI Marketing Mastermind</h4>
+                                <p>Multiple mentors from Uber, Skill Medha &more</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 2 Days</span>
+                                    <span><i data-feather="clock"></i> 10 AM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/generative_ai_business.png" alt="Generative AI Business" />
+                            <div class="workshop-item__content">
+                                <h4>Generative AI Business Mastermind</h4>
+                                <p>Multiple mentors from Uber, Skill Medha &more</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 3 Days</span>
+                                    <span><i data-feather="clock"></i> 10 AM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/generative_ai.png" alt="Generative AI Workshop" />
+                            <div class="workshop-item__content">
+                                <h4>Generative AI Workshop</h4>
+                                <p>Vaibhav Sisinty</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 3 Hours</span>
+                                    <span><i data-feather="clock"></i> 7 PM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/consultant.png" alt="AI For Consultants" />
+                            <div class="workshop-item__content">
+                                <h4>AI For Consultants</h4>
+                                <p>Vaibhav & Rushika</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 3 Hours</span>
+                                    <span><i data-feather="clock"></i> 11 AM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/linkedin.png" alt="LinkedIn Growth" />
+                            <div class="workshop-item__content">
+                                <h4>LinkedIn Growth With AI</h4>
+                                <p>Vaibhav Sisinty</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 5 Days</span>
+                                    <span><i data-feather="clock"></i> 7 PM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./course.html" class="workshop-item">
+                            <img src="./images/product-management.png" alt="Product Management" />
+                            <div class="workshop-item__content">
+                                <h4>Product Management With AI</h4>
+                                <p>Mohammad Sarosh</p>
+                                <div class="workshop-item__meta">
+                                    <span><i data-feather="calendar"></i> 3 Hours</span>
+                                    <span><i data-feather="clock"></i> 11 AM IST</span>
+                                    <span><i data-feather="play-circle"></i> Coming Soon</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script src="script.js" defer></script>
+    <script src="../app.js"></script>
+
+    <!-- for ion icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

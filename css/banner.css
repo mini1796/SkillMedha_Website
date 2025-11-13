@@ -1,0 +1,104 @@
+/* --- Banner (Hero) Component (Mobile-First) --- */
+.banner-wrapper {
+    max-width: 1400px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+}
+
+.hero-banner {
+    background-color: #d2ecec;
+    border-radius: 15px; /* Smaller border-radius for mobile */
+    margin: 1rem auto; /* Smaller margin for mobile */
+    padding: 2rem 1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-flex-container {
+    display: flex;
+    flex-direction: column; /* Stacked on mobile */
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.hero-content {
+    flex: 1;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 2rem; /* Smaller for mobile */
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+    /* color: rgba(255, 255, 255, 0.85); */
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px; /* Smaller min-height for mobile */
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+/* This is the new class for your static image */
+.hero-illustration-img {
+    width: 100%;
+    max-width: 450px; /* Set a max-width for the image */
+    height: auto;
+    object-fit: contain;
+}
+
+.hero-illustration video {
+    height: 20rem;
+}
+
+/* --- Banner Media Queries --- */
+
+/* --- 768px Breakpoint (Tablets & Medium Screens) --- */
+@media (min-width: 768px) {
+    /* Banner adjustments */
+    .hero-banner {
+        border-radius: 24px;
+        padding: 80px 40px;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-illustration {
+        min-height: 250px;
+    }
+}
+
+/* --- 992px Breakpoint (Larger Tablets & Desktops) --- */
+@media (min-width: 992px) {
+    /* Banner layout change to side-by-side */
+    .hero-flex-container {
+        flex-direction: row; /* Side-by-side */
+        text-align: left;
+        gap: 10px;
+    }
+
+    .hero-content {
+        align-items: flex-start;
+    }
+
+    .hero-content p {
+        margin: 0 0 30px 0; /* Align left */
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem; /* Full desktop size */
+    }
+}

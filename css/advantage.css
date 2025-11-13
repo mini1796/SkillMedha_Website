@@ -1,0 +1,100 @@
+@import url(./globalStyle.css);
+
+/* --- Carousel --- */
+.advantage-carousel-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+.advantage-carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.advantage-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  margin: 2rem 0;
+  scroll-snap-type: x mandatory;
+}
+
+/* --- Base Card Style (Mobile-First) --- */
+.advantage-card {
+  flex: 0 0 85%; /* Card width on mobile */
+  min-height: 480px;
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  position: relative;
+  background-color: var(--bg-dark-green);
+  color: var(--text-light);
+  scroll-snap-align: start;
+  transition: transform 0.3s ease;
+
+  /* Background image styles */
+  background-size: cover;
+  background-position: center;
+}
+
+.advantage-card:hover {
+  transform: translateY(-5px);
+}
+
+/* --- Card Content (Text) --- */
+.advantage-card .card-content {
+  position: relative;
+  z-index: 2; /* On top of the overlay */
+  padding: 24px;
+}
+
+.advantage-card .card-content h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.advantage-card .card-content p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 90%;
+}
+
+/* --- Gradient Overlay --- */
+.card-overlay {
+  position: absolute;
+  inset: 0; /* Covers the entire card */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.6) 25%,
+    rgba(0, 0, 0, 0.1) 60%,
+    transparent 100%
+  );
+  z-index: 1; /* Sits above background, below text */
+}
+
+/*
+        ========================================
+        --- RESPONSIVE STYLES (Mobile-First) ---
+        ========================================
+        */
+
+/* --- 768px Breakpoint (Tablets) --- */
+@media (min-width: 768px) {
+
+  .advantage-card {
+    flex-basis: 320px; /* Fixed card width for tablets */
+  }
+  .advantage-card .card-content h4 {
+    font-size: 1.3rem;
+  }
+}
+
+/* --- 992px Breakpoint (Desktops) --- */
+@media (min-width: 992px) {
+
+  .advantage-card {
+    flex-basis: 350px; /* Fixed card width for desktops */
+  }
+}

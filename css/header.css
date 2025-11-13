@@ -1,0 +1,434 @@
+@import url(./globalStyle.css);
+
+/* --- Semantic Element: Header --- */
+.site-header {
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-light);
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 998;
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    border-radius: 20px 20px 0 0;
+}
+
+.site-header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    gap: 8px;
+    flex-shrink: 0;
+    /* Prevents logo from shrinking */
+}
+
+.site-header__logo img {
+    height: 2.5rem;
+}
+
+/* --- Semantic Element: Desktop Navigation --- */
+.site-header__desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: 40px;
+}
+
+.site-header__nav-link {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: 500;
+    padding: 8px 0;
+    transition: color 0.3s ease;
+}
+
+.site-header__nav-link:hover {
+    color: #007aff;
+}
+
+/* This one class now styles ALL buttons */
+.site-header__nav-link--button {
+    border: 1px solid var(--border-light);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.site-header__nav-link--button:hover {
+    background-color: #f5f5f5;
+}
+
+/* --- Desktop Authentication Links --- */
+.site-header__desktop-auth {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+    /* Pushes auth links to the far right */
+}
+
+/*
+/* --- THIS RULE WAS REDUNDANT AND HAS BEEN DELETED ---
+.site-header__nav-link--outline {
+    border: 1px solid var(--border-light);
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+*/
+
+/*
+========================================
+--- MOBILE & TABLET STYLES (Hidden on Desktop) ---
+========================================
+*/
+
+.site-header__mobile-controls {
+    display: none;
+    /* Hidden by default */
+    margin-left: auto;
+    /* Pushes controls to the far right */
+    align-items: center;
+    gap: 16px;
+}
+
+.site-header__menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.site-header__menu-toggle span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--border-dark);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger 'X' animation */
+.site-header__menu-toggle.is-open span:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.site-header__menu-toggle.is-open span:nth-child(2) {
+    opacity: 0;
+}
+
+.site-header__menu-toggle.is-open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Navigation Panel */
+.mobile-nav-panel {
+    display: none;
+    /* Hidden by default */
+    position: absolute;
+    top: 69px;
+    /* Height of the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--text-light);
+    border-bottom: 1px solid var(--border-light);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.mobile-nav-panel.is-open {
+    display: block;
+}
+
+.mobile-nav-panel__list {
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 8px;
+}
+
+.mobile-nav-panel__link {
+    text-decoration: none;
+    color: var(--header-text-color);
+    font-weight: 500;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.mobile-nav-panel__link:last-child {
+    border-bottom: none;
+}
+
+/*
+========================================
+--- MEDIA QUERIES (Desktop-First) ---
+========================================
+*/
+
+/* --- 1024px Breakpoint (Tablets) --- */
+/* Hides desktop nav, shows mobile controls */
+@media (max-width: 1024px) {
+    .site-header__desktop-nav {
+        display: none;
+    }
+
+    .site-header__desktop-auth {
+        display: none;
+    }
+
+    .site-header__mobile-controls {
+        display: flex;
+        /* Show the mobile controls */
+    }
+}
+
+/* --- 480px Breakpoint (Mobile) --- */
+/* Hides the "Learn" button */
+@media (max-width: 480px) {
+
+    /* FIXED: This selector now correctly targets the header */
+    /* Hides the "Learn" button on small screens */
+    .site-header__mobile-controls .site-header__nav-link--button {
+        display: none;
+    }
+}
+
+/*
+========================================
+--- PAGE OVERLAY STYLES ---
+========================================
+*/
+.page-overlay {
+    position: fixed;
+    /* Covers the entire screen */
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    z-index: 999;
+    /* Sits just below the mega-menu */
+
+    /* --- Transition States --- */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out;
+}
+
+.page-overlay.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*
+========================================
+--- MEGA MENU STYLES (Desktop-First) ---
+========================================
+*/
+.mega-menu {
+    /* display: none; */
+    /* <-- REMOVE this line */
+
+    position: absolute;
+    top: 69px;
+    left: 50%;
+    width: 80%;
+    max-width: 1400px;
+    background-color: var(--card-bg);
+    border-bottom: 1px solid var(--border-light);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
+
+    /* --- ADD THESE LINES for smooth transition --- */
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px) translateX(-50%);
+    /* Starts 10px "up" */
+    transition: opacity 0.3s ease-out,
+        transform 0.3s ease-out,
+        visibility 0.3s ease-out;
+}
+
+.mega-menu.is-open {
+    /* display: block; */
+    /* <-- REMOVE this line */
+
+    /* --- ADD THESE LINES --- */
+    visibility: visible;
+    opacity: 1;
+    /* Moves to final position */
+}
+
+.mega-menu__wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two-column layout */
+    gap: 40px;
+}
+
+.mega-menu__column:first-child {
+    border-right: 1px solid var(--border-light);
+    padding-right: 40px;
+}
+
+.mega-menu__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.mega-menu__subtitle {
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    margin-top: 4px;
+}
+
+.mega-menu__list {
+    list-style: none;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* --- Mentorship Item Style --- */
+.mentorship-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.mentorship-item:hover {
+    background-color: #f9f9f9;
+}
+
+.mentorship-item img {
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+.mentorship-item__content h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.mentorship-item__content p {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin: 2px 0 6px 0;
+}
+
+.mentorship-item__meta {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping on small screens */
+    gap: 12px;
+    font-size: 0.75rem;
+    color: var(--text-gray);
+}
+
+.mentorship-item__meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.mentorship-item__meta i {
+    width: 12px;
+    height: 12px;
+}
+
+/* --- Workshop Item Style --- */
+.workshop-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.workshop-item:hover {
+    background-color: #f9f9f9;
+}
+
+.workshop-item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.workshop-item__content h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.workshop-item__content p {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-top: 2px;
+}
+
+/* Meta styles are shared with mentorship-item */
+.workshop-item__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: var(--text-gray);
+    margin-top: 6px;
+}
+
+.workshop-item__meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.workshop-item__meta i {
+    width: 12px;
+    height: 12px;
+}
+
+/* --- Media Queries (Desktop-First) --- */
+
+@media (max-width: 1024px) {
+
+    /* On tablet, reduce padding */
+    .mega-menu__wrapper {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* On mobile, stack columns */
+    .mega-menu__wrapper {
+        grid-template-columns: 1fr;
+        /* Stack to 1 column */
+        gap: 30px;
+    }
+
+    .mega-menu__column:first-child {
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 30px;
+    }
+}

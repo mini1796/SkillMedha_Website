@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Medha Clone</title>
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="./css/globalStyle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/advantage.css" />
+    <link rel="stylesheet" href="./css/learners.css" />
+    <link rel="stylesheet" href="./css/testimonials.css" />
+    <link rel="stylesheet" href="./css/companies.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- for google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- page overlay for learn modal  -->
+    <div class="page-overlay" id="page-overlay"></div>
+
+    <!-- header placeholder  -->
+    <div id="header-placeholder"></div>
+
+    <!-- Banner  -->
+    <div class="banner-wrapper">
+        <section class="hero-banner">
+            <div class="hero-flex-container">
+                <div class="hero-content">
+                    <h1>Learn, Build, and Get Hired</h1>
+                    <p>
+                        Our Workshops & Hackathons are the bridge. We empower students to learn in-demand skills and
+                        then prove them by building real-world projects, giving employers direct access to verified,
+                        hands-on talent.
+                    </p>
+                    <a href="#wh_section" class="btn btn-primary-green">
+                        Explore All Programs
+                    </a>
+                </div>
+
+                <div class="hero-illustration">
+                    <!-- <video autoplay loop muted src="./images/Website_Banner_Video_Generation.mp4">
+            Your browser does not support the video tag.
+          </video> -->
+                    <img src="./images/banner.png" alt="Business Analyst" class="hero-illustration-img" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Workshops and Hackathons  -->
+    <section class="section" id="wh_section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Workshops & Hackathons</h1>
+            </div>
+
+            <div class="our-programs-cards-container">
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Generative AI<br />
+                            Workshop
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 3 Hours</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Master prompts, plugins, and productivity hacks.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"
+                                alt="ChatGPT" />
+                            <img src="https://www.vectorlogo.zone/logos/midjourney/midjourney-icon.svg"
+                                alt="Midjourney" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/DALL_E_2_logo.svg/1200px-DALL_E_2_logo.svg.png"
+                                alt="DALL-E" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Go beyond basic prompting. Learn to automate tasks, generate
+                            high-quality content, and integrate AI tools directly into your
+                            professional workflow in this hands-on session.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            LinkedIn Growth<br />
+                            with AI
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 2 Days</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build a personal brand that attracts recruiters.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn" />
+                            <img src="https://www.vectorlogo.zone/logos/openai/openai-icon.svg" alt="OpenAI" />
+                            <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg" alt="Canva" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Stop scrolling, start connecting. Learn AI-powered strategies
+                            to optimize your profile, create engaging content, and build a
+                            network that lands you opportunities.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Power BI<br />
+                            Zero to Hero
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 2 Days</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build 5+ interactive business dashboards.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"
+                                alt="Power BI" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/800px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+                                alt="Excel" />
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Learn to transform raw data into powerful insights. This hands-on
+                            workshop covers data modeling, DAX formulas, and building
+                            dashboards that get you noticed by employers.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            REST API Design<br />
+                            with Node.js
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 3 Days</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build and deploy a complete REST API.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Node.js_logo.svg"
+                                alt="Node.js" />
+                            <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"
+                                alt="Express.js" />
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" />
+                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Master the backbone of modern web applications. Learn to build
+                            secure, efficient, and scalable REST APIs using the powerful
+                            Node.js and Express.js ecosystem.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Rapid Prototyping<br />
+                            in Figma
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 1 Day</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Design a fully interactive mobile app prototype.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" />
+                            <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" alt="Framer" />
+                            <img src="https://www.vectorlogo.zone/logos/maze_design/maze_design-icon.svg" alt="Maze" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Go from static wireframes to dynamic, clickable prototypes.
+                            Learn advanced Figma techniques, auto-layout, and component
+                            libraries to build realistic user experiences.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            AI Innovation<br />
+                            Challenge
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 48 Hours</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Prize Pool:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    ₹1,00,000 & Internship Opportunities
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/openai/openai-icon.svg" alt="OpenAI" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                                alt="Python" />
+                            <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Compete with the best minds to build a real-world AI solution.
+                            Mentors from top tech companies will be available to guide you.
+                            Can you build the next big thing in 48 hours?
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Future of FinTech<br />
+                            Hackathon
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 24 Hours</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Challenge:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Solve real-world banking & payment challenges.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/stripe/stripe-icon.svg" alt="Stripe" />
+                            <img src="https://www.vectorlogo.zone/logos/razorpay/razorpay-icon.svg" alt="Razorpay" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                                alt="Python" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Disrupt the future of finance. Build innovative solutions for
+                            payments, lending, or personal finance. Pitch your idea to
+                            top VCs and industry leaders from HDFC, ICICI, etc.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Code for Good<br />
+                            Social Impact Hackathon
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 3 Days</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build technology for a better tomorrow.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"
+                                alt="Google Cloud" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                alt="React" />
+                            <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Join us to build solutions for sustainability, education, and
+                            healthcare. Partner with leading NGOs and make a real-world
+                            impact with your code.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Agile & Scrum<br />
+                            Masterclass
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 2 Days</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Get certified! Includes PSM I exam preparation.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg"
+                                alt="Jira" />
+                            <img src="https://www.vectorlogo.zone/logos/trello/trello-icon.svg" alt="Trello" />
+                            <img src="https://www.vectorlogo.zone/logos/atlassian_confluence/atlassian_confluence-icon.svg"
+                                alt="Confluence" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Lead high-performing teams. Master the Agile framework, run
+                            effective sprints, manage backlogs in Jira, and prepare for
+                            your Scrum Master certification.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Tech Pitch &<br />
+                            Storytelling
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Duration : 1 Day</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Pitch your ideas with confidence.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Microsoft_365_PowerPoint_logo.svg/2048px-Microsoft_365_PowerPoint_logo.svg.png"
+                                alt="PowerPoint" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Google_Slides_logo_%282020%29.svg/1200px-Google_Slides_logo_%282020%29.svg.png"
+                                alt="Google Slides" />
+                            <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg" alt="Canva" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Your code is great, but can you sell it? This workshop is for
+                            techies, PMs, and founders who need to present ideas, products,
+                            and themselves with clarity and impact.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer placeholder  -->
+    <div id="footer-placeholder"></div>
+
+    <!-- javascript files  -->
+    <script src="script.js" defer></script>
+    <script src="./app.js"></script>
+    <script src="./influencer.js"></script>
+
+    <!-- for ion icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

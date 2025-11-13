@@ -1,0 +1,225 @@
+/*
+      ========================================
+      --- COMPONENT 1: "Unleashing Potential" BANNER ---
+      ========================================
+      */
+
+.unleash-banner {
+    background-color: var(--bg-dark-green);
+    color: var(--text-light);
+    border-radius: 20px;
+    padding: 60px 24px;
+    /* Mobile padding */
+    margin: 20px;
+    text-align: center;
+}
+
+.unleash-banner__title {
+    font-size: 2.5rem;
+    /* Mobile font size */
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.unleash-banner__subtitle {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.unleash-banner__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--brand-green);
+    color: var(--bg-dark-green);
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.unleash-banner__button:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+
+/* --- Tablet (768px) & Up --- */
+@media (min-width: 768px) {
+    .unleash-banner {
+        padding: 80px 40px;
+    }
+
+    .unleash-banner__title {
+        font-size: 3rem;
+    }
+
+    .unleash-banner__subtitle {
+        font-size: 1.1rem;
+    }
+}
+
+/* --- Desktop (1024px) & Up --- */
+@media (min-width: 1024px) {
+    .unleash-banner__title {
+        font-size: 3.5rem;
+    }
+}
+
+/*
+      ========================================
+      --- COMPONENT 2: "Empowering Careers" SECTION ---
+      ========================================
+      */
+.empowering-section {
+    padding: 60px 0;
+}
+
+.empowering-section__header {
+    margin-bottom: 40px;
+}
+
+.empowering-section__subtitle {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-gray);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.empowering-section__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+/* --- Grid Layout --- */
+.empowering-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Mobile: 1 column */
+    gap: 40px;
+}
+
+/* --- Card Styles (Mobile) --- */
+.empowering-card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.empowering-card__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.empowering-card__content {
+    padding: 24px;
+}
+
+.empowering-card__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.empowering-card__text {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+}
+
+/* --- Tablet (768px) & Up --- */
+@media (min-width: 768px) {
+    .empowering-section__title {
+        font-size: 2.2rem;
+    }
+
+    .empowering-grid {
+        /* Desktop layout:
+            Top row has 1fr (text) + 1.25fr (image)
+            Bottom row has two 1fr columns
+          */
+        grid-template-columns: 1fr 1.25fr;
+        gap: 30px;
+    }
+
+    /* --- "What Drives Us" Card --- */
+    /* Make this card span both columns */
+    .empowering-card--drives-us {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        /* Text-left, image-right */
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* On tablet/desktop, order changes: text first */
+    .empowering-card--drives-us .empowering-card__content {
+        order: 1;
+    }
+
+    .empowering-card--drives-us .empowering-card__image {
+        order: 2;
+        height: 300px;
+        border-radius: 12px;
+    }
+
+    /* --- "Community" & "Mentors" Cards --- */
+    /* These two cards will now sit in the next row, 
+           each taking one column of the main grid.
+           But wait, the main grid is 1fr 1.25fr. That won't work.
+           
+           Let's fix the grid...
+        */
+
+    .empowering-grid {
+        grid-template-columns: 1fr 1fr;
+        /* Simpler 2-column grid */
+    }
+
+    .empowering-card--drives-us {
+        grid-column: 1 / -1;
+        /* Spans 2 columns */
+        display: grid;
+        grid-template-columns: 1fr 1.25fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Now "Community" and "Mentors" will automatically 
+           flow into a 2-column layout below.
+        */
+
+    /* Change mobile's [image-first] to [text-first] */
+    .empowering-card--community .empowering-card__content {
+        order: 1;
+    }
+
+    .empowering-card--community .empowering-card__image {
+        order: 2;
+    }
+
+    /* --- Desktop (1024px) & Up --- */
+    @media (min-width: 1024px) {
+        .empowering-section__title {
+            font-size: 2.5rem;
+        }
+
+        .empowering-card--drives-us {
+            gap: 50px;
+        }
+
+        .empowering-card__content {
+            padding: 30px;
+        }
+    }
+}

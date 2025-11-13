@@ -1,0 +1,122 @@
+/*
+========================================
+--- "JOIN US" COMPONENT (Desktop-First) ---
+========================================
+*/
+
+/* --- Base (Desktop) Styles --- */
+.join-us-banner {
+    display: flex;
+    flex-direction: row;
+    /* Side-by-side layout */
+    background-color: var(--bg-dark-green);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+/* This is the div for the image */
+.join-us-image {
+    order: 2;
+    /* Image on the right */
+    flex-basis: 50%;
+    /* Image and text are 50/50 */
+    min-height: 300px;
+    /* Base height */
+    background-image: url("../../images/joinUs.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+}
+
+/* This is the div for the text content */
+.join-us-content {
+    order: 1;
+    /* Text on the left */
+    flex-basis: 50%;
+    /* Image and text are 50/50 */
+    padding: 80px;
+    /* Desktop padding */
+    color: var(--text-light);
+}
+
+.join-us-title {
+    font-size: 2.5rem;
+    /* Desktop font size */
+}
+
+.join-us-text {
+    font-size: 1.2rem;
+    /* Desktop font size */
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.join-us-button .arrow-icon {
+    transition: transform 0.3s ease;
+}
+
+.join-us-button:hover .arrow-icon {
+    transform: translateX(4px);
+}
+
+/*
+========================================
+--- RESPONSIVE STYLES (Desktop-First) ---
+========================================
+*/
+
+/* --- 1023.98px Breakpoint (Tablets) --- */
+@media (max-width: 1023.98px) {
+    .join-us-image {
+        flex-basis: 40%;
+        /* Image becomes 40% */
+    }
+
+    .join-us-content {
+        flex-basis: 60%;
+        /* Text becomes 60% */
+        padding: 60px;
+        /* Tablet padding */
+    }
+
+    .join-us-title {
+        font-size: 2.2rem;
+        /* Tablet font size */
+    }
+
+    .join-us-text {
+        font-size: 1.1rem;
+        /* Tablet font size */
+    }
+}
+
+/* --- 767.98px Breakpoint (Mobile) --- */
+@media (max-width: 767.98px) {
+    .join-us-banner {
+        flex-direction: column;
+        /* Stack vertically */
+    }
+
+    .join-us-image {
+        order: 1;
+        /* Image on top */
+        min-height: 200px;
+        /* Mobile height */
+        /* flex-basis is ignored in column layout, no need to unset */
+    }
+
+    .join-us-content {
+        order: 2;
+        /* Text on bottom */
+        padding: 30px;
+        /* Mobile padding */
+        /* flex-basis is ignored */
+    }
+
+    .join-us-text {
+        font-size: 1rem;
+        /* Mobile font size */
+    }
+}

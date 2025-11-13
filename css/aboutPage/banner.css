@@ -1,0 +1,15 @@
+@import url(../globalStyle.css);
+/*
+========================================
+--- ABOUT PAGE BANNER STYLES ---
+========================================
+*/
+
+.about-banner {
+    background-color: var(--bg-dark-green) !important;
+    text-align: center;
+}
+
+.hero-content p {
+    margin: 2rem auto !important;
+}

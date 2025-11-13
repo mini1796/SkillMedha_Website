@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Medha Clone</title>
+
+    <!-- css files  -->
+    <link rel="stylesheet" href="./css/globalStyle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/advantage.css" />
+    <link rel="stylesheet" href="./css/learners.css" />
+    <link rel="stylesheet" href="./css/testimonials.css" />
+    <link rel="stylesheet" href="./css/companies.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- for google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <!-- page overlay for learn modal  -->
+    <div class="page-overlay" id="page-overlay"></div>
+
+    <!-- header placeholder  -->
+    <div id="header-placeholder"></div>
+
+    <!-- Banner  -->
+    <div class="banner-wrapper">
+        <section class="hero-banner">
+            <div class="hero-flex-container">
+                <div class="hero-content">
+                    <h1>Deep Skills for High-Impact Careers</h1>
+                    <p>
+                        Our Courses are the bridge to deep expertise. We empower students with comprehensive, end-to-end
+                        programs that build a job-ready portfolio, help colleges produce top-tier graduates, and give
+                        employers access to verified, specialized talent.
+                    </p>
+                    <a href="#c_section" class="btn btn-primary-green">
+                        Find Your Course
+                    </a>
+                </div>
+
+                <div class="hero-illustration">
+                    <!-- <video autoplay loop muted src="./images/Website_Banner_Video_Generation.mp4">
+            Your browser does not support the video tag.
+          </video> -->
+                    <img src="./images/banner.png" alt="Business Analyst" class="hero-illustration-img" />
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- course cards  -->
+    <section class="section" id="c_section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Courses</h1>
+            </div>
+
+            <div class="our-programs-cards-container">
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Full Stack Web<br />
+                            Development (MERN)
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 6 Months</div>
+                        </div>
+                    </div>
+
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    10+ Full-Stack MERN Projects
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="./images/mongodb_logo.png" alt="MongoDB icon" />
+                            <img src="./images/expressjs_logo.png" alt="Express.js icon" />
+                            <img src="./images/react_logo.png" alt="React icon" />
+                            <img src="./images/nodejs_logo.png" alt="Node.js icon" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Master front-end and back-end development. Learn to build
+                            scalable, data-driven web applications using React, Node.js, and
+                            MongoDB. Go from a blank page to a fully deployed MERN stack
+                            application.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Product Management<br />
+                            Career Accelerator
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 4 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build a PM portfolio with 3 real-world products
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg"
+                                alt="Jira" />
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" />
+                            <img src="https://www.vectorlogo.zone/logos/mixpanel/mixpanel-icon.svg" alt="Mixpanel" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Go from idea to launch. Master user research, PRD writing, roadmap
+                            planning, and agile methodologies. Learn from mentors at top
+                            product-led companies.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            UI/UX Design<br />
+                            Pro-Level Program
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 5 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    5+ Case Studies & a High-Fidelity Portfolio
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" />
+                            <img src="https://www.vectorlogo.zone/logos/adobe_xd/adobe_xd-icon.svg" alt="Adobe XD" />
+                            <img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="Sketch" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Learn the complete design thinking process. Master wireframing,
+                            prototyping, user testing, and interaction design to build
+                            beautiful, user-centric products.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            DevOps & Cloud<br />
+                            Engineering
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 4 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build 3 complete CI/CD pipelines from scratch
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" alt="AWS" />
+                            <img src="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" alt="Docker" />
+                            <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg"
+                                alt="Kubernetes" />
+                            <img src="https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg"
+                                alt="Terraform" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Bridge the gap between development and operations. Master CI/CD,
+                            containerization with Docker, orchestration with Kubernetes,
+                            and Infrastructure as Code with Terraform.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Business Analyst<br />
+                            Foundation Course
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 3 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    10+ Requirement Gathering & SRS document projects
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg"
+                                alt="Jira" />
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="SQL" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"
+                                alt="Power BI" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Become the vital link between business stakeholders and IT. Learn to
+                            gather requirements, model data flows, use SQL to query databases,
+                            and create clear, actionable reports.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Software QA<br />
+                            (Automation & Manual)
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 3 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    50+ Test Cases & 3 Live Automation Projects
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/selenium/selenium-icon.svg" alt="Selenium" />
+                            <img src="https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg"
+                                alt="Jira" />
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Ensure quality from day one. Master manual testing principles,
+                            test case writing, and build powerful UI automation scripts with
+                            Selenium to find bugs before they go live.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Java Full Stack<br />
+                            with Spring Boot
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 6 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    Build an enterprise-grade e-commerce application
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="httpsG://www.vectorlogo.zone/logos/java/java-icon.svg" alt="Java" />
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring Boot" />
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
+                                alt="React" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Go beyond core Java. Master the Spring Framework, build secure
+                            REST APIs, and connect to databases to become a job-ready backend
+                            developer for top-tier enterprises.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Salesforce Admin<br />
+                            & App Builder
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 3 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    2 Full-Cycle Implementations & Certification Prep
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://www.vectorlogo.zone/logos/salesforce/salesforce-icon.svg"
+                                alt="Salesforce" />
+                            <img src="https://www.vectorlogo.zone/logos/tableau/tableau-icon.svg" alt="Tableau" />
+                            <img src="https://www.vectorlogo.zone/logos/slack/slack-icon.svg" alt="Slack" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Start your career in the #1 CRM ecosystem. Learn to manage user
+                            accounts, build custom reports, automate business processes,
+                            and prepare to ace the Salesforce Admin exam.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Data Science<br />
+                            with Python
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 5 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    5+ Capstone Projects (Recommenders, Predictors)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png"
+                                alt="Python" />
+                            <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg"
+                                alt="TensorFlow" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1200px-Scikit_learn_logo_small.svg.png"
+                                alt="scikit-learn" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Learn to think like a Data Scientist. Go from Python basics to
+                            building and deploying deep learning models. This program covers
+                            statistics, neural networks, and computer vision.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+                <a href="./course.html" class="our-program-card">
+                    <div class="our-program-card-top-container">
+                        <div class="course-heading">
+                            Digital Marketing<br />
+                            & Growth Hacking
+                        </div>
+                        <div class="duration-container">
+                            <div class="calendar-icon-div">
+                                <img src="./images/calendar.png" alt="calendar icon" />
+                            </div>
+                            <div class="duration-text">Min Duration : 4 Months</div>
+                        </div>
+                    </div>
+                    <div class="our-program-card-bottom-container">
+                        <div class="projects-guided-container">
+                            <strong class="experience_strong">Experience:-</strong>
+                            <div class="projects-guided-text-container">
+                                <div class="projects-guided-text-top">
+                                    10+ Live Campaigns & SEO Audits
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-icons-container">
+                            <img src="httpsall.wikimedia.org/wikipedia/commons/thumb/a/ab/Google_Analytics_logo.svg/1200px-Google_Analytics_logo.svg.png"
+                                alt="Google Analytics" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Google_Ads_logo.svg/1200px-Google_Ads_logo.svg.png"
+                                alt="Google Ads" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/1200px-Meta-Logo.png"
+                                alt="Meta" />
+                        </div>
+                        <div class="our-program-bottom-para">
+                            Become a complete T-shaped marketer. Master SEO, SEM, social media,
+                            content marketing, and performance analytics. Learn to build funnels
+                            that convert and strategies that deliver real-world ROI.
+                        </div>
+                        <span class="btn btn-primary-green"> Register Now </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer placeholder  -->
+    <div id="footer-placeholder"></div>
+
+    <!-- javascript files  -->
+    <script src="script.js" defer></script>
+    <script src="./app.js"></script>
+    <script src="./influencer.js"></script>
+
+    <!-- for ion icons  -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

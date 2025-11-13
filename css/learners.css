@@ -1,0 +1,149 @@
+
+
+.carousel-nav {
+  display: none; /* Hide on mobile, show on desktop */
+  gap: 12px;
+}
+
+.nav-arrow {
+  background: var(--card-bg);
+  border: 1px solid var(--border-light);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: all 0.3s ease;
+}
+.nav-arrow:hover {
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.nav-arrow i {
+  width: 20px;
+  height: 20px;
+}
+
+/* Carousel wrapper (handles the scrolling and scrollbar) */
+.learners-carousel-wrapper {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+
+  /* Hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.learners-carousel-wrapper::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Carousel inner container (holds the cards) */
+.learners-carousel {
+  display: flex; /* Lays out cards in a row */
+  flex-wrap: nowrap; /* Prevents wrapping */
+  gap: 20px;
+  scroll-snap-type: x mandatory; /* Creates snap-to behavior */
+}
+
+/* Testimonial Card */
+.learners-card {
+  flex: 0 0 85%; /* Each card takes 85% of screen width on mobile */
+  max-width: 210px; /* Max width a card can have */
+  border: 1px solid grey;
+  border-radius: var(--card-border-radius);
+  padding: 16px;
+  background: var(--card-bg);
+  scroll-snap-align: start; /* Snap to the start of each card */
+  /* Use flex-column to manage internal spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Space between person, job, separator, job */
+}
+
+/* Block for Avatar + Name */
+.person-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0; /* Prevent avatar from shrinking */
+}
+
+.person-block .name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* NEW: Gray box for job info */
+.job-info-block {
+    background-color: rgba(230, 230, 230, 0.195);
+    border-radius: 8px;
+    padding: 16px;
+
+    /* --- ADD THESE LINES --- */
+    
+    /* 1. Set a fixed height that can fit 3 lines of text + padding */
+    height: 95px; 
+
+    /* 2. Use flexbox to vertically center the text */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    /* 3. Ensures the height value includes the padding */
+    box-sizing: border-box; 
+}
+
+.job-info-block .role {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.4;
+}
+
+.job-info-block .company {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+.separator-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0; /* Reduced margin */
+}
+
+.separator-icon i {
+  color: var(--text-light); /* Make the arrow icon white */
+  background: var(--text-dark); /* Make the circle background dark */
+  border-radius: 50%;
+  padding: 4px;
+  width: 28px;
+  height: 28px;
+}
+
+/*
+        ========================================
+        --- RESPONSIVE STYLES (Mobile-First) ---
+        ========================================
+        */
+
+/* --- 768px Breakpoint (Tablets & Medium Screens) --- */
+@media (min-width: 768px) {
+
+  .carousel-nav {
+    display: flex; /* Show nav arrows */
+  }
+}

@@ -1,0 +1,52 @@
+/* Main section wrapper */
+.logo-grid {
+  display: grid;
+  /* Mobile-first: 3 columns */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  /* Gap between logos */
+  align-items: center;
+  justify-items: center;
+  margin: 4rem auto;
+}
+
+.logo-grid img {
+  max-height: 35px;
+  /* Control height for uniformity */
+  width: auto;
+  object-fit: contain;
+  /* Apply grayscale and opacity for the muted look */
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.logo-grid img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* --- Responsive Styles --- */
+
+/* 768px Breakpoint (Tablets) */
+@media (min-width: 768px) {
+
+  .logo-grid {
+    /* 5 columns for tablets */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 60px;
+  }
+
+  .logo-grid img {
+    max-height: 40px;
+  }
+}
+
+/* 992px Breakpoint (Desktops) */
+@media (min-width: 992px) {
+  .logo-grid {
+    /* 7 columns for desktop as in the image */
+    grid-template-columns: repeat(7, 1fr);
+    gap: 80px;
+  }
+}

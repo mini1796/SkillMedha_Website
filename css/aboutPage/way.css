@@ -1,0 +1,49 @@
+/*
+========================================
+--- SKILL MEDHA WAY SECTION STYLES ---
+========================================
+*/
+.skillmedha-way-image-wrapper {
+  height: 35rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  /* --- ADD THESE NEW PROPERTIES --- */
+  background-image: url('../../images/skillmedha-team.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* This is the key to making it responsive.
+    It creates a box that maintains a 16:9 aspect ratio.
+    You can change 16 / 9 to 21 / 9 (wider) or 4 / 3 (taller)
+    to perfectly fit your image.
+  */
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  position: relative;
+  /* Essential for positioning the ::before pseudo-element */
+}
+
+/* --- ADD THIS NEW RULE FOR THE OVERLAY --- */
+.skillmedha-way-image-wrapper::before {
+  content: '';
+  /* Required for pseudo-elements */
+  position: absolute;
+  /* Position relative to the wrapper */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black overlay with 30% opacity */
+  border-radius: 12px;
+  /* Match the wrapper's border-radius */
+  z-index: 1;
+  /* Ensure the overlay is above the background image */
+}
+
+
+
+

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skill Medha Clone</title>
+
+  <!-- css files  -->
+  <link rel="stylesheet" href="./css/globalStyle.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/banner.css" />
+  <link rel="stylesheet" href="./css/courses.css" />
+  <link rel="stylesheet" href="./css/advantage.css" />
+  <link rel="stylesheet" href="./css/learners.css" />
+  <link rel="stylesheet" href="./css/testimonials.css" />
+  <link rel="stylesheet" href="./css/companies.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+
+  <!-- for google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet" />
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+  <!-- page overlay for learn modal  -->
+  <div class="page-overlay" id="page-overlay"></div>
+
+  <!-- header placeholder  -->
+  <div id="header-placeholder"></div>
+
+  <!-- Banner  -->
+  <div class="banner-wrapper">
+    <section class="hero-banner">
+      <div class="hero-flex-container">
+        <div class="hero-content">
+          <h1>Where Talent and Opportunity Connect</h1>
+          <p>
+            Skill Medha is the bridge. We empower students with job-ready
+            skills, help colleges streamline placements, and give employers
+            direct access to verified talent.
+          </p>
+          <a href="#" class="btn btn-primary-green">
+            Join the Ecosystem <span class="chevron"></span>
+          </a>
+        </div>
+
+        <div class="hero-illustration">
+          <!-- <video autoplay loop muted src="./images/Website_Banner_Video_Generation.mp4">
+            Your browser does not support the video tag.
+          </video> -->
+          <img src="./images/banner.png" alt="Business Analyst" class="hero-illustration-img" />
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- courses  -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">Courses</h1>
+        <a href="./viewAllCourses.html" class="btn btn-primary-green">View All</a>
+      </div>
+
+      <div class="our-programs-cards-container">
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              Full Stack Web<br />
+              Development (MERN)
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Min Duration : 6 Months</div>
+            </div>
+          </div>
+
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  10+ Full-Stack MERN Projects
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img src="./images/mongodb_logo.png" alt="MongoDB icon" />
+              <img src="./images/expressjs_logo.png" alt="Express.js icon" />
+              <img src="./images/react_logo.png" alt="React icon" />
+              <img src="./images/nodejs_logo.png" alt="Node.js icon" />
+            </div>
+            <div class="our-program-bottom-para">
+              Master front-end and back-end development. Learn to build
+              scalable, data-driven web applications using React, Node.js, and
+              MongoDB. Go from a blank page to a fully deployed MERN stack
+              application.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              Cloud Computing<br />
+              AWS Architect
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Min Duration : 3 Months</div>
+            </div>
+          </div>
+
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  25+ Hands-On AWS Cloud Labs
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img src="./images/aws_logo.png" alt="AWS icon" />
+              <img src="./images/docker_logo.png" alt="Docker icon" />
+              <img src="./images/kubernetes_logo.png" alt="Kubernetes icon" />
+              <img src="./images/terraform_logo.png" alt="Terraform icon" />
+            </div>
+            <div class="our-program-bottom-para">
+              Become an AWS expert. Learn to design, deploy, and manage
+              scalable and fault-tolerant systems on Amazon Web Services.
+              Covers S3, EC2, VPC, Lambda, and prepares you for AWS
+              certification.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              Cybersecurity &<br />
+              Ethical Hacking
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Min Duration : 4 Months</div>
+            </div>
+          </div>
+
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  50+ Hacking Simulations & Labs
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img src="./images/kali_linux_logo.png" alt="Kali Linux icon" />
+              <img src="./images/wireshark_logo.png" alt="Wireshark icon" />
+              <img src="./images/metasploit_logo.png" alt="Metasploit icon" />
+            </div>
+            <div class="our-program-bottom-para">
+              Learn to think like a hacker to build unbreakable defenses. This
+              course covers network security, cryptography, web penetration
+              testing, and malware analysis in a hands-on, lab-based
+              environment.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- workshops and hackathons  -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">Workshops & Hackathons</h1>
+        <a href="./viewAllWorkshops.html" class="btn btn-primary-green">View All</a>
+      </div>
+
+      <div class="our-programs-cards-container">
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              Generative AI<br />
+              Workshop
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Duration : 3 Hours</div>
+            </div>
+          </div>
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  Master prompts, plugins, and productivity hacks.
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/ChatGPT_logo.svg/1200px-ChatGPT_logo.svg.png"
+                alt="ChatGPT" />
+              <img src="https://www.vectorlogo.zone/logos/midjourney/midjourney-icon.svg" alt="Midjourney" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/DALL_E_2_logo.svg/1200px-DALL_E_2_logo.svg.png"
+                alt="DALL-E" />
+            </div>
+            <div class="our-program-bottom-para">
+              Go beyond basic prompting. Learn to automate tasks, generate
+              high-quality content, and integrate AI tools directly into your
+              professional workflow in this hands-on session.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              LinkedIn Growth<br />
+              with AI
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Duration : 2 Days</div>
+            </div>
+          </div>
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  Build a personal brand that attracts recruiters.
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" alt="LinkedIn" />
+              <img src="https://www.vectorlogo.zone/logos/openai/openai-icon.svg" alt="OpenAI" />
+              <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg" alt="Canva" />
+            </div>
+            <div class="our-program-bottom-para">
+              Stop scrolling, start connecting. Learn AI-powered strategies
+              to optimize your profile, create engaging content, and build a
+              network that lands you opportunities.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+
+        <a href="./course.html" class="our-program-card">
+          <div class="our-program-card-top-container">
+            <div class="course-heading">
+              Power BI<br />
+              Zero to Hero
+            </div>
+            <div class="duration-container">
+              <div class="calendar-icon-div">
+                <img src="./images/calendar.png" alt="calendar icon" />
+              </div>
+              <div class="duration-text">Duration : 2 Days</div>
+            </div>
+          </div>
+          <div class="our-program-card-bottom-container">
+            <div class="projects-guided-container">
+              <strong class="experience_strong">Experience:-</strong>
+              <div class="projects-guided-text-container">
+                <div class="duration-text">
+                  Build 5+ interactive business dashboards.
+                </div>
+              </div>
+            </div>
+            <div class="course-icons-container">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/New_Power_BI_Logo.svg/1200px-New_Power_BI_Logo.svg.png"
+                alt="Power BI" />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg/800px-Microsoft_Office_Excel_%282019%E2%80%93present%29.svg.png"
+                alt="Excel" />
+              <img src="https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" alt="MySQL" />
+            </div>
+            <div class="our-program-bottom-para">
+              Learn to transform raw data into powerful insights. This hands-on
+              workshop covers data modeling, DAX formulas, and building
+              dashboards that get you noticed by employers.
+            </div>
+            <span class="btn btn-primary-green"> Register Now </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skill Medha Advantage  -->
+  <section class="section">
+    <div class="container">
+      <p class="section-subtitle">DESIGNED FOR YOUR CAREER GROWTH</p>
+      <h2 class="section-title">Get the Skill Medha Advantage</h2>
+
+      <div class="advantage-carousel-wrapper">
+        <div class="advantage-carousel">
+          <div class="advantage-card" style="background-image: url(./images/advantageCard1.jpg)">
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <h4>Learn Skills Employers Demand</h4>
+              <p>
+                Learn the exact, in-demand skills co-designed with top
+                employers.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantage-card" style="background-image: url(./images/advantageCard2.jpg)">
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <h4>Access Exclusive Hiring Partners</h4>
+              <p>
+                Get direct access to our exclusive network of companies hiring
+                verified talent.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantage-card" style="background-image: url(./images/advantageCard3.jpg)">
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <h4>Join a Career-Driven Community</h4>
+              <p>
+                Connect with peers, mentors, and placement coordinators in our
+                career community.
+              </p>
+            </div>
+          </div>
+
+          <div class="advantage-card" style="background-image: url(./images/advantageCard4.jpg)">
+            <div class="card-overlay"></div>
+            <div class="card-content">
+              <h4>Build a Job-Ready Portfolio</h4>
+              <p>
+                Build a portfolio of real-world projects that prove you're
+                job-ready.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Stories  -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="header-text">
+          <p class="section-subtitle">SUCCESS STORIES</p>
+          <h2 class="section-title">Our Learners at Leading Companies</h2>
+        </div>
+        <div class="carousel-nav">
+          <button class="nav-arrow" id="learners-prev-btn" aria-label="Previous slide">
+            <i data-feather="chevron-left"></i>
+          </button>
+          <button class="nav-arrow" id="learners-next-btn" aria-label="Next slide">
+            <i data-feather="chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="advantage-carousel-wrapper" id="learners-carousel-wrapper">
+        <div class="learners-carousel">
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
+              <h4 class="name">Priya Sharma</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Business Analyst</p>
+              <p class="company">HDFC Bank</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">B.Com (Hons) Graduate</p>
+              <p class="company">ABC College</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test2.jpg" alt="Teja Vanama" />
+              <h4 class="name">Rohan Gupta</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Product Manager</p>
+              <p class="company">Swiggy</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Software Engineer</p>
+              <p class="company">Tech Solutions</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test3.jpg" alt="Sujay Putta" />
+              <h4 class="name">Alisha Khan</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Senior UX Designer</p>
+              <p class="company">Microsoft</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Associate UX Designer</p>
+              <p class="company">Sparkle Innovations</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test4.jpg" alt="Ravi Shankar" />
+              <h4 class="name">Ravi Shankar</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">VP - Products & Marketing</p>
+              <p class="company">Sterlite Technologies</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Vice President - Products & Marketing</p>
+              <p class="company">Skyvera</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test5.jpg" alt="Aditya Suri" />
+              <h4 class="name">Aditya Suri</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Senior Associate</p>
+              <p class="company">alliantgroup</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Associate Manager</p>
+              <p class="company">Google Operations Center</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test5.jpg" alt="Kaustubh P" />
+              <h4 class="name">Kaustubh P</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Account Manager- Client Success</p>
+              <p class="company">CogMat</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Account Manager - Client Success</p>
+              <p class="company">LS Digital Group</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
+              <h4 class="name">Priya Sharma</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Business Analyst</p>
+              <p class="company">HDFC Bank</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">B.Com (Hons) Graduate</p>
+              <p class="company">ABC College</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test2.jpg" alt="Teja Vanama" />
+              <h4 class="name">Rohan Gupta</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Product Manager</p>
+              <p class="company">Swiggy</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Software Engineer</p>
+              <p class="company">Tech Solutions</p>
+            </div>
+          </div>
+
+          <div class="learners-card">
+            <div class="person-block">
+              <img class="avatar" src="./images/test3.jpg" alt="Sujay Putta" />
+              <h4 class="name">Alisha Khan</h4>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Senior UX Designer</p>
+              <p class="company">Microsoft</p>
+            </div>
+            <div class="separator-icon">
+              <i data-feather="chevron-down"></i>
+            </div>
+            <div class="job-info-block">
+              <p class="role">Associate UX Designer</p>
+              <p class="company">Sparkle Innovations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brands  -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Our alumni work at top brands like</h2>
+
+      <div class="logo-grid">
+        <img src="./images/google_logo.png" alt="Google" />
+        <img src="./images/swiggy_logo.png" alt="Swiggy" />
+        <img src="./images/zoho_logo.png" alt="Zoho" />
+        <img src="./images/philips_logo.png" alt="Philips" />
+        <img src="./images/microsoft_logo.png" alt="Microsoft" />
+        <img src="./images/zomato_logo.png" alt="Zomato" />
+        <img src="./images/paytm_logo.png" alt="Paytm" />
+
+        <img src="./images/disney_hotstar_logo.png" alt="Disney+ Hotstar" />
+        <img src="./images/snapdeal_logo.png" alt="Snapdeal" />
+        <img src="./images/apna_logo.png" alt="Apna" />
+        <img src="./images/walmart_logo.png" alt="Walmart" />
+        <img src="./images/uber_logo.png" alt="Uber" />
+        <img src="./images/amazon_logo.png" alt="Amazon" />
+        <img src="./images/adobe_logo.png" alt="Adobe" />
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonials  -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header-left">
+        <p class="section-subtitle">HEAR IT FROM THEM</p>
+        <h2 class="section-title">
+          Ambitious People <span>❤️</span> Skill Medha
+        </h2>
+      </div>
+
+      <div class="testimonial-grid-row">
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/goSoial_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              ✨ Thrilled to share I've just landed a role as a Digital
+              Marketing Specialist! This wouldn't have been possible without
+              the Digital Marketing Program at Skill Medha. A huge shoutout to
+              my mentor, Kaushik Sen, for guiding me through live campaigns
+              and SEO strategies. We went from theory to real-world ROI in
+              weeks! 🚀
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test1.jpg" alt="Abhishika K.N" />
+            <div class="user-info">
+              <h4 class="name">Priya Sharma</h4>
+              <p class="title">
+                Digital Marketing Specialist, <br />
+                GoSocial Agency
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/Deloitte_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              Just presented my final capstone project for the Skill Medha
+              Data Analytics course, and I'm amazed at how far I've come. I
+              can now build dynamic dashboards in Power BI that actually tell
+              a story with data. Big thanks to the instructors for their
+              deep-dive sessions on DAX and data modeling. Highly recommend!
+              📊
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test2.jpg" alt="Rahul Phathani" />
+            <div class="user-info">
+              <h4 class="name">Rohan Gupta</h4>
+              <p class="title">Senior Analyst, <br />Deloitte</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/bain_and_company_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              I'm excited to share that I've accepted an offer to join Bain & Company as an Associate Consultant. The
+              Management Consulting program at Skill Medha was instrumental. The case-study-based approach and live
+              projects gave me a practical framework for problem-solving that I used directly in my interviews. A huge
+              thanks to the mentors for the rigorous prep!
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test4.jpg" alt="Akash Pandey" />
+            <div class="user-info">
+              <h4 class="name">Aditya Rao</h4>
+              <p class="title">
+                Associate Consultant, <br />
+                Bain & Company
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/freshworks_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              It's official! I'm making the pivot from engineering to Product
+              Management. 🎉 A massive thank you to the Skill Medha team and
+              my mentor, Tushar Baweja. The program's focus on user stories,
+              PRDs, and market analysis gave me the confidence and portfolio I
+              needed to land my first PM role.
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test3.jpg" alt="sumit varma" />
+            <div class="user-info">
+              <h4 class="name">Meera Iyer</h4>
+              <p class="title">
+                Associate Product Manager, <br />
+                Freshworks
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-grid-row">
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/vit_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              So excited to share that I've accepted an offer as a Full Stack
+              Developer! Being a final-year B.Tech student, I was worried
+              about being 'job-ready'. Skill Medha's MERN stack program
+              bridged that exact gap. Building a full e-commerce site from
+              scratch was tough but 100% worth it.
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test1.jpg" alt="Anjali Singh" />
+            <div class="user-info">
+              <h4 class="name">Anjali Singh</h4>
+              <p class="title">
+                Final Year Student, <br />
+                VIT
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/wipro_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              Officially certified! 🛡️ The Cybersecurity course at Skill Medha
+              was an incredible deep dive into network defense and ethical
+              hacking. The hands-on labs using Kali Linux and Wireshark were
+              my favorite part. This program opened my eyes to a whole new
+              career path.
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test5.jpg" alt="David Roy" />
+            <div class="user-info">
+              <h4 class="name">David Roy</h4>
+              <p class="title">
+                IT Administrator, <br />
+                Wipro
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/zs_associates_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              What sets Skill Medha apart is the connection to employers. It's
+              not just about learning; it's about getting verified. The
+              exclusive hiring drives and portfolio reviews were key. I felt
+              supported by my college, my mentor, and the Skill Medha team
+              right up until I signed my offer letter.
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test4.jpg" alt="Karan Desai" />
+            <div class="user-info">
+              <h4 class="name">Karan Desai</h4>
+              <p class="title">
+                Business Analyst, <br />
+                ZS Associates
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img src="./images/stealth_logo.png" alt="" />
+          </div>
+          <div class="card-body-text">
+            <p>
+              Vaibhav Sisinty's LinkedIn workshop at Skill Medha was a
+              game-changer. Just two days, and my profile views are already up
+              300%. Mind blown! 💥
+            </p>
+          </div>
+          <div class="card-footer">
+            <img class="avatar" src="./images/test2.jpg" alt="Sameer Ali" />
+            <div class="user-info">
+              <h4 class="name">Sameer Ali</h4>
+              <p class="title">Founder, <br />Stealth Startup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer placeholder  -->
+  <div id="footer-placeholder"></div>
+
+  <!-- javascript files  -->
+  <script src="script.js" defer></script>
+  <script src="./app.js"></script>
+  <script src="./influencer.js"></script>
+
+  <!-- for ion icons  -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

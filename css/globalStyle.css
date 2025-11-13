@@ -1,0 +1,129 @@
+/* --- Global Reset & Variables --- */
+:root {
+  --bg-dark-green: #116264;
+  --brand-green: #25a3a6;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --text-gray: #666666;
+  --border-light: #e0e0e0;
+  --border-dark: #333333;
+  --card-border-radius: 12px;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/*
+========================================
+--- RESPONSIVE FONT SETUP ---
+This scales your base font-size from 15px at 320px to 16px at 1400px.
+All "rem" units will now scale automatically.
+========================================
+*/
+html {
+  font-size: clamp(0.9375rem,
+      /* 15px (min size at 320px) */
+      calc(0.9375rem + (1 - 0.9375) * ((100vw - 20rem) / (87.5 - 20))),
+      1rem
+      /* 16px (max size at 1400px) */
+    );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: var(--text-dark);
+  background-color: #f9f9f9;
+  min-width: 320px;
+  font-size: 1rem;
+  /* Sets base body font to 15px-16px (based on html) */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/*
+========================================
+--- GLOBAL STYLES & WRAPPERS ---
+========================================
+*/
+
+/* --- Section (Responsive Padding) --- */
+.section {
+  width: 100%;
+  /* Scales padding from 32px (mobile) to 64px (desktop) */
+  padding: clamp(2rem, 1rem + 5vw, 4rem) 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  /* Removed top/bottom margin, handled by .section */
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* --- Typography (Responsive) --- */
+.section-title {
+  /* Scales font-size from 30px (mobile) to 40px (desktop) */
+  font-size: clamp(1.875rem,
+      calc(1.875rem + (2.5 - 1.875) * ((100vw - 20rem) / (87.5 - 20))),
+      2.5rem);
+  font-weight: 500;
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-green);
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
+}
+
+/*
+========================================
+--- BUTTON STYLES ---
+========================================
+*/
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  /* Will scale relative to base font */
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--brand-green);
+  color: var(--text-light);
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* --- Media Query for Button (Overrides fluid scaling if needed) --- */
+@media (min-width: 768px) {
+  .btn{
+    font-size: 0.9rem;
+    /* Explicitly larger on tablets+ */
+    padding: 14px 28px;
+  }
+}

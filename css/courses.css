@@ -1,0 +1,181 @@
+/* --- Section Header --- */
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+/* --- Card Grid --- */
+.our-programs-cards-container {
+  width: 100%;
+  display: grid;
+  /* This one line handles all responsiveness */
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  gap: 2rem;
+  padding: 1rem 0;
+  align-items: stretch;
+  /* Makes all cards in a row the same height */
+}
+
+/* --- Base Card Styles (Mobile-First) --- */
+.our-program-card {
+  width: 100%;
+  /* Fills the grid column */
+  padding: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  box-shadow: 0px 2px 6px rgba(128, 128, 128, 0.779);
+  background-color: #fff;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+
+/* --- Card Top --- */
+.our-program-card-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  row-gap: 1rem;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.3rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.23);
+}
+
+.course-heading {
+  text-align: center;
+  font-size: 1.5rem;
+  /* Mobile font size */
+  font-weight: 650;
+  min-height: 3.3em;
+  /* Prevents layout shift */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.duration-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+  align-items: center;
+}
+
+.calendar-icon-div {
+  width: 20px;
+  /* Mobile icon size */
+  height: 20px;
+  /* Mobile icon size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px gray;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.duration-text {
+  font-weight: 500;
+  font-size: 0.9rem;
+  /* Mobile font size */
+}
+
+.calendar-icon-div img {
+  width: 80%;
+}
+
+/* --- Card Bottom --- */
+.our-program-card-bottom-container {
+  width: 100%;
+  display: flex;
+  row-gap: 1rem;
+  /* Mobile row gap */
+  flex-direction: column;
+  flex-grow: 1;
+  /* Fills the card's height */
+  justify-content: space-between;
+  /* Pushes button to bottom */
+}
+
+.projects-guided-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 0.4rem;
+  /* Mobile gap */
+}
+
+.course-icons-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.course-icons-container img {
+  width: 15%;
+}
+
+.our-program-bottom-para {
+  font-size: 12px;
+  /* Mobile font size */
+}
+
+/*
+========================================
+--- MEDIA QUERIES (Tablet & Desktop) ---
+========================================
+*/
+
+/* Styles for screens 768px and WIDER */
+@media (min-width: 768px) {
+
+  .our-program-card {
+    padding: 1.6rem;
+    /* Larger padding */
+  }
+
+  .course-heading {
+    font-size: 1.8rem;
+    /* Larger font */
+    min-height: 3.6em;
+  }
+
+  .calendar-icon-div {
+    width: 30px;
+    /* Larger icon */
+    height: 30px;
+  }
+
+  .duration-text {
+    font-size: 1rem;
+    /* Larger font */
+  }
+
+  .our-program-card-bottom-container {
+    row-gap: 1.5rem;
+    /* Larger gap */
+  }
+
+  .projects-guided-container {
+    column-gap: 1rem;
+    /* Larger gap */
+  }
+
+  .our-program-bottom-para {
+    font-size: 0.8rem;
+    /* Larger font */
+  }
+
+}
+
+@media (max-width:768px) {
+  .our-programs-cards-container {
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  }
+}
