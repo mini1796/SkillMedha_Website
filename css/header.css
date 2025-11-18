@@ -281,12 +281,12 @@
 .mega-menu__title {
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: var(--bg-dark-green);
 }
 
 .mega-menu__subtitle {
     font-size: 0.9rem;
-    color: var(--text-gray);
+    color: #009de0;
     margin-top: 4px;
 }
 
@@ -309,7 +309,7 @@
 }
 
 .mentorship-item:hover {
-    background-color: #f9f9f9;
+    background-color: var(--bg-dark-green);
 }
 
 .mentorship-item img {
@@ -346,6 +346,10 @@
     gap: 4px;
 }
 
+.mentorship-item:hover .mentorship-item__content h4, .mentorship-item:hover .mentorship-item__content p, .mentorship-item:hover .mentorship-item__meta {
+    color: white;
+}
+
 .mentorship-item__meta i {
     width: 12px;
     height: 12px;
@@ -362,7 +366,11 @@
 }
 
 .workshop-item:hover {
-    background-color: #f9f9f9;
+    background-color: var(--bg-dark-green);
+}
+
+.workshop-item:hover .workshop-item__content h4, .workshop-item:hover .workshop-item__content p, .workshop-item:hover .workshop-item__meta {
+    color: white;
 }
 
 .workshop-item img {
@@ -399,6 +407,11 @@
     display: flex;
     align-items: center;
     gap: 4px;
+}
+
+.mentorship-item__meta span svg, .workshop-item__meta span svg {
+    color: var(--brand-green);
+    width: 15px;
 }
 
 .workshop-item__meta i {

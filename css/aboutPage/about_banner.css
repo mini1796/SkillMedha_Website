@@ -10,6 +10,13 @@
     text-align: center;
 }
 
+.hero-banner {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .hero-content p {
     margin: 2rem auto !important;
 }

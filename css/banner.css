@@ -1,14 +1,13 @@
 /* --- Banner (Hero) Component (Mobile-First) --- */
 .banner-wrapper {
-    max-width: 1400px;
-    margin: 1rem auto;
+    margin: 0 auto;
     padding: 0 1rem;
+    background-color: var(--bg-dark-green);
 }
 
 .hero-banner {
-    background-color: #d2ecec;
-    border-radius: 15px; /* Smaller border-radius for mobile */
-    margin: 1rem auto; /* Smaller margin for mobile */
+    max-width: 1400px;
+    margin: 0 auto; /* Smaller margin for mobile */
     padding: 2rem 1rem;
     overflow: hidden;
     position: relative;
@@ -32,9 +31,11 @@
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;
+    color: white;
 }
 
 .hero-content p {
+    color: white;
     font-size: 0.95rem;
     /* color: rgba(255, 255, 255, 0.85); */
     max-width: 500px;
@@ -52,14 +53,6 @@
     width: 100%;
 }
 
-/* This is the new class for your static image */
-.hero-illustration-img {
-    width: 100%;
-    max-width: 450px; /* Set a max-width for the image */
-    height: auto;
-    object-fit: contain;
-}
-
 .hero-illustration video {
     height: 20rem;
 }
@@ -70,7 +63,6 @@
 @media (min-width: 768px) {
     /* Banner adjustments */
     .hero-banner {
-        border-radius: 24px;
         padding: 80px 40px;
     }
     .hero-content h1 {

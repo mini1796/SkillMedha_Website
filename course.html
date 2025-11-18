@@ -4,12 +4,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Medha Course Page</title>
+  <title>Digital Marketing Masterclass - Skill Medha</title>
 
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/coursePage.css">
-  <link rel="stylesheet" href="./css/footer.css">
+  <!-- css files  -->
+  <link rel="stylesheet" href="./css/globalStyle.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/coursePage.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
 
+  <!-- for google fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
@@ -18,23 +21,26 @@
 </head>
 
 <body>
-  <div id="header-placeholder"></div>
+  <!-- page overlay for learn modal  -->
   <div class="page-overlay" id="page-overlay"></div>
+
+  <!-- header placeholder  -->
+  <div id="header-placeholder"></div>
 
   <main class="course-detail-grid">
 
     <header class="course-hero-bar">
       <nav class="breadcrumbs">
-        <a href="#">Development</a>
+        <a href="#">Marketing</a>
         <i data-feather="chevron-right"></i>
-        <a href="#">Programming Languages</a>
+        <a href="#">Digital Marketing</a>
         <i data-feather="chevron-right"></i>
-        <a href="#">React JS</a>
+        <a href="#">All-in-One</a>
       </nav>
     </header>
-  
-    <div class="video-preview-mobile">
-      <img src="https://via.placeholder.com/340x200.png?text=Preview+this+course" alt="Course preview" />
+
+    <div class="video-preview-mobile js-video-preview">
+      <img src="https://img-c.udemycdn.com/course/750x422/125554_1d9c_3.jpg" alt="Course preview" />
       <div class="video-play-button">
         <i data-feather="play" fill="currentColor"></i>
       </div>
@@ -43,36 +49,36 @@
 
     <div class="course-main-content">
       <section class="course-header">
-        <h1>React - The Complete Guide 2025 (incl. Next.js, Redux)</h1>
+        <h1>The Complete Digital Marketing Course - 12 Courses in 1</h1>
         <p class="subtitle">
-          Dive in and learn React.js from scratch! Learn React, Hooks, Redux,
-          React Router, Next.js, Best Practices and way more!
+          Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics
+          & More!
         </p>
         <span class="bestseller-tag">Bestseller</span>
         <div class="ratings-box">
-          <span class="score">4.6</span>
-          <span class="stars">★★★★★</span>
-          <span class="reviews">(235,684 ratings)</span>
-          <span class="learners">993,083 learners</span>
+          <span class="score">4.5</span>
+          <span class="stars">★★★★☆</span>
+          <span class="reviews">(165,342 ratings)</span>
+          <span class="learners">800,120 learners</span>
         </div>
         <div class="author-info">
           Created by
-          <a href="#">Academind by Maximilian Schwarzmüller</a>,
-          <a href="#">Maximilian Schwarzmüller</a>
+          <a href="#">Rob Percival</a>,
+          <a href="#">Daragh Walsh</a>
         </div>
         <div class="meta-info">
-          <span><i data-feather="alert-circle"></i> Last updated 8/2025</span>
+          <span><i data-feather="alert-circle"></i> Last updated 10/2025</span>
           <span><i data-feather="globe"></i> English</span>
-          <span><i data-feather="info"></i> English [CC], Arabic [Auto],
-            <a href="#">27 more</a></span>
+          <span><i data-feather="info"></i> English [CC], Spanish [Auto],
+            <a href="#">15 more</a></span>
         </div>
       </section>
 
       <section class="grid-premium-box">
         <div class="premium-box">
-          <img src="https://via.placeholder.com/40x40.png?text=P" alt="Premium" />
+          <img src="./images/premium.png" alt="Premium" />
           <div class="premium-text">
-            Access 26,000+ top-rated courses with a Udemy plan.
+            Access this top-rated course with a Skill Medha plan.
             <a href="#">See Plans & Pricing</a>
           </div>
         </div>
@@ -83,58 +89,157 @@
           <h2>What you'll learn</h2>
           <ul id="learning-list">
             <li>
-              <i data-feather="check"></i>Learn React from the ground up and
-              finish the course as an advanced React developer
+              <i data-feather="check"></i>Grow a Business Online From Scratch
             </li>
             <li>
-              <i data-feather="check"></i>Build multiple high-quality demo
-              apps, including a fullstack app built with Next.js
+              <i data-feather="check"></i>Make Money as an Affiliate Marketer
             </li>
             <li>
-              <i data-feather="check"></i>Join more than 900,000 students in
-              this course & more than 3,000,000 students I taught across all my
-              courses
+              <i data-feather="check"></i>Get Hired as a Digital Marketing Expert
             </li>
             <li>
-              <i data-feather="check"></i>Build fullstack React apps with
-              Next.js 14+
+              <i data-feather="check"></i>Work from Home as a Freelance Marketer
             </li>
             <li>
-              <i data-feather="check"></i>Follow along locally or in a cloud
-              development environment
+              <i data-feather="check"></i>Market on major platforms (Facebook, Instagram, LinkedIn, Pinterest)
             </li>
             <li>
-              <i data-feather="check"></i>Learn all about React Hooks and
-              React Components
+              <i data-feather="check"></i>Master SEO, Google Ads & Google Analytics
             </li>
             <li class="hidden-item" style="display: none">
-              <i data-feather="check"></i>Manage complex state efficiently
-              with React's Context API & React Redux
+              <i data-feather="check"></i>Build a professional WordPress website in 1 hour
             </li>
             <li class="hidden-item" style="display: none">
-              <i data-feather="check"></i>Build standalone React apps &
-              applications connected to a backend via HTTP
+              <i data-feather="check"></i>Create high-converting email marketing campaigns
             </li>
           </ul>
-          <button class="show-more-btn" id="show-more-btn">
-            Show more <i data-feather="chevron-down"></i>
-          </button>
+          <a class="show-more" id="show-more-btn">
+            Show more <img src="./images/down-chevron.png" alt="">
+          </a>
         </div>
       </section>
 
-      <section class="grid-explore-topics">
-        <h2>Explore related topics</h2>
-        <div class="explore-topics-list">
-          <a href="#" class="topic-tag">React JS</a>
-          <a href="#" class="topic-tag">Programming Languages</a>
-          <a href="#" class="topic-tag">Development</a>
+      <section class="course-includes">
+        <h2>This course includes:</h2>
+        <div class="includes-grid">
+          <div><i data-feather="video"></i> 22.5 hours on-demand video</div>
+          <div><i data-feather="file-text"></i> 35 articles</div>
+          <div><i data-feather="download"></i> 10 downloadable resources</div>
+          <div><i data-feather="monitor"></i> Access on mobile and TV</div>
+          <div><i data-feather="award"></i> Certificate of completion</div>
         </div>
       </section>
+
+      <section class="course-content-section">
+        <h2>Course content</h2>
+        <div class="course-content-header">
+          <span>12 sections • 250 lectures • 22h 30m total length</span>
+          <button class="expand-all-btn" id="expandAllBtn">Expand all sections</button>
+        </div>
+
+        <ul class="accordion">
+          <!-- SECTION 1 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>Introduction to Digital Marketing</span>
+              <span class="lesson-meta">5 lectures • 25min</span>
+            </button>
+            <ul class="accordion-content">
+              <li class="lecture-item">
+                <i data-feather="play-circle"></i>
+                <span>What is Digital Marketing?</span>
+                <a class="lecture-preview js-video-preview">Preview</a>
+                <span class="lecture-duration">04:15</span>
+              </li>
+              <li class="lecture-item">
+                <i data-feather="play-circle"></i>
+                <span>Defining Your Audience & Value Proposition</span>
+                <a class="lecture-preview js-video-preview">Preview</a>
+                <span class="lecture-duration">06:30</span>
+              </li>
+            </ul>
+          </li>
+          <!-- SECTION 2 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>Market Research</span>
+              <span class="lesson-meta">8 lectures • 45min</span>
+            </button>
+            <ul class="accordion-content">
+              <li class="lecture-item">
+                <i data-feather="play-circle"></i>
+                <span>How to Validate Your Idea</span>
+                <span class="lecture-duration">05:00</span>
+              </li>
+            </ul>
+          </li>
+          <!-- SECTION 3 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>WordPress Setup</span>
+              <span class="lesson-meta">12 lectures • 1hr 15min</span>
+            </button>
+            <ul class="accordion-content">
+            </ul>
+          </li>
+          <!-- SECTION 4 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>Search Engine Optimization (SEO)</span>
+              <span class="lesson-meta">25 lectures • 2hr 30min</span>
+            </button>
+            <ul class="accordion-content">
+            </ul>
+          </li>
+          <!-- SECTION 5 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>YouTube Marketing</span>
+              <span class="lesson-meta">15 lectures • 1hr 45min</span>
+            </button>
+            <ul class="accordion-content">
+            </ul>
+          </li>
+          <!-- SECTION 6 -->
+          <li class="accordion-item">
+            <button class="accordion-header">
+              <img src="./images/down-chevron.png" alt="">
+              <span>Facebook Marketing</span>
+              <span class="lesson-meta">18 lectures • 1hr 50min</span>
+            </button>
+            <ul class="accordion-content">
+            </ul>
+          </li>
+        </ul>
+        <button class="btn btn-outline show-more-sections-btn">6 more sections</button>
+      </section>
+
+      <!-- Video Modal Structure -->
+      <div class="modal" id="videoModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+          <button class="modal-close" id="modalCloseBtn"><i data-feather="x"></i></button>
+          <h2>Course Preview</h2>
+          <div class="video-wrapper">
+            <iframe id="videoModalIframe" width="560" height="315" src="https://www.youtube.com/embed/bixR-KIJKYM"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <aside class="course-sidebar">
-      <div class="video-preview-desktop">
-        <img src="https://via.placeholder.com/340x200.png?text=Preview+this+course" alt="Course preview" />
+      <div class="video-preview-desktop js-video-preview">
+        <img src="https://img-c.udemycdn.com/course/750x422/125554_1d9c_3.jpg" alt="Course preview" />
         <div class="video-play-button">
           <i data-feather="play" fill="currentColor"></i>
         </div>
@@ -144,30 +249,29 @@
       <div class="purchase-box">
         <div class="purchase-tabs">
           <button class="tab-link is-active">Personal</button>
-          <button class="tab-link">Teams</button>
+          <button class="tab-link">University</button>
         </div>
         <p>This Premium course is included in plans</p>
         <div class="price-info">
-          <span class="price-current">₹579</span>
-          <span class="price-original">₹3,459</span>
-          <span class="price-discount">83% off</span>
+          <span class="price-current">₹499</span>
+          <span class="price-original">₹4,499</span>
+          <span class="price-discount">89% off</span>
         </div>
         <p class="time-left-promo">
-          <i data-feather="clock"></i> 13 hours left at this price!
+          <i data-feather="clock"></i> 5 hours left at this price!
         </p>
-        <button class="btn btn-purple">Add to cart</button>
-        <button class="btn btn-outline" style="margin-top: 8px">Buy now</button>
+        <button class="btn btn-green" style="margin-top: 8px; width: 100%;">Add to cart</button>
+        <button class="btn btn-dark-blue" style="margin-top: 8px; width: 100%;">Buy now</button>
 
         <p class="purchase-guarantee">30-Day Money-Back Guarantee</p>
         <div class="purchase-links">
           <a href="#">Share</a>
           <a href="#">Gift this course</a>
-          <a href="#">Apply Coupon</a>
         </div>
 
         <form class="coupon-form">
-          <input type="text" placeholder="Enter Coupon" />
-          <button class="btn btn-dark">Apply</button>
+          <input type="text" class="btn" placeholder="Enter Coupon" />
+          <button class="btn btn-light-blue">Apply</button>
         </form>
 
         <div class="subscribe-box">
@@ -176,16 +280,18 @@
             Get this course, plus 26,000+ of our top-rated courses, with
             Personal Plan. <a href="#">Learn more</a>
           </p>
-          <button class="btn btn-outline">Start subscription</button>
-          <p class="price-small">Starting at ₹500 per month</p>
+          <button class="btn btn-dark-blue">Start subscription</button>
+          <p class="price-small">Starting at ₹600 per month</p>
           <p class="cancel-small">Cancel anytime</p>
         </div>
       </div>
     </aside>
   </main>
+
   <div id="footer-placeholder"></div>
 
   <script src="app.js"></script>
+  <script src="./courseAccordion.js"></script>
 </body>
 
 </html>
