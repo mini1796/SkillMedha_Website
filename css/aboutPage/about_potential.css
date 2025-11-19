@@ -84,20 +84,6 @@
     margin-bottom: 40px;
 }
 
-.empowering-section__subtitle {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--text-gray);
-    letter-spacing: 1px;
-    margin-bottom: 8px;
-}
-
-.empowering-section__title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    color: var(--text-dark);
-}
-
 /* --- Grid Layout --- */
 .empowering-grid {
     display: grid;

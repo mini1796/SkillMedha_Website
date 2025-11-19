@@ -1,0 +1,48 @@
+
+/* --- Coding Exercises --- */
+.coding-exercises {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Two columns: text and image */
+    gap: 32px;
+    /* Space between columns */
+    border: 1px solid var(--border-light);
+    padding: 24px;
+    margin-top: 32px;
+    color: var(--text-dark);
+    align-items: center;
+    /* Vertically align content */
+}
+
+.coding-exercises-text h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.coding-exercises-text p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.coding-exercises-image {
+    /* Dark background for code block */
+    padding: 12px;
+    /* Padding around the image to simulate code editor */
+    border-radius: 8px;
+    /* Slightly rounded corners for the code editor look */
+    overflow: hidden;
+    /* Ensure image respects border-radius */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Inner shadow for depth */
+}
+
+.coding-exercises-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    /* Inner image slightly rounded */
+}

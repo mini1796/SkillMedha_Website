@@ -1,0 +1,142 @@
+/* --- Trusted Clients Component Styles --- */
+
+.trusted-clients-section {
+    /* Gradient from Light Blue (Left) to Brand Green (Right) */
+    background: linear-gradient(90deg, var(--light-blue) 0%, var(--brand-green) 100%);
+    color: var(--text-light);
+    padding: 80px 0;
+}
+
+/* Utility for white text override */
+.text-white {
+    color: var(--text-light) !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-5 {
+    margin-bottom: 3rem;
+}
+
+/* --- Layout Wrapper --- */
+.clients-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures divider stretches */
+    position: relative;
+    gap: 2rem;
+}
+
+.client-column {
+    flex: 1;
+    /* Both columns take equal width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* --- Badges --- */
+.badge-wrapper {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.category-badge {
+    background-color: var(--bg-dark-green);
+    /* Using global dark green/blue */
+    color: var(--text-light);
+    padding: 12px 40px;
+    border-radius: 50px;
+    /* Pill shape */
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Logo Grid --- */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 Columns */
+    gap: 40px 30px;
+    /* Row gap 40px, Column gap 30px */
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    /* Fixed height for alignment */
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+
+    /* THE MAGIC TRICK: 
+     This turns any colored logo into a pure white logo 
+     Brightness 0 = Black, Invert 1 = White */
+    filter: brightness(0) invert(1);
+}
+
+.logo-item img:hover {
+    opacity: 1;
+}
+
+/* --- Vertical Divider --- */
+.vertical-divider {
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* Semi-transparent white */
+    margin: 20px 0;
+    /* Top/bottom spacing */
+}
+
+/* --- Responsive Design --- */
+
+/* Tablet & Mobile: Stack the columns */
+@media (max-width: 992px) {
+    .clients-wrapper {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .vertical-divider {
+        display: none;
+        /* Hide vertical line */
+    }
+
+    /* Optional: Add a horizontal divider if needed, or just use gap */
+    .client-column {
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .client-column:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Small Mobile: Reduce logo columns to 2 */
+@media (max-width: 480px) {
+    .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        /* Smaller heading */
+    }
+}

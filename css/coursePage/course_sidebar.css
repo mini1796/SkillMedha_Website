@@ -1,0 +1,342 @@
+.course-sidebar {
+    position: sticky;
+    top: 20px;
+    /* Adjust as needed for header space */
+    align-self: start;
+    z-index: 10;
+}
+
+/* Hide mobile-only video */
+.video-preview-mobile {
+    display: none;
+    width: 80%;
+}
+
+
+/* --- Video Preview (Desktop) --- */
+.video-preview-desktop {
+    position: relative;
+    cursor: pointer;
+    background-color: var(--text-dark);
+    border: 1px solid var(--border-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: var(--card-border-radius);
+    overflow: hidden;
+}
+
+.video-preview-desktop video {
+    width: 100%;
+}
+
+.video-preview-desktop img {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.video-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-dark);
+}
+
+.video-play-button i {
+    width: 30px;
+    height: 30px;
+    fill: var(--text-dark);
+    margin-left: 4px;
+}
+
+.video-preview-desktop span {
+    color: var(--text-light);
+    font-weight: 600;
+    text-align: center;
+    display: block;
+    padding-bottom: 24px;
+}
+
+/* --- Purchase Box --- */
+.purchase-box {
+    border: 1px solid var(--border-light);
+    padding: 24px;
+    background-color: var(--card-bg);
+    box-shadow: var(--card-shadow);
+    margin-top: 24px;
+    border-radius: var(--card-border-radius);
+    position: sticky; /* Kept sticky per previous requirement */
+    top: 20px; 
+}
+
+.purchase-tabs {
+    display: flex;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.purchase-box p {
+    color: var(--text-dark);
+    margin-bottom: 8px;
+}
+
+.tab-link {
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: var(--text-gray);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-link:hover {
+    color: var(--text-dark);
+}
+
+.tab-link.is-active {
+    color: var(--text-dark);
+    border-bottom-color: var(--text-dark);
+}
+
+/* --- University Tab Content --- */
+.university-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+}
+
+.university-text {
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.university-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.university-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.university-features li i {
+    width: 16px;
+    height: 16px;
+    stroke: var(--light-blue);
+}
+
+.price-info {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.price-current {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+.price-original {
+    font-size: 1rem;
+    color: var(--text-gray);
+    text-decoration: line-through;
+}
+
+.price-discount {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--price-discount-color);
+}
+
+.time-left-promo {
+    font-weight: 600;
+    margin: 8px 0 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.time-left-promo svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: text-bottom;
+}
+
+.purchase-guarantee {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--text-gray);
+    margin: 16px 0;
+}
+
+.purchase-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 16px 0;
+    font-size: 0.9rem;
+    color: var(--bg-dark-green);
+}
+
+.purchase-links a:hover {
+    text-decoration: underline;
+    color: var(--brand-green);
+}
+
+.coupon-form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.coupon-form input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+.coupon-form .btn-dark {
+    flex-shrink: 0;
+    padding: 12px 16px;
+    font-size: 0.95rem;
+    border-radius: 4px;
+}
+
+.subscribe-box {
+    border-top: 1px solid var(--border-light);
+    padding-top: 16px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.subscribe-box p {
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-dark);
+}
+
+.subscribe-box .subscribe-text {
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-dark);
+}
+
+.subscribe-box .subscribe-text a {
+    color: var(--bg-dark-green);
+    text-decoration: underline;
+}
+
+.subscribe-box .subscribe-text a:hover {
+    color: var(--brand-green);
+    text-decoration: none;
+}
+
+.subscribe-box .price-small,
+.subscribe-box .cancel-small {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-top: 8px;
+    font-weight: 300;
+}
+
+/* --- Coupon Feedback Messages --- */
+.coupon-msg {
+    font-size: 0.85rem;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    min-height: 20px;
+}
+
+.coupon-msg.success {
+    color: var(--brand-green, #198754);
+}
+
+.coupon-msg.error {
+    color: #dc3545; /* Red */
+}
+
+/* --- Tab Content Logic --- */
+.tab-content {
+    display: none; /* Hide all by default */
+    animation: fadeIn 0.3s ease;
+}
+
+.tab-content.active {
+    display: block; /* Show only active */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Modal Logic (Standardized) --- */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+    background: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 1001;
+}
+
+.modal-content.small-modal {
+    max-width: 500px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px; right: 10px;
+    background: none; border: none;
+    cursor: pointer;
+}
+.modal-close i { stroke: #666; width: 24px; height: 24px; }
+

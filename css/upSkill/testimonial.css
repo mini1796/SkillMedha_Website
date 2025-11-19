@@ -1,0 +1,428 @@
+.testimonials-section {
+    background-color: #f9f9f9;
+    /* Light background for the section */
+    padding-bottom: 0;
+    /* Adjust for card shadow */
+}
+
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.testimonials-header .section-title {
+    margin-bottom: 1rem;
+    color: var(--bg-dark-green);
+}
+
+/* --- Logo Navigation Tabs --- */
+.logo-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allow wrapping on smaller screens */
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.logo-tab-btn {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--card-border-radius);
+    padding: 15px 30px;
+    /* Adjust padding for logos */
+    height: 80px;
+    /* Fixed height for consistent look */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--card-shadow);
+    flex-shrink: 0;
+    /* Prevent shrinking when wrapping */
+    width: 180px;
+    /* Fixed width for consistent look */
+}
+
+.logo-tab-btn img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    filter: grayscale(100%);
+    /* Desaturated by default */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.logo-tab-btn.active {
+    border-color: var(--light-blue);
+    /* Highlight active tab */
+    box-shadow: 0 0 0 3px rgba(0, 157, 224, 0.3);
+    /* Subtle outer glow */
+    transform: translateY(-5px);
+    /* Lift active tab */
+}
+
+.logo-tab-btn:hover:not(.active) {
+    border-color: var(--bg-dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.logo-tab-btn.active img,
+.logo-tab-btn:hover img {
+    filter: grayscale(0%);
+    /* Colorize on active/hover */
+    opacity: 1;
+}
+
+/* --- Testimonial Card Wrapper --- */
+.testimonial-carousel-wrapper {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px; /* Space for arrows */
+}
+
+/* Use Grid to stack items on top of each other */
+.testimonial-card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    position: relative;
+    min-height: 450px; /* Safe minimum height */
+}
+
+/* The Individual Slide */
+.testimonial-item {
+    grid-area: 1 / 1; /* Force all items into the same grid cell */
+    display: flex;
+    width: 100%;
+    height: 100%; /* Stretch to container height */
+    
+    /* Animation States */
+    opacity: 0;
+    transform: translateX(20px); /* Start slightly offset */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    pointer-events: none; /* Prevent clicking links on hidden slides */
+    z-index: 1;
+    background-color: #fff;
+}
+
+/* Active State */
+.testimonial-item.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+    z-index: 2;
+    position: relative; /* Ensures this slide dictates the height */
+}
+
+/* Left Content (Text) */
+.testimonial-content-left {
+    flex: 1;
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    background-color: #ffffff;
+}
+
+.quote-icon {
+    color: var(--light-blue);
+    width: 40px;
+    height: 40px;
+    margin-bottom: 24px;
+}
+
+.testimonial-text {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-dark);
+    margin-bottom: 32px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: auto; 
+    padding-top: 20px;
+}
+
+.author-avatar {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f0f0f0;
+}
+
+.download-case-study {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Right Content (Video) */
+.testimonial-video-right {
+    flex: 1; /* Take up 50% width */
+    position: relative;
+    background-color: #333; /* Fallback color if image fails */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%; /* Force full height */
+}
+
+/* Dark Overlay for Video */
+.testimonial-video-right::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(0,56,101,0.4), rgba(0,0,0,0.6));
+    z-index: 1;
+}
+
+.video-overlay-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #ffffff;
+    padding: 30px;
+    width: 100%;
+}
+/* --- Navigation Arrows --- */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--card-shadow);
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.carousel-arrow i {
+    width: 24px;
+    height: 24px;
+    stroke: var(--bg-dark-green);
+}
+
+.carousel-arrow:hover {
+    background-color: var(--light-blue);
+    border-color: var(--light-blue);
+    box-shadow: 0 5px 15px rgba(0, 157, 224, 0.2);
+}
+
+.carousel-arrow:hover i {
+    stroke: var(--text-light);
+}
+
+.arrow-left {
+    left: 0;
+}
+
+.arrow-right {
+    right: 0;
+}
+
+/* Disable arrow when not needed */
+.carousel-arrow.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+    background-color: var(--card-bg);
+    border-color: var(--border-light);
+}
+
+.carousel-arrow.disabled i {
+    stroke: var(--text-gray);
+}
+
+
+/* ========================================
+        --- RESPONSIVE DESIGN ---
+        ======================================== */
+@media (max-width: 1024px) {
+    .logo-tab-btn {
+        padding: 10px 20px;
+        height: 70px;
+        width: 160px;
+    }
+
+    .testimonial-item {
+        flex-direction: column;
+        /* Stack content on smaller screens */
+    }
+
+    .testimonial-content-left,
+    .testimonial-video-right {
+        padding: 30px;
+    }
+
+    .testimonial-video-right {
+        min-height: 280px;
+        /* Ensure video section has height */
+    }
+
+    .testimonial-carousel-wrapper {
+        padding: 0 20px;
+    }
+
+    .carousel-arrow {
+        top: 40%;
+        /* Adjust arrow position */
+        width: 40px;
+        height: 40px;
+    }
+
+    .carousel-arrow i {
+        width: 20px;
+        height: 20px;
+    }
+
+    .author-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo-tabs {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .logo-tab-btn {
+        width: 140px;
+        height: 60px;
+        padding: 10px 15px;
+    }
+
+    .testimonials-header {
+        margin-bottom: 2rem;
+    }
+
+    .testimonial-text {
+        font-size: 1rem;
+    }
+
+    .download-case-study {
+        font-size: 0.85rem;
+    }
+
+    .download-case-study i {
+        width: 18px;
+        height: 18px;
+    }
+
+    .video-title {
+        font-size: 1.1rem;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .play-button i {
+        width: 30px;
+        height: 30px;
+    }
+
+    .video-author-small {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-tabs {
+        justify-content: space-around;
+    }
+
+    .logo-tab-btn {
+        width: 120px;
+        height: 50px;
+        padding: 8px 10px;
+    }
+
+    .logo-tab-btn img {
+        max-height: 80%;
+    }
+
+    .testimonial-content-left,
+    .testimonial-video-right {
+        padding: 20px;
+    }
+
+    .quote-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .author-avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .carousel-arrow {
+        display: none;
+        /* Hide arrows on very small screens, rely on touch */
+    }
+}
+
+/* --- RESPONSIVE FIXES --- */
+@media (max-width: 992px) {
+    .testimonial-item {
+        flex-direction: column; /* Stack vertically on tablet/mobile */
+    }
+
+    .testimonial-carousel-wrapper {
+        padding: 0 20px; /* Remove side padding for arrows */
+    }
+
+    .testimonial-video-right {
+        width: 100%;
+        min-height: 300px; /* FIX: Enforce height for video on mobile */
+        flex: none; /* Don't rely on flex shrinking */
+    }
+
+    .testimonial-content-left {
+        padding: 30px 24px;
+        flex: none; /* Allow text to take natural height */
+    }
+
+    /* Reposition Arrows for Mobile */
+    .carousel-arrow {
+        bottom: -60px; /* Move below card */
+        transform: none;
+    }
+    
+    .testimonials-section {
+        padding-bottom: 80px; /* Add space for arrows */
+    }
+}

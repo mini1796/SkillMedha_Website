@@ -6,17 +6,41 @@
 */
 
 .about-banner {
-    background-color: var(--bg-dark-green) !important;
-    text-align: center;
-}
-
-.hero-banner {
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    gap: 1rem;
+    text-align: center;
+    background-color: var(--bg-dark-green);
+    padding: 5rem;
 }
 
-.hero-content p {
-    margin: 2rem auto !important;
+.about-banner p {
+    width: 55%;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.about-banner h1 {
+    font-size: 3rem; /* Smaller for mobile */
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .about-banner {
+        padding: 2rem;
+    }
+
+    .about-banner h1 {
+        font-size: 2rem;
+    }
+
+    .about-banner p {
+        font-size: 0.8rem;
+        width: 80%;
+    }
 }

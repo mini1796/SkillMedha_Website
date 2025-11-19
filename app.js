@@ -148,31 +148,3 @@ document.addEventListener("DOMContentLoaded", () => {
   loadAllComponents();
 });
 
-// 5. Initialize "Show More" Button
-const showMoreBtn = document.getElementById("show-more-btn");
-const hiddenItems = document.querySelectorAll(".hidden-item");
-
-if (showMoreBtn && hiddenItems.length > 0) {
-  showMoreBtn.addEventListener("click", () => {
-    // Toggle visibility of hidden items
-    hiddenItems.forEach(item => {
-      // Check current display style and toggle
-      const isHidden = item.style.display === "none" || item.style.display === "";
-      item.style.display = isHidden ? "flex" : "none";
-    });
-
-    // Change button text and icon
-    if (showMoreBtn.innerText.includes("Show more")) {
-      showMoreBtn.innerHTML = 'Show less <i data-feather="chevron-up"></i>';
-    } else {
-      showMoreBtn.innerHTML = 'Show more <i data-feather="chevron-down"></i>';
-    }
-
-    // Re-run Feather Icons to render the new icon
-    try {
-      feather.replace();
-    } catch (e) {
-      console.warn("Feather icons not found.");
-    }
-  });
-} // End of Show More scripts

@@ -1,0 +1,330 @@
+/*
+        ========================================
+        --- MOBILE STYLES ---
+        ========================================
+        */
+@media (max-width: 767.98px) {
+    .accordion-header {
+        font-size: 0.95rem;
+        padding: 14px 16px;
+    }
+
+    .accordion-header .lesson-meta {
+        font-size: 0.8rem;
+    }
+
+    .lecture-item {
+        padding: 10px 16px 10px 40px;
+        font-size: 0.85rem;
+    }
+
+    .lecture-item i {
+        width: 14px;
+        height: 14px;
+    }
+
+    .lecture-item>span:first-of-type {
+        padding-right: 0;
+        /* Allow wrapping */
+        flex-basis: 100%;
+        /* Make title take full width */
+    }
+
+    .lecture-preview {
+        margin-left: 0;
+        /* Stack preview link below title */
+        flex-basis: 100%;
+        margin-top: 6px;
+        padding-left: 0;
+        margin-right: auto;
+    }
+
+    .lecture-item .lecture-duration {
+        margin-left: auto;
+        /* Push duration to end of line */
+    }
+
+    .show-more-sections-btn {
+        font-size: 0.9rem;
+        padding: 12px 16px;
+    }
+}
+
+/*
+========================================
+--- TABLET & MOBILE (Desktop-First) ---
+========================================
+*/
+
+@media (max-width: 1023.98px) {
+    .course-detail-grid {
+        grid-template-columns: 1fr;
+        /* 1 column */
+        gap: 24px;
+        padding: 0;
+        /* Full width */
+    }
+
+    .course-sidebar {
+        position: static;
+        /* Make sidebar static on mobile */
+    }
+
+    .video-preview-desktop {
+        display: none;
+        /* Hide desktop video */
+    }
+
+    /* Show mobile video */
+    .video-preview-mobile {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        background-color: var(--text-dark);
+        border: none;
+        margin: 0 auto;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .video-preview-mobile video {
+        width: 100%;
+        opacity: 0.8;
+        border-radius: 0;
+    }
+
+
+    .video-preview-mobile span {
+        color: var(--text-light);
+        font-weight: 600;
+        text-align: center;
+        display: block;
+        padding-bottom: 24px;
+    }
+
+
+    /* Re-style breadcrumbs for mobile dark bar */
+    .course-hero-bar {
+        background-color: var(--bg-dark-green);
+        padding: 16px 24px;
+    }
+
+    .breadcrumbs {
+        color: #d1d7dc;
+    }
+
+    .breadcrumbs a {
+        color: var(--text-light);
+    }
+
+    .breadcrumbs i {
+        stroke: #d1d7dc;
+    }
+
+    /* Reset padding for content areas */
+    .course-main-content,
+    .course-sidebar {
+        padding: 0 24px;
+    }
+
+    /* Reset purchase box styles for mobile */
+    .purchase-box {
+        margin-top: 0;
+        box-shadow: none;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+    }
+
+    .what-youll-learn,
+    .course-includes,
+    .coding-exercises,
+    .course-content-section {
+        margin-top: 24px;
+        /* Adjust top margin for mobile sections */
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    .what-youll-learn ul {
+        grid-template-columns: 1fr;
+        /* 1 column */
+    }
+
+    .grid-premium-box {
+        margin-top: 0;
+        padding: 0 24px;
+    }
+
+    .premium-box {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
+    .course-includes .includes-grid {
+        grid-template-columns: 1fr;
+        /* Single column for includes on mobile */
+    }
+
+    .coding-exercises {
+        grid-template-columns: 1fr;
+        /* Stack text and image on mobile */
+        gap: 24px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+    /* Bleed mobile video to edges */
+    .video-preview-mobile {
+        margin: 0;
+    }
+
+    /* Adjust padding for small mobile */
+    .course-hero-bar,
+    .course-main-content,
+    .course-sidebar {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .what-youll-learn,
+    .course-includes,
+    .coding-exercises,
+    .course-content-section {
+        padding: 16px;
+        /* Tighter padding inside boxes */
+        margin-top: 20px;
+    }
+
+    .purchase-box {
+        padding: 16px;
+    }
+
+    .grid-premium-box {
+        padding: 0 16px;
+    }
+
+    .course-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .course-header .subtitle {
+        font-size: 1rem;
+    }
+
+    .ratings-box .score {
+        font-size: 1.1rem;
+    }
+
+    .ratings-box .reviews,
+    .ratings-box .learners,
+    .author-info,
+    .meta-info {
+        font-size: 0.85rem;
+    }
+
+    .meta-info i {
+        width: 14px;
+        height: 14px;
+    }
+
+    .premium-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+
+    .premium-box img {
+        margin-bottom: 8px;
+    }
+
+    .price-current {
+        font-size: 1.8rem;
+    }
+
+    .price-original,
+    .price-discount {
+        font-size: 0.9rem;
+    }
+
+    .tab-link {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .coupon-form input,
+    .coupon-form .btn-dark {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .subscribe-box p {
+        font-size: 0.95rem;
+    }
+
+    .subscribe-box .subscribe-text {
+        font-size: 0.85rem;
+    }
+
+    .what-youll-learn h2,
+    .course-includes h2,
+    .coding-exercises h2,
+    .course-content-section h2 {
+        font-size: 1.3rem;
+    }
+
+    .what-youll-learn ul {
+        font-size: 0.9rem;
+    }
+
+    .includes-grid {
+        font-size: 0.9rem;
+    }
+
+    .includes-grid i {
+        width: 16px;
+        height: 16px;
+    }
+
+    .coding-exercises-text p {
+        font-size: 0.9rem;
+    }
+
+    .accordion-header {
+        font-size: 0.95rem;
+        padding: 14px 16px;
+    }
+
+    .accordion-header i {
+        width: 16px;
+        height: 16px;
+    }
+
+    .accordion-header .lesson-meta {
+        font-size: 0.8rem;
+    }
+
+    .lecture-item {
+        padding: 10px 16px 10px 40px;
+        font-size: 0.85rem;
+    }
+
+    .lecture-item i {
+        width: 14px;
+        height: 14px;
+    }
+
+    .lecture-item .lecture-duration {
+        font-size: 0.8rem;
+    }
+
+    .show-more-sections-btn {
+        font-size: 0.9rem;
+        padding: 12px 16px;
+    }
+}

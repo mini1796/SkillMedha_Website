@@ -1,0 +1,106 @@
+/* --- Stats Component Styles --- */
+
+.stats-section {
+    /* Linear Gradient matching the image: Cyan Blue to Purple */
+    background: linear-gradient(90deg, #00b4db 0%, #8f53d8 100%);
+    color: var(--text-light);
+    text-align: center;
+}
+
+.stats-grid {
+    display: grid;
+    /* 5 Equal Columns on Desktop */
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    /* Large size */
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    /* Optional: slight text shadow for readability */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-label {
+    font-size: 1rem;
+    font-weight: 300;
+    /* Rubik Light */
+    opacity: 0.9;
+}
+
+.stats-cta {
+    display: flex;
+    justify-content: center;
+}
+
+/* Button Override: Make it match the dark button in the image specifically */
+.stats-cta .btn-dark-blue {
+    background-color: #003865;
+    /* Using your global dark green/blue var */
+    padding: 16px 40px;
+    /* Slightly larger touch area */
+    font-weight: 500;
+    border-radius: 4px;
+    /* Sharper corners like the image */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Lift off the gradient */
+}
+
+.stats-cta .btn-dark-blue:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Responsive --- */
+
+/* Tablet: 3 cols top, 2 cols bottom */
+@media (max-width: 992px) {
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Center the last 2 items if they wrap */
+    .stat-item:nth-last-child(-n+2) {
+        grid-column: auto;
+    }
+}
+
+/* Mobile: 2 cols then 1 col */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem 1rem;
+    }
+
+    /* Make the last item span full width so it's centered */
+    .stat-item:last-child {
+        grid-column: span 2;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .stats-grid {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+    }
+
+    .stat-item:last-child {
+        grid-column: auto;
+    }
+}

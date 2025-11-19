@@ -1,0 +1,140 @@
+/* --- Section Layout --- */
+.assessment-section {
+    /* Split Background using Global Variable */
+    background: linear-gradient(to bottom, var(--bg-dark-green) 70%, #ffffff 70%);
+    /* Inherit padding from .section, but we ensure the container handles the width */
+}
+
+/* --- Header Customization --- */
+.assessment-header {
+    text-align: center;
+    color: var(--text-light);
+    /* White text for blue bg */
+    margin-bottom: 60px;
+}
+
+.assessment-header .section-title {
+    color: var(--text-light);
+    /* Override global dark color for this specific section */
+    margin-bottom: 16px;
+}
+
+.assessment-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.text-highlight-blue {
+    color: var(--light-blue);
+}
+
+.text-highlight-green {
+    color: var(--brand-green);
+}
+
+/* --- Grid Layout --- */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+/* --- Card Styling --- */
+.assessment-card {
+    background-color: var(--card-bg);
+    border-radius: var(--card-border-radius);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    /* Use Global Shadow */
+    box-shadow: var(--card-shadow);
+
+    /* Hover Transitions */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        box-shadow 0.4s ease;
+    position: relative;
+    height: 100%;
+}
+
+/* Icon Bubble (Local variable for the light green bubble) */
+.icon-wrapper {
+    --local-icon-bg: #e9f7ef;
+    width: 60px;
+    height: 60px;
+    background-color: var(--local-icon-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.icon-wrapper i {
+    color: var(--brand-green);
+    width: 28px;
+    height: 28px;
+}
+
+/* Card Typography */
+.assessment-card h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    /* Matching Rubik weight */
+    color: var(--bg-dark-green);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.assessment-card p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 30px;
+    flex-grow: 1;
+}
+
+/* Make button full width for card */
+.assessment-card .btn {
+    width: 100%;
+}
+
+/* --- HOVER EFFECTS --- */
+
+/* 1. Lift Card */
+.assessment-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* 2. Pulse Icon */
+.assessment-card:hover .icon-wrapper {
+    transform: scale(1.1);
+    background-color: #d1e7dd;
+    /* Slightly darker shade */
+}
+
+/* 3. Button is handled by Global .btn-green:hover */
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .assessment-section {
+        background: var(--bg-dark-green);
+        /* Solid color on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

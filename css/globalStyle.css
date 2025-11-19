@@ -6,21 +6,22 @@
 
 /* --- Global Reset & Variables --- */
 :root {
-    --bg-dark-green: #003865;
-    --brand-green: #27ae60;
-    --text-light: #ffffff;
-    --text-dark: #333333;
-    --text-gray: #7e7e7e;
-    --border-light: #e0e0e0;
-    --border-dark: #333333;
-    --card-border-radius: 12px;
-    --card-bg: #ffffff;
-    --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --bg-dark-green: #003865;
+  --brand-green: #27ae60;
+  --light-blue : #009de0;
+  --text-light: #ffffff;
+  --text-dark: #333333;
+  --text-gray: #707070;
+  --border-light: #e0e0e0;
+  --border-dark: #333333;
+  --card-border-radius: 12px;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 
-    /* Button Colors mapped to your new brand variables */
-    --btn-color-green: var(--brand-green);     /* Green: #27ae60 */
-    --btn-color-dark-blue: var(--bg-dark-green); /* Dark Blue: #003865 */
-    --btn-color-light-blue: var(--text-gray);  /* Light Blue: #009de0 */
+  /* Button Colors mapped to your new brand variables */
+  --btn-color-green: var(--brand-green);     /* Green: #27ae60 */
+  --btn-color-dark-blue: var(--bg-dark-green); /* Dark Blue: #003865 */
+  --btn-color-light-blue: var(--light-blue);  /* Light Blue: #009de0 */
 }
 
 /*
@@ -29,39 +30,39 @@
 ========================================
 */
 html {
-    font-size: clamp(0.9375rem,
-        /* 15px (min size at 320px) */
-        calc(0.9375rem + (1 - 0.9375) * ((100vw - 20rem) / (87.5 - 20))),
-        1rem
-        /* 16px (max size at 1400px) */
-    );
+  font-size: clamp(0.9375rem,
+    /* 15px (min size at 320px) */
+    calc(0.9375rem + (1 - 0.9375) * ((100vw - 20rem) / (87.5 - 20))),
+    1rem
+    /* 16px (max size at 1400px) */
+  );
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Rubik", sans-serif;
-    font-weight: 300;
-    color: var(--text-dark);
-    background-color: #f9f9f9;
-    min-width: 320px;
-    font-size: 1rem;
-    /* Sets base body font to 15px-16px (based on html) */
-    line-height: 1.6;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: var(--text-dark);
+  background-color: #f9f9f9;
+  min-width: 320px;
+  font-size: 1rem;
+  /* Sets base body font to 15px-16px (based on html) */
+  line-height: 1.6;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 /*
@@ -72,36 +73,36 @@ img {
 
 /* --- Section (Responsive Padding) --- */
 .section {
-    width: 100%;
-    /* Scales padding from 32px (mobile) to 64px (desktop) */
-    padding: clamp(2rem, 1rem + 5vw, 4rem) 0;
+  width: 100%;
+  /* Scales padding from 32px (mobile) to 64px (desktop) */
+  padding: clamp(2rem, 1rem + 5vw, 4rem) 0;
 }
 
 .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    /* Removed top/bottom margin, handled by .section */
-    padding: 0 24px;
-    box-sizing: border-box;
+  max-width: 1400px;
+  margin: 0 auto;
+  /* Removed top/bottom margin, handled by .section */
+  padding: 0 24px;
+  box-sizing: border-box;
 }
 
 /* --- Typography (Responsive) --- */
 .section-title {
-    /* Scales font-size from 30px (mobile) to 40px (desktop) */
-    font-size: clamp(1.875rem,
-        calc(1.875rem + (2.5 - 1.875) * ((100vw - 20rem) / (87.5 - 20))),
-        2.5rem);
-    font-weight: 500;
-    color: var(--bg-dark-green);
-    line-height: 1.2;
+  /* Scales font-size from 30px (mobile) to 40px (desktop) */
+  font-size: clamp(1.875rem,
+    calc(1.875rem + (2.5 - 1.875) * ((100vw - 20rem) / (87.5 - 20))),
+    2.5rem);
+  font-weight: 500;
+  color: var(--bg-dark-green);
+  line-height: 1.2;
 }
 
 .section-subtitle {
-    font-size: 0.85rem;
-    font-weight: 600;
-    color: var(--bg-dark-green);
-    letter-spacing: 1px;
-    margin-bottom: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--brand-green);
+  letter-spacing: 1px;
+  margin-bottom: 0.4rem;
 }
 
 /*
@@ -110,106 +111,104 @@ img {
 ========================================
 */
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 10px 20px;
-    border-radius: 8px;
-    font-weight: 500;
-    font-size: 0.95rem;
-    /* Will scale relative to base font */
-    border: 2px solid transparent; /* Set to 2px for outline alignment */
-    transition: all 0.3s ease;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    width: fit-content;
-    font-family: "Rubik", sans-serif; /* Ensure button font */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  /* Will scale relative to base font */
+  border: 2px solid transparent; /* Set to 2px for outline alignment */
+  transition: all 0.3s ease;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif; /* Ensure button font */
 }
 
-/* Base .btn hover from your new style */
+/* Base .btn hover */
 .btn:hover {
-    cursor: pointer;
-    filter: brightness(1.1);
-    /* Note: The dark green hover is applied to specific buttons below */
+  cursor: pointer;
+  filter: brightness(1.1);
 }
 
 /* --- Green Button (Primary) --- */
 .btn-green {
-    background-color: var(--btn-color-green);
-    border-color: var(--btn-color-green);
-    color: var(--text-light);
+  background-color: var(--btn-color-green);
+  border-color: var(--btn-color-green);
+  color: var(--text-light);
 }
 .btn-green:hover {
-    background-color: var(--bg-dark-green); /* Use new global hover color */
-    border-color: var(--bg-dark-green);
-    filter: brightness(1.1); /* Keep hover effect consistent */
+  background-color: var(--bg-dark-green);
+  border-color: var(--bg-dark-green);
+  filter: brightness(1.1);
 }
 
 /* --- Dark Blue Button (Secondary) --- */
 .btn-dark-blue {
-    background-color: var(--btn-color-dark-blue);
-    border-color: var(--btn-color-dark-blue);
-    color: var(--text-light);
+  background-color: var(--btn-color-dark-blue);
+  border-color: var(--btn-color-dark-blue);
+  color: var(--text-light);
 }
 .btn-dark-blue:hover {
-    background-color: var(--btn-color-dark-blue); /* Dark blue hover */
-    border-color: var(--btn-color-dark-blue);
-    filter: brightness(1.2); /* Make it slightly brighter on hover */
+  background-color: var(--btn-color-dark-blue);
+  border-color: var(--btn-color-dark-blue);
+  filter: brightness(1.2);
 }
 
 /* --- Light Blue Button (Tertiary) --- */
 .btn-light-blue {
-    background-color: var(--btn-color-light-blue);
-    border-color: var(--btn-color-light-blue);
-    color: var(--text-light);
+  background-color: var(--btn-color-light-blue);
+  border-color: var(--btn-color-light-blue);
+  color: var(--text-light);
 }
 .btn-light-blue:hover {
-    background-color: var(--btn-color-light-blue); /* Light blue hover */
-    border-color: var(--btn-color-light-blue);
-    filter: brightness(1.1);
+  background-color: var(--btn-color-light-blue);
+  border-color: var(--btn-color-light-blue);
+  filter: brightness(1.1);
 }
 
 /* --- Outline Button (Secondary Action) --- */
 .btn-outline {
-    background-color: transparent;
-    color: var(--btn-color-dark-blue);
-    border-color: var(--btn-color-dark-blue);
+  background-color: transparent;
+  color: var(--btn-color-dark-blue);
+  border-color: var(--btn-color-dark-blue);
 }
 .btn-outline:hover {
-    background-color: var(--btn-color-dark-blue);
-    color: var(--text-light);
-    filter: none; /* Override base hover */
+  background-color: var(--btn-color-dark-blue);
+  color: var(--text-light);
+  filter: none;
 }
 
 /* --- Icon Button (Special Case) --- */
 .btn-icon {
-    padding: 10px; /* Square padding */
-    background-color: transparent;
-    border-color: var(--border-light);
-    color: var(--text-gray);
+  padding: 10px; /* Square padding */
+  background-color: transparent;
+  border-color: var(--border-light);
+  color: var(--light-blue);
 }
 .btn-icon:hover {
-    background-color: var(--card-bg, #f9f9f9); /* Use card-bg or fallback */
-    border-color: var(--border-dark);
-    color: var(--text-dark);
-    filter: none; /* Override base hover */
+  background-color: var(--card-bg, #f9f9f9);
+  border-color: var(--border-dark);
+  color: var(--text-dark);
+  filter: none;
 }
 .btn-icon img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* --- Media Query for Button (Overrides fluid scaling if needed) --- */
 @media (min-width: 768px) {
-    .btn {
-        font-size: 0.9rem;
-        /* Explicitly larger on tablets+ */
-        padding: 14px 28px;
-    }
-    
-    .btn-icon {
-         padding: 12px; /* Adjust icon button padding for desktop */
-    }
+  .btn {
+    font-size: 0.9rem;
+    /* Explicitly larger on tablets+ */
+    padding: 14px 28px;
+  }
+  
+  .btn-icon {
+     padding: 12px; /* Adjust icon button padding for desktop */
+  }
 }
