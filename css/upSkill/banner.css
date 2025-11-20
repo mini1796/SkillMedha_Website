@@ -6,10 +6,16 @@
     overflow: hidden;
 }
 
+.about-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* --- 2. INFINITE LOGO CAROUSEL STYLES --- */
 .trusted-by-wrapper {
     background-color: #f8f9fa;
-    padding: 10px 0;
+    padding: 25px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     display: flex;
@@ -54,9 +60,10 @@
 }
 
 .logo-item img {
-    height: 4rem;
+    height: 2rem;
     width: auto;
     object-fit: contain;
+    max-width: fit-content;
 }
 
 .logo-item:hover {

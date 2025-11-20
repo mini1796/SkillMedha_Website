@@ -6,12 +6,12 @@
 */
 
 .about-banner {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    text-align: center;
+    gap: 1rem; */
+    /* text-align: center; */
     background-color: var(--bg-dark-green);
     padding: 5rem;
 }
