@@ -71,8 +71,9 @@
     box-shadow: var(--card-shadow);
     margin-top: 24px;
     border-radius: var(--card-border-radius);
-    position: sticky; /* Kept sticky per previous requirement */
-    top: 20px; 
+    position: sticky;
+    /* Kept sticky per previous requirement */
+    top: 20px;
 }
 
 .purchase-tabs {
@@ -205,10 +206,13 @@
 }
 
 .coupon-form {
-    display: flex;
+    display: grid;
     align-items: center;
     gap: 8px;
     margin: 16px 0;
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 1fr 0.5fr;
 }
 
 .coupon-form input {
@@ -276,30 +280,42 @@
 }
 
 .coupon-msg.error {
-    color: #dc3545; /* Red */
+    color: #dc3545;
+    /* Red */
 }
 
 /* --- Tab Content Logic --- */
 .tab-content {
-    display: none; /* Hide all by default */
+    display: none;
+    /* Hide all by default */
     animation: fadeIn 0.3s ease;
 }
 
 .tab-content.active {
-    display: block; /* Show only active */
+    display: block;
+    /* Show only active */
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(5px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* --- Modal Logic (Standardized) --- */
 .modal {
     display: none;
     position: fixed;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -312,9 +328,11 @@
 
 .modal-overlay {
     position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
 }
 
 .modal-content {
@@ -324,7 +342,7 @@
     width: 100%;
     max-width: 800px;
     position: relative;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     z-index: 1001;
 }
 
@@ -334,9 +352,15 @@
 
 .modal-close {
     position: absolute;
-    top: 10px; right: 10px;
-    background: none; border: none;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
     cursor: pointer;
 }
-.modal-close i { stroke: #666; width: 24px; height: 24px; }
 
+.modal-close i {
+    stroke: #666;
+    width: 24px;
+    height: 24px;
+}

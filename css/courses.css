@@ -14,12 +14,13 @@
   width: 100%;
   display: grid;
   /* This one line handles all responsiveness */
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
-  padding: 1rem 0;
+  width: 100%;
   align-items: stretch;
   /* Makes all cards in a row the same height */
 }
+
 
 /* --- Base Card Styles (Mobile-First) --- */
 .our-program-card {
@@ -136,6 +137,10 @@
 
 /* Styles for screens 768px and WIDER */
 @media (min-width: 768px) {
+  .section-header {
+    display: flex;
+  }
+
 
   .our-program-card {
     padding: 1.6rem;
@@ -180,4 +185,5 @@
   .our-programs-cards-container {
     grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
   }
+
 }

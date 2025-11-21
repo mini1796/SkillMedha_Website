@@ -36,7 +36,7 @@
   <main class="course-detail-grid">
 
     <!-- breadcrumbs -->
-    <header class="course-hero-bar">
+    <!-- <header class="course-hero-bar">
       <nav class="breadcrumbs">
         <a href="#">Marketing</a>
         <i data-feather="chevron-right"></i>
@@ -44,7 +44,7 @@
         <i data-feather="chevron-right"></i>
         <a href="#">All-in-One</a>
       </nav>
-    </header>
+    </header> -->
 
     <div class="video-preview-mobile js-video-preview" data-video-id="bixR-KIJKYM">
       <video src="./images/Website_Banner_Video_Generation.mp4" alt="Course preview" autoplay loop muted
@@ -57,29 +57,29 @@
     <div class="course-main-content">
       <!-- coure name and deets -->
       <section class="course-header">
-        <h1>The Complete Digital Marketing Course - 12 Courses in 1</h1>
-        <p class="subtitle">
+        <h1 id="course-title">The Complete Digital Marketing Course - 12 Courses in 1</h1>
+        <p class="subtitle" id="course-subtitle">
           Master Digital Marketing Strategy, Social Media Marketing, SEO, YouTube, Email, Facebook Marketing, Analytics
           & More!
         </p>
-        <span class="bestseller-tag">Bestseller</span>
-        <div class="ratings-box">
+        <!-- <span class="bestseller-tag">Bestseller</span> -->
+        <!-- <div class="ratings-box">
           <span class="score">4.5</span>
           <span class="stars">★★★★☆</span>
           <span class="reviews">(165,342 ratings)</span>
           <span class="learners">800,120 learners</span>
-        </div>
+        </div> -->
         <div class="author-info">
-          Created by
+          Cousr Instructors :
           <a href="#">Rob Percival</a>,
           <a href="#">Daragh Walsh</a>
         </div>
-        <div class="meta-info">
+        <!-- <div class="meta-info">
           <span><i data-feather="alert-circle"></i> Last updated 10/2025</span>
           <span><i data-feather="globe"></i> English</span>
           <span><i data-feather="info"></i> English [CC], Spanish [Auto],
             <a href="#">15 more</a></span>
-        </div>
+        </div> -->
       </section>
 
       <!-- premium box -->
@@ -165,7 +165,7 @@
           <button class="expand-all-btn" id="expandAllBtn">Expand all sections</button>
         </div>
 
-        <ul class="accordion">
+        <ul class="accordion" id="accordion-container">
           <li class="accordion-item">
             <button class="accordion-header">
               <i data-feather="chevron-down"></i>
@@ -271,8 +271,6 @@
         </div>
       </div>
 
-
-
     </div>
 
     <!-- sidebar  -->
@@ -295,9 +293,9 @@
           <p>This Premium course is included in plans</p>
 
           <div class="price-info">
-            <span class="price-current" id="coursePrice">₹499</span>
-            <span class="price-original">₹4,499</span>
-            <span class="price-discount">89% off</span>
+            <span class="price-current" id="sidebar-price">₹499</span>
+            <span class="price-original" id="sidebar-original-price">₹4,499</span>
+            <span class="price-discount" id="sidebar-discount">89% off</span>
           </div>
 
           <p class="time-left-promo">
@@ -320,7 +318,7 @@
               Get this course, plus 26,000+ of our top-rated courses, with
               Personal Plan. <a href="#">Learn more</a>
             </p>
-            <button class="btn btn-dark-blue js-purchase-btn">Start subscription</button>
+            <button class="btn btn-dark-blue" style="margin: 0 auto;">Start subscription</button>
             <p class="price-small">Starting at ₹600 per month</p>
             <p class="cancel-small">Cancel anytime</p>
           </div>
@@ -341,9 +339,6 @@
         </div>
       </div>
     </aside>
-
-
-
 
     <!-- video preview modal  -->
     <div class="modal" id="videoModal">
