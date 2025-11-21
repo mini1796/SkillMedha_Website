@@ -1,49 +1,66 @@
 document.addEventListener('DOMContentLoaded', () => {
-  fetchData();
+    console.log("Script started: Fetching data...");
+    fetchData();
 });
 
 async function fetchData() {
-  try {
-    const response = await fetch('./data.json');
-    const data = await response.json();
+    try {
+        const response = await fetch('./data.json');
+        
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-    // 1. Render Courses
-    renderCards(data.courses, 'courses-container');
+        // DATA IS NOW AN ARRAY, NOT AN OBJECT
+        const data = await response.json();
+        console.log("Data loaded:", data);
 
-    // 2. Render Workshops
-    renderCards(data.workshops, 'workshops-container');
+        // 1. Filter the Array to get Courses
+        const coursesList = data.filter(item => item.type === 'course');
+        console.log("Found Courses:", coursesList.length);
+        renderCards(coursesList, 'courses-container');
 
-  } catch (error) {
-    console.error("Error loading data:", error);
-  }
+        // 2. Filter the Array to get Workshops
+        const workshopsList = data.filter(item => item.type === 'workshop');
+        console.log("Found Workshops:", workshopsList.length);
+        renderCards(workshopsList, 'workshops-container');
+
+    } catch (error) {
+        console.error("Error loading data:", error);
+        // Visual feedback for debugging
+        document.body.insertAdjacentHTML('beforeend', `<p style="color:red; padding:20px;">Error: ${error.message}. Check Console.</p>`);
+    }
 }
 
-// A reusable function to render cards into ANY container
 function renderCards(items, containerId) {
-  const container = document.getElementById(containerId);
-  if (!container) return;
-
-  const limit = container.dataset.limit;
-  const itemsToDisplay = limit ? items.slice(0, limit) : items;
-
-  container.innerHTML = '';
-
-  itemsToDisplay.forEach(item => {
-    // 1. Generate Icons
-    let iconsHtml = '';
-    if (item.techIcons) {
-      item.techIcons.forEach(iconPath => {
-        iconsHtml += `<img src="${iconPath}" alt="Tool icon" />`;
-      });
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.warn(`Container #${containerId} not found on this page.`);
+        return;
     }
 
-    // 2. Handle Data variations (Course vs Workshop)
-    // Courses have "projects", Workshops might still use "experienceText" or similar.
-    // We use || (OR) to be safe.
-    const experienceData = item.projects || item.experienceText || "Hands-on Practice";
-    const linkUrl = `course-details.html?id=${item.id}&type=${item.type}`;
+    const limit = container.dataset.limit;
+    const itemsToDisplay = limit ? items.slice(0, limit) : items;
 
-    const cardHtml = `
+    container.innerHTML = ''; 
+
+    itemsToDisplay.forEach(item => {
+        // 1. Generate Icons
+        let iconsHtml = '';
+        if (item.techIcons && Array.isArray(item.techIcons)) {
+            item.techIcons.forEach(iconPath => {
+                iconsHtml += `<img src="${iconPath}" alt="Tool icon" />`;
+            });
+        }
+
+        // 2. Handle Experience/Projects Text
+        // Your JSON uses "projects", but we keep fallbacks just in case
+        const experienceData = item.projects || item.experienceText || "Hands-on Practice";
+        
+        // 3. Build Link
+        const linkUrl = `course-details.html?id=${item.id}&type=${item.type}`;
+
+        const cardHtml = `
         <a href="${linkUrl}" class="our-program-card">
           <div class="our-program-card-top-container">
             <div class="course-heading">${item.title}</div>
@@ -72,7 +89,6 @@ function renderCards(items, containerId) {
         </a>
       `;
 
-    container.innerHTML += cardHtml;
-  });
+        container.innerHTML += cardHtml;
+    });
 }
-

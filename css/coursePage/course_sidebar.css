@@ -267,21 +267,32 @@
 }
 
 /* --- Coupon Feedback Messages --- */
+/* Example CSS that is needed for visual feedback */
+
+/* Base styling for the message */
 .coupon-msg {
-    font-size: 0.85rem;
-    margin-top: -10px;
-    margin-bottom: 10px;
-    font-weight: 600;
-    min-height: 20px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
 }
 
+/* Specific styling for success */
 .coupon-msg.success {
-    color: var(--brand-green, #198754);
+    color: #1c901c; /* Green text */
+    border: 1px solid #c8e6c9;
+    background-color: #e8f5e9;
+    padding: 8px;
+    border-radius: 4px;
 }
 
+/* Specific styling for error/invalid */
 .coupon-msg.error {
-    color: #dc3545;
-    /* Red */
+    color: #d32f2f; /* Red text */
+    border: 1px solid #ef9a9a;
+    background-color: #ffebee;
+    padding: 8px;
+    border-radius: 4px;
 }
 
 /* --- Tab Content Logic --- */
