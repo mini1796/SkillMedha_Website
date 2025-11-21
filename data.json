@@ -321,7 +321,6 @@
         "description": "Learn the end-to-end Design Thinking process. Go from defining user problems to building high-fidelity, interactive prototypes using Figma. Master essential UX/UI principles for web and mobile applications.",
         "techIcons": [
             "./images/figma_logo.png",
-            "./images/design_thinking_icon.png",
             "./images/ux_icon.png",
             "./images/invision_logo.png"
         ],

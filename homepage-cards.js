@@ -74,7 +74,7 @@ function renderCards(items, containerId) {
 
           <div class="our-program-card-bottom-container">
             <div class="projects-guided-container">
-              <strong class="experience_strong">Experience:</strong>
+              <strong class="experience_strong">Projects:</strong>
               <div class="projects-guided-text-container">
                 <div class="duration-text">${experienceData}</div>
               </div>
