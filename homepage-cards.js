@@ -21,16 +21,15 @@ async function fetchData() {
 // A reusable function to render cards into ANY container
 function renderCards(items, containerId) {
   const container = document.getElementById(containerId);
-  if (!container) return; // If container doesn't exist on this page, skip
+  if (!container) return;
 
-  // Check for Limit (e.g., show only 3 on homepage)
   const limit = container.dataset.limit;
   const itemsToDisplay = limit ? items.slice(0, limit) : items;
 
-  container.innerHTML = ''; // Clear loading text
+  container.innerHTML = '';
 
   itemsToDisplay.forEach(item => {
-    // Generate Icons HTML
+    // 1. Generate Icons
     let iconsHtml = '';
     if (item.techIcons) {
       item.techIcons.forEach(iconPath => {
@@ -38,43 +37,35 @@ function renderCards(items, containerId) {
       });
     }
 
-    // Determine Link: Redirect to course page or workshop page?
-    // If it's a workshop, maybe you want a different page, or the same details page.
-    // Here I assume same details page structure.
+    // 2. Handle Data variations (Course vs Workshop)
+    // Courses have "projects", Workshops might still use "experienceText" or similar.
+    // We use || (OR) to be safe.
+    const experienceData = item.projects || item.experienceText || "Hands-on Practice";
     const linkUrl = `course-details.html?id=${item.id}&type=${item.type}`;
 
-    // Exact HTML Structure
     const cardHtml = `
         <a href="${linkUrl}" class="our-program-card">
           <div class="our-program-card-top-container">
-            <div class="course-heading">
-              ${item.title}
-            </div>
+            <div class="course-heading">${item.title}</div>
             <div class="duration-container">
               <div class="calendar-icon-div">
                 <img src="./images/calendar.png" alt="calendar icon" />
               </div>
-              <div class="duration-text">Min Duration : ${item.duration}</div>
+              <div class="duration-text">Duration : ${item.duration}</div>
             </div>
           </div>
 
           <div class="our-program-card-bottom-container">
             <div class="projects-guided-container">
-              <strong class="experience_strong">Experience:-</strong>
+              <strong class="experience_strong">Experience:</strong>
               <div class="projects-guided-text-container">
-                <div class="duration-text">
-                  ${item.experienceText}
-                </div>
+                <div class="duration-text">${experienceData}</div>
               </div>
             </div>
             
-            <div class="course-icons-container">
-               ${iconsHtml}
-            </div>
+            <div class="course-icons-container">${iconsHtml}</div>
             
-            <div class="our-program-bottom-para">
-              ${item.description}
-            </div>
+            <div class="our-program-bottom-para">${item.description}</div>
             
             <span class="btn btn-green"> Register Now </span>
           </div>
@@ -84,3 +75,4 @@ function renderCards(items, containerId) {
     container.innerHTML += cardHtml;
   });
 }
+

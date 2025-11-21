@@ -1,334 +1,146 @@
-{
-    "courses": [
-        {
-            "id": "web-development",
-            "title": "Full Stack Web<br />Development (MERN)",
-            "duration": "6 Months",
-            "experienceText": "10+ Full-Stack MERN Projects",
-            "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using React, Node.js, and MongoDB.",
-            "techIcons": [
-                "./images/mongodb_logo.png",
-                "./images/expressjs_logo.png",
-                "./images/react_logo.png",
-                "./images/nodejs_logo.png"
-            ],
-            "price": 499,
-            "originalPrice": 4999,
-            "videoPreview": "./images/preview_marketing.mp4",
-            "learningPoints": [
-                "Grow a Business Online From Scratch",
-                "Make Money as an Affiliate Marketer",
-                "Get Hired as a Digital Marketing Expert"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "Introduction to Digital Marketing",
-                    "lectureCount": 5,
-                    "duration": "25min",
-                    "lectures": [
-                        {
-                            "title": "What is Digital Marketing?",
-                            "time": "04:15"
-                        },
-                        {
-                            "title": "Defining Your Audience",
-                            "time": "06:30"
-                        }
-                    ]
-                },
-                {
-                    "sectionTitle": "Market Research",
-                    "lectureCount": 8,
-                    "duration": "45min",
-                    "lectures": [
-                        {
-                            "title": "How to Validate Your Idea",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "web-development",
-            "title": "Full Stack Web<br />Development (MERN)",
-            "duration": "6 Months",
-            "experienceText": "10+ Full-Stack MERN Projects",
-            "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using React, Node.js, and MongoDB.",
-            "techIcons": [
-                "./images/mongodb_logo.png",
-                "./images/expressjs_logo.png",
-                "./images/react_logo.png",
-                "./images/nodejs_logo.png"
-            ],
-            "price": 499,
-            "originalPrice": 4999,
-            "videoPreview": "./images/preview_marketing.mp4",
-            "learningPoints": [
-                "Grow a Business Online From Scratch",
-                "Make Money as an Affiliate Marketer",
-                "Get Hired as a Digital Marketing Expert"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "Introduction to Digital Marketing",
-                    "lectureCount": 5,
-                    "duration": "25min",
-                    "lectures": [
-                        {
-                            "title": "What is Digital Marketing?",
-                            "time": "04:15"
-                        },
-                        {
-                            "title": "Defining Your Audience",
-                            "time": "06:30"
-                        }
-                    ]
-                },
-                {
-                    "sectionTitle": "Market Research",
-                    "lectureCount": 8,
-                    "duration": "45min",
-                    "lectures": [
-                        {
-                            "title": "How to Validate Your Idea",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "cloud-computing",
-            "title": "Cloud Computing<br />AWS Architect",
-            "duration": "3 Months",
-            "experienceText": "25+ Hands-On AWS Cloud Labs",
-            "description": "Become an AWS expert. Learn to design, deploy, and manage scalable and fault-tolerant systems on Amazon Web Services.",
-            "techIcons": [
-                "./images/aws_logo.png",
-                "./images/docker_logo.png",
-                "./images/kubernetes_logo.png"
-            ],
-            "price": 699,
-            "originalPrice": 6999,
-            "videoPreview": "./images/preview_coding.mp4",
-            "learningPoints": [
-                "Build 16 web development projects",
-                "Build a real startup website",
-                "Master backend development with Node"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "HTML Basics",
-                    "lectureCount": 3,
-                    "duration": "15min",
-                    "lectures": [
-                        {
-                            "title": "HTML Skeleton",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "cloud-computing",
-            "title": "Cloud Computing<br />AWS Architect",
-            "duration": "3 Months",
-            "experienceText": "25+ Hands-On AWS Cloud Labs",
-            "description": "Become an AWS expert. Learn to design, deploy, and manage scalable and fault-tolerant systems on Amazon Web Services.",
-            "techIcons": [
-                "./images/aws_logo.png",
-                "./images/docker_logo.png",
-                "./images/kubernetes_logo.png"
-            ],
-            "price": 699,
-            "originalPrice": 6999,
-            "videoPreview": "./images/preview_coding.mp4",
-            "learningPoints": [
-                "Build 16 web development projects",
-                "Build a real startup website",
-                "Master backend development with Node"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "HTML Basics",
-                    "lectureCount": 3,
-                    "duration": "15min",
-                    "lectures": [
-                        {
-                            "title": "HTML Skeleton",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        }
+[{
+    "id": "web-development",
+    "type": "course",
+    "title": "Full Stack Web Development (MERN)",
+    "duration": "6 Months",
+    "projects": "10+ Full-Stack MERN Projects",
+    "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using **M**ongoDB, **E**xpress.js, **R**eact, and **N**ode.js (MERN).",
+    "techIcons": [
+        "./images/mongodb_logo.png",
+        "./images/expressjs_logo.png",
+        "./images/react_logo.png",
+        "./images/nodejs_logo.png"
     ],
-    "workshops": [
+    "courseInstructors": [
+        "Instructor 1 Name",
+        "Instructor 2 Name"
+    ],
+    "learningPoints": [
+        "Build full-stack, data-driven web applications.",
+        "Master essential React concepts and state management.",
+        "Develop robust APIs using Node.js and Express.js.",
+        "Work with MongoDB for database persistence."
+    ],
+    "courseIncludes": {
+        "videoDuration": "22.5 hours",
+        "articles": 35,
+        "downloadableResources": 10,
+        "accessOnMobile": "yes",
+        "certificateOfCompletion": "yes"
+    },
+    "price": 499,
+    "originalPrice": 4999,
+    "couponCode": "MEDHA100",
+    "couponDiscount": 100,
+    "videoPreview": "./videos/preview_webdev.mp4",
+    "curriculum": [
         {
-            "id": "web-development",
-            "title": "Full Stack Web<br />Development (MERN)",
-            "duration": "6 Months",
-            "experienceText": "10+ Full-Stack MERN Projects",
-            "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using React, Node.js, and MongoDB.",
-            "techIcons": [
-                "./images/mongodb_logo.png",
-                "./images/expressjs_logo.png",
-                "./images/react_logo.png",
-                "./images/nodejs_logo.png"
-            ],
-            "price": 499,
-            "originalPrice": 4999,
-            "videoPreview": "./images/preview_marketing.mp4",
-            "learningPoints": [
-                "Grow a Business Online From Scratch",
-                "Make Money as an Affiliate Marketer",
-                "Get Hired as a Digital Marketing Expert"
-            ],
-            "curriculum": [
+            "sectionTitle": "Introduction to MERN Stack",
+            "lectures": [
                 {
-                    "sectionTitle": "Introduction to Digital Marketing",
-                    "lectureCount": 5,
-                    "duration": "25min",
-                    "lectures": [
-                        {
-                            "title": "What is Digital Marketing?",
-                            "time": "04:15"
-                        },
-                        {
-                            "title": "Defining Your Audience",
-                            "time": "06:30"
-                        }
-                    ]
+                    "title": "What is Full-Stack Development and MERN?",
+                    "videoPreview": "./videos/preview_lecture1.mp4",
+                    "time": "04:15"
                 },
                 {
-                    "sectionTitle": "Market Research",
-                    "lectureCount": 8,
-                    "duration": "45min",
-                    "lectures": [
-                        {
-                            "title": "How to Validate Your Idea",
-                            "time": "05:00"
-                        }
-                    ]
+                    "title": "Setting Up Your Development Environment",
+                    "videoPreview": "./videos/preview_lecture2.mp4",
+                    "time": "06:30"
                 }
             ]
         },
         {
-            "id": "web-development",
-            "title": "Full Stack Web<br />Development (MERN)",
-            "duration": "6 Months",
-            "experienceText": "10+ Full-Stack MERN Projects",
-            "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using React, Node.js, and MongoDB.",
-            "techIcons": [
-                "./images/mongodb_logo.png",
-                "./images/expressjs_logo.png",
-                "./images/react_logo.png",
-                "./images/nodejs_logo.png"
-            ],
-            "price": 499,
-            "originalPrice": 4999,
-            "videoPreview": "./images/preview_marketing.mp4",
-            "learningPoints": [
-                "Grow a Business Online From Scratch",
-                "Make Money as an Affiliate Marketer",
-                "Get Hired as a Digital Marketing Expert"
-            ],
-            "curriculum": [
+            "sectionTitle": "React Fundamentals",
+            "lectures": [
                 {
-                    "sectionTitle": "Introduction to Digital Marketing",
-                    "lectureCount": 5,
-                    "duration": "25min",
-                    "lectures": [
-                        {
-                            "title": "What is Digital Marketing?",
-                            "time": "04:15"
-                        },
-                        {
-                            "title": "Defining Your Audience",
-                            "time": "06:30"
-                        }
-                    ]
-                },
-                {
-                    "sectionTitle": "Market Research",
-                    "lectureCount": 8,
-                    "duration": "45min",
-                    "lectures": [
-                        {
-                            "title": "How to Validate Your Idea",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "cloud-computing",
-            "title": "Cloud Computing<br />AWS Architect",
-            "duration": "3 Months",
-            "experienceText": "25+ Hands-On AWS Cloud Labs",
-            "description": "Become an AWS expert. Learn to design, deploy, and manage scalable and fault-tolerant systems on Amazon Web Services.",
-            "techIcons": [
-                "./images/aws_logo.png",
-                "./images/docker_logo.png",
-                "./images/kubernetes_logo.png"
-            ],
-            "price": 699,
-            "originalPrice": 6999,
-            "videoPreview": "./images/preview_coding.mp4",
-            "learningPoints": [
-                "Build 16 web development projects",
-                "Build a real startup website",
-                "Master backend development with Node"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "HTML Basics",
-                    "lectureCount": 3,
-                    "duration": "15min",
-                    "lectures": [
-                        {
-                            "title": "HTML Skeleton",
-                            "time": "05:00"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "cloud-computing",
-            "title": "Cloud Computing<br />AWS Architect",
-            "duration": "3 Months",
-            "experienceText": "25+ Hands-On AWS Cloud Labs",
-            "description": "Become an AWS expert. Learn to design, deploy, and manage scalable and fault-tolerant systems on Amazon Web Services.",
-            "techIcons": [
-                "./images/aws_logo.png",
-                "./images/docker_logo.png",
-                "./images/kubernetes_logo.png"
-            ],
-            "price": 699,
-            "originalPrice": 6999,
-            "videoPreview": "./images/preview_coding.mp4",
-            "learningPoints": [
-                "Build 16 web development projects",
-                "Build a real startup website",
-                "Master backend development with Node"
-            ],
-            "curriculum": [
-                {
-                    "sectionTitle": "HTML Basics",
-                    "lectureCount": 3,
-                    "duration": "15min",
-                    "lectures": [
-                        {
-                            "title": "HTML Skeleton",
-                            "time": "05:00"
-                        }
-                    ]
+                    "title": "Components, Props, and State",
+                    "videoPreview": "./videos/preview_lecture3.mp4",
+                    "time": "05:00"
                 }
             ]
         }
     ]
-}
+},
+{
+    "id": "data-science-ml",
+    "type": "course",
+    "title": "Data Science & Machine Learning with Python",
+    "duration": "4 Months",
+    "projects": "8+ Capstone Projects (Classification, NLP, Time Series)",
+    "description": "Become a skilled Data Scientist. Master the full data lifecycle: data wrangling, exploratory analysis, statistical modeling, and deploying powerful Machine Learning and Deep Learning models using Python.",
+    "techIcons": [
+        "./images/python_logo.png",
+        "./images/pandas_logo.png",
+        "./images/scikitlearn_logo.png",
+        "./images/tensorflow_logo.png"
+    ],
+    "courseInstructors": [
+        "Dr. Anya Sharma (Data Scientist)",
+        "Prof. Ben Carter (ML Engineer)"
+    ],
+    "learningPoints": [
+        "Build predictive models using Scikit-learn and TensorFlow.",
+        "Master data analysis and manipulation with Pandas and NumPy.",
+        "Apply Deep Learning techniques for image and text data.",
+        "Perform A/B testing and statistical inference for business decisions."
+    ],
+    "courseIncludes": {
+        "videoDuration": "35 hours",
+        "articles": 50,
+        "downloadableResources": 15,
+        "accessOnMobile": "yes",
+        "certificateOfCompletion": "yes"
+    },
+    "price": 699,
+    "originalPrice": 5999,
+    "couponCode": "DATA_PRO200",
+    "couponDiscount": 200,
+    "videoPreview": "./videos/preview_datascience.mp4",
+    "curriculum": [
+        {
+            "sectionTitle": "Module 1: Python & Data Wrangling",
+            "lectures": [
+                {
+                    "title": "Introduction to Python for Data Science",
+                    "videoPreview": "./videos/preview_data_m1l1.mp4",
+                    "time": "05:20"
+                },
+                {
+                    "title": "Data Manipulation with Pandas",
+                    "videoPreview": "./videos/preview_data_m1l2.mp4",
+                    "time": "07:45"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Module 2: Machine Learning Fundamentals",
+            "lectures": [
+                {
+                    "title": "Supervised Learning: Regression vs. Classification",
+                    "videoPreview": "./videos/preview_data_m2l1.mp4",
+                    "time": "09:10"
+                },
+                {
+                    "title": "Model Evaluation and Hyperparameter Tuning",
+                    "videoPreview": "./videos/preview_data_m2l2.mp4",
+                    "time": "06:55"
+                }
+            ]
+        },
+        {
+            "sectionTitle": "Module 3: Deep Learning & Capstone",
+            "lectures": [
+                {
+                    "title": "Neural Networks with TensorFlow/Keras",
+                    "videoPreview": "./videos/preview_data_m3l1.mp4",
+                    "time": "12:30"
+                },
+                {
+                    "title": "Final Project Kickoff: Image Classification",
+                    "videoPreview": "./videos/preview_data_m3l2.mp4",
+                    "time": "04:50"
+                }
+            ]
+        }
+    ]
+}]
