@@ -1,0 +1,108 @@
+/* --- 3. Test Types Section (New Component - Dark Blue Grid) --- */
+.test-types-section {
+    background-color: #003366;
+    /* Matching the dark blue background from image */
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.test-types-section h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.test-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cards per row */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.test-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 250px;
+    /* Uniform height */
+    transition: transform 0.3s ease;
+}
+
+.test-card:hover {
+    transform: translateY(-5px);
+}
+
+.test-card h3 {
+    color: #0f172a;
+    /* Dark text for title */
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.test-card p {
+    color: #64748b;
+    /* Grey text for desc */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+
+.card-btn {
+    background-color: var(--accent-green);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    transition: background 0.3s;
+}
+
+.card-btn:hover {
+    background-color: #16a34a;
+}
+
+/* --- Responsive Queries --- */
+@media (max-width: 992px) {
+    .three-col-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 60px;
+    }
+
+    .center-image {
+        order: -1;
+        margin-bottom: 20px;
+    }
+
+    .test-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 per row on tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .test-cards-grid {
+        grid-template-columns: 1fr;
+        /* 1 per row on mobile */
+    }
+}

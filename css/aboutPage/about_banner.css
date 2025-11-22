@@ -14,6 +14,8 @@
     /* text-align: center; */
     background-color: var(--bg-dark-green);
     padding: 5rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .about-banner p {
@@ -23,7 +25,8 @@
 }
 
 .about-banner h1 {
-    font-size: 3rem; /* Smaller for mobile */
+    font-size: 3rem;
+    /* Smaller for mobile */
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 20px;

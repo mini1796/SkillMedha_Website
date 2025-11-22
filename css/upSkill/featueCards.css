@@ -91,9 +91,9 @@
 }
 
 .assessment-card p {
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     color: var(--text-gray);
-    line-height: 1.6;
+    line-height: 1.4;
     margin-bottom: 30px;
     flex-grow: 1;
 }

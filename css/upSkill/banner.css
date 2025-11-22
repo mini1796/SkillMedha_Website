@@ -1,9 +1,10 @@
 /* --- 1. HERO SECTION STYLES --- */
 .upskill-hero {
-    background-color: #fff;
+    background-color: var(--bg-dark-green);
     text-align: center;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .about-banner {

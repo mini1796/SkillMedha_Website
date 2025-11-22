@@ -1,0 +1,102 @@
+/* --- 2. Split Feature Section --- */
+    .feature-split-section {
+      padding: 80px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .three-col-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr 1fr; 
+      gap: 40px;
+      align-items: center;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .list-item {
+      display: flex;
+      gap: 15px;
+      align-items: flex-start;
+    }
+
+    .icon-wrapper {
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* Left Side Icons (Blue) */
+    .problem-side .icon-wrapper i {
+      color: var(--icon-blue);
+      width: 32px;
+      height: 32px;
+    }
+
+    /* Right Side Icons (Green) */
+    .solution-side .icon-wrapper i {
+      color: var(--accent-green);
+      width: 32px;
+      height: 32px;
+    }
+
+    .text-wrapper h3 {
+      font-size: 1.1rem;
+      color: var(--bg-dark-green);
+      margin: 0 0 8px 0;
+      font-weight: 600;
+    }
+
+    .text-wrapper p {
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .center-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .center-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .col-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--bg-dark-green);
+      margin-bottom: 30px;
+    }
+
+    /* --- Responsive --- */
+    @media (max-width: 992px) {
+      .three-col-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+        gap: 60px;
+      }
+      
+      .center-image {
+        order: -1; 
+        margin-bottom: 20px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero-banner h1 {
+        font-size: 1.8rem;
+      }
+    }
+
+    .icon-wrapper svg {
+          color: var(--light-blue);
+    }
