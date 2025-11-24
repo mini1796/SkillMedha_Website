@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="./css/header.css" />
     <link rel="stylesheet" href="./css/aboutPage/about_banner.css">
     <link rel="stylesheet" href="./css/upSkill/banner.css">
-    <link rel="stylesheet" href="./css/featurePage/banner.css">
-    <link rel="stylesheet" href="./css/featurePage/comprehensive.css">
+    <link rel="stylesheet" href="./css/featurePage/featureSplit.css">
+    <link rel="stylesheet" href="./css/featurePage/testTypes.css">
+    <link rel="stylesheet" href="./css/featurePage/integration.css">
     <link rel="stylesheet" href="./css/footer.css" />
 
     <!-- Google Fonts -->
@@ -202,12 +203,85 @@
             </div>
 
             <div style="margin-top: 50px;">
-                <a href="contact.html" class="btn btn-green" style="width: fit-content; margin: 0 auto;">Explore All Test
+                <a href="contact.html" class="btn btn-green" style="width: fit-content; margin: 0 auto;">Explore All
+                    Test
                     Modules</a>
             </div>
         </section>
 
+        <!-- INTEGRATION SECTION: Laptop + Feature Grid -->
+        <section class="ats-integration-section">
+            <div class="ats-container">
+                <!-- Left: Laptop Mockup -->
+                <div class="ats-left-image">
+                    <div class="laptop-mockup">
+                        <div class="laptop-screen">
+                            <img src="./images/dashboard_preview.jpg" style="width:100%; height:100%; object-fit:cover;"
+                                onerror="this.src='https://assets.materialup.com/uploads/b70b4a45-6679-4592-a39c-851d45c75574/preview.png'"
+                                alt="Dashboard Screen">
+                        </div>
+                    </div>
+                </div>
 
+                <!-- Right: 5 Feature Points in Grid -->
+                <div class="ats-right-content">
+                    <h2>Powerful Features for Seamless Assessments</h2>
+                    <div class="ats-features-grid">
+
+                        <!-- Point 1 -->
+                        <div class="feature-point-card">
+                            <div class="fp-icon"><i data-feather="database"></i></div>
+                            <div class="fp-text">
+                                <h4>Massive Question Bank</h4>
+                                <p>Access 100,000+ technical and aptitude questions updated weekly.</p>
+                            </div>
+                        </div>
+
+                        <!-- Point 2 -->
+                        <div class="feature-point-card">
+                            <div class="fp-icon"><i data-feather="edit-3"></i></div>
+                            <div class="fp-text">
+                                <h4>Custom Test Creation</h4>
+                                <p>Create your own tests by mixing difficulty levels and topics.</p>
+                            </div>
+                        </div>
+
+                        <!-- Point 3 -->
+                        <div class="feature-point-card">
+                            <div class="fp-icon"><i data-feather="check-circle"></i></div>
+                            <div class="fp-text">
+                                <h4>Detailed Solutions</h4>
+                                <p>Step-by-step explanations for every question for better learning.</p>
+                            </div>
+                        </div>
+
+                        <!-- Point 4 -->
+                        <div class="feature-point-card">
+                            <div class="fp-icon"><i data-feather="trending-up"></i></div>
+                            <div class="fp-text">
+                                <h4>Performance Benchmarking</h4>
+                                <p>Compare individual student scores with national averages.</p>
+                            </div>
+                        </div>
+
+                        <!-- Point 5 -->
+                        <div class="feature-point-card" style="grid-column: span 2;">
+                            <div class="fp-icon"><i data-feather="layers"></i></div>
+                            <div class="fp-text">
+                                <h4>Seamless LMS Integration</h4>
+                                <p>Integrate directly with your college's existing learning management system via API.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="text-align:center;">
+                        <a href="#" class="explore-btn">Explore Features</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
