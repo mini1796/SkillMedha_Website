@@ -129,6 +129,17 @@
   /* Mobile font size */
 }
 
+.price-register {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.original-price {
+  text-decoration:line-through;
+  color: rgb(197, 197, 197);
+}
+
 /*
 ========================================
 --- MEDIA QUERIES (Tablet & Desktop) ---
