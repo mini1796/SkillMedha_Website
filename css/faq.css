@@ -1,0 +1,95 @@
+/* ========================================
+--- FAQ SECTION STYLES ---
+========================================
+*/
+
+/* Header Alignment */
+.faq-header {
+  text-align: center;
+  margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FAQ Container - Limits width for readability */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Space between items */
+}
+
+/* Individual FAQ Card */
+.faq-item {
+  background-color: var(--card-bg);
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-light);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* The Question Button */
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 1.25rem 1.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  
+  /* Font Styling */
+  font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--bg-dark-green);
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: var(--brand-green);
+}
+
+/* Icon Rotation */
+.icon-toggle {
+  color: var(--brand-green);
+  transition: transform 0.3s ease;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0; /* Prevents squishing on small screens */
+}
+
+/* Active State Styles (Applied via JS) */
+.faq-item.active .icon-toggle {
+  transform: rotate(180deg);
+}
+
+.faq-item.active .faq-question {
+  color: var(--brand-green);
+  border-bottom: 1px solid rgba(0,0,0,0.05); /* Subtle divider */
+}
+
+/* The Answer Area (Hidden by default) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #ffffff;
+}
+
+.answer-content {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding-top: 1rem;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}

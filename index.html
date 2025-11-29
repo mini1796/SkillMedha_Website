@@ -1,69 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skill Medha</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Skill Medha</title>
+    <link rel="stylesheet" href="./css/globalStyle.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/courses.css" />
+    <link rel="stylesheet" href="./css/advantage.css" />
+    <link rel="stylesheet" href="./css/learners.css" />
+    <link rel="stylesheet" href="./css/testimonials.css" />
+    <link rel="stylesheet" href="./css/companies.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
-  <link rel="stylesheet" href="./css/globalStyle.css" />
-  <link rel="stylesheet" href="./css/header.css" />
-  <link rel="stylesheet" href="./css/banner.css" />
-  <link rel="stylesheet" href="./css/courses.css" />
-  <link rel="stylesheet" href="./css/advantage.css" />
-  <link rel="stylesheet" href="./css/learners.css" />
-  <link rel="stylesheet" href="./css/testimonials.css" />
-  <link rel="stylesheet" href="./css/companies.css" />
-  <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-    rel="stylesheet" />
-  <script src="https://unpkg.com/feather-icons"></script>
-</head>
+  <body>
+    <!-- modal overlay  -->
+    <div class="page-overlay" id="page-overlay"></div>
 
-<body>
-  <!-- modal overlay  -->
-  <div class="page-overlay" id="page-overlay"></div>
+    <!-- header placeholder -->
+    <div id="header-placeholder"></div>
 
-  <!-- header placeholder -->
-  <div id="header-placeholder"></div>
+    <!-- banner  -->
+    <div class="banner-wrapper">
+      <section class="hero-banner">
+        <div class="hero-flex-container">
+          <div class="hero-content">
+            <h1>Where Talent and Opportunity Connect</h1>
+            <p>
+              Skill Medha is the bridge. We empower students with job-ready
+              skills, help colleges streamline placements, and give employers
+              direct access to verified talent.
+            </p>
+            <a href="#" class="btn btn-green" style="width: fit-content">
+              Join the Ecosystem <span class="chevron"></span>
+            </a>
+          </div>
 
-  <!-- banner  -->
-  <div class="banner-wrapper">
-    <section class="hero-banner">
-      <div class="hero-flex-container">
-        <div class="hero-content">
-          <h1>Where Talent and Opportunity Connect</h1>
-          <p>
-            Skill Medha is the bridge. We empower students with job-ready
-            skills, help colleges streamline placements, and give employers
-            direct access to verified talent.
-          </p>
-          <a href="#" class="btn btn-green" style="width: fit-content;">
-            Join the Ecosystem <span class="chevron"></span>
-          </a>
+          <div class="hero-illustration">
+            <video
+              autoplay
+              loop
+              muted
+              src="./images/Website_Banner_Video_Generation.mp4"
+              alt="Business Analyst"
+              class="hero-illustration-img"
+            ></video>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- courses  -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Courses</h1>
+          <a href="./viewAllCourses.html" class="btn btn-light-blue"
+            >View All</a
+          >
         </div>
 
-        <div class="hero-illustration">
-          <video autoplay loop muted src="./images/Website_Banner_Video_Generation.mp4" alt="Business Analyst"
-            class="hero-illustration-img"></video>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- courses  -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h1 class="section-title">Courses</h1>
-        <a href="./viewAllCourses.html" class="btn btn-light-blue">View All</a>
-      </div>
-
-      <div class="our-programs-cards-container" id="courses-container" data-limit="3">
-        <!-- <a href="./digital_marketing_course.html" class="our-program-card">
+        <div
+          class="our-programs-cards-container"
+          id="courses-container"
+          data-limit="3"
+        >
+          <!-- <a href="./digital_marketing_course.html" class="our-program-card">
           <div class="our-program-card-top-container">
             <div class="course-heading">
               Full Stack Web<br />
@@ -178,20 +192,26 @@
             <span class="btn btn-green"> Register Now </span>
           </div>
         </a> -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- workshops and hackathons  -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h1 class="section-title">Workshops & Hackathons</h1>
-        <a href="./viewAllWorkshops.html" class="btn btn-light-blue">View All</a>
-      </div>
+    <!-- workshops and hackathons  -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Workshops & Hackathons</h1>
+          <a href="./viewAllWorkshops.html" class="btn btn-light-blue"
+            >View All</a
+          >
+        </div>
 
-      <div class="our-programs-cards-container" id="workshops-container" data-limit="3">
-        <!-- <a href="./digital_marketing_course.html" class="our-program-card">
+        <div
+          class="our-programs-cards-container"
+          id="workshops-container"
+          data-limit="3"
+        >
+          <!-- <a href="./digital_marketing_course.html" class="our-program-card">
           <div class="our-program-card-top-container">
             <div class="course-heading">
               Generative AI<br />
@@ -302,500 +322,654 @@
             <span class="btn btn-green"> Register Now </span>
           </div>
         </a> -->
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- skill medha advantage  -->
-  <section class="section">
-    <div class="container">
-      <p class="section-subtitle">DESIGNED FOR YOUR CAREER GROWTH</p>
-      <h2 class="section-title">Get the Skill Medha Advantage</h2>
+    <!-- skill medha advantage  -->
+    <section class="section">
+      <div class="container">
+        <p class="section-subtitle">DESIGNED FOR YOUR CAREER GROWTH</p>
+        <h2 class="section-title">Get the Skill Medha Advantage</h2>
 
-      <div class="advantage-carousel-wrapper">
-        <div class="advantage-carousel">
-          <div class="advantage-card" style="background-image: url(./images/advantageCard1.jpg)">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <h4>Learn Skills Employers Demand</h4>
+        <div class="advantage-carousel-wrapper">
+          <div class="advantage-carousel">
+            <div
+              class="advantage-card"
+              style="background-image: url(./images/advantageCard1.jpg)"
+            >
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <h4>Learn Skills Employers Demand</h4>
+                <p>
+                  Learn the exact, in-demand skills co-designed with top
+                  employers.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="advantage-card"
+              style="background-image: url(./images/advantageCard2.jpg)"
+            >
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <h4>Access Exclusive Hiring Partners</h4>
+                <p>
+                  Get direct access to our exclusive network of companies hiring
+                  verified talent.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="advantage-card"
+              style="background-image: url(./images/advantageCard3.jpg)"
+            >
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <h4>Join a Career-Driven Community</h4>
+                <p>
+                  Connect with peers, mentors, and placement coordinators in our
+                  career community.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="advantage-card"
+              style="background-image: url(./images/advantageCard4.jpg)"
+            >
+              <div class="card-overlay"></div>
+              <div class="card-content">
+                <h4>Build a Job-Ready Portfolio</h4>
+                <p>
+                  Build a portfolio of real-world projects that prove you're
+                  job-ready.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- success stories  -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="header-text">
+            <p class="section-subtitle">SUCCESS STORIES</p>
+            <h2 class="section-title">Our Learners at Leading Companies</h2>
+          </div>
+          <div class="carousel-nav">
+            <button
+              class="nav-arrow"
+              id="learners-prev-btn"
+              aria-label="Previous slide"
+            >
+              <i data-feather="chevron-left"></i>
+            </button>
+            <button
+              class="nav-arrow"
+              id="learners-next-btn"
+              aria-label="Next slide"
+            >
+              <i data-feather="chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="advantage-carousel-wrapper" id="learners-carousel-wrapper">
+          <div class="learners-carousel">
+            <div class="learners-card">
+              <div class="person-block">
+                <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
+                <h4 class="name">Priya Sharma</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Business Analyst</p>
+                <p class="company">HDFC Bank</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">B.Com (Hons) Graduate</p>
+                <p class="company">ABC College</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test2.jpg"
+                  alt="Teja Vanama"
+                />
+                <h4 class="name">Rohan Gupta</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Product Manager</p>
+                <p class="company">Swiggy</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Software Engineer</p>
+                <p class="company">Tech Solutions</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test3.jpg"
+                  alt="Sujay Putta"
+                />
+                <h4 class="name">Alisha Khan</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Senior UX Designer</p>
+                <p class="company">Microsoft</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Associate UX Designer</p>
+                <p class="company">Sparkle Innovations</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test4.jpg"
+                  alt="Ravi Shankar"
+                />
+                <h4 class="name">Ravi Shankar</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">VP - Products & Marketing</p>
+                <p class="company">Sterlite Technologies</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Vice President - Products & Marketing</p>
+                <p class="company">Skyvera</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test5.jpg"
+                  alt="Aditya Suri"
+                />
+                <h4 class="name">Aditya Suri</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Senior Associate</p>
+                <p class="company">alliantgroup</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Associate Manager</p>
+                <p class="company">Google Operations Center</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img class="avatar" src="./images/test5.jpg" alt="Kaustubh P" />
+                <h4 class="name">Kaustubh P</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Account Manager- Client Success</p>
+                <p class="company">CogMat</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Account Manager - Client Success</p>
+                <p class="company">LS Digital Group</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
+                <h4 class="name">Priya Sharma</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Business Analyst</p>
+                <p class="company">HDFC Bank</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">B.Com (Hons) Graduate</p>
+                <p class="company">ABC College</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test2.jpg"
+                  alt="Teja Vanama"
+                />
+                <h4 class="name">Rohan Gupta</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Product Manager</p>
+                <p class="company">Swiggy</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Software Engineer</p>
+                <p class="company">Tech Solutions</p>
+              </div>
+            </div>
+
+            <div class="learners-card">
+              <div class="person-block">
+                <img
+                  class="avatar"
+                  src="./images/test3.jpg"
+                  alt="Sujay Putta"
+                />
+                <h4 classZ="name">Alisha Khan</h4>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Senior UX Designer</p>
+                <p class="company">Microsoft</p>
+              </div>
+              <div class="separator-icon">
+                <i data-feather="chevron-down"></i>
+              </div>
+              <div class="job-info-block">
+                <p class="role">Associate UX Designer</p>
+                <p class="company">Sparkle Innovations</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- our alumni  -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Our alumni work at top brands like</h2>
+
+        <div class="logo-grid">
+          <img src="./images/google_logo.png" alt="Google" />
+          <img src="./images/swiggy_logo.png" alt="Swiggy" />
+          <img src="./images/zoho_logo.png" alt="Zoho" />
+          <img src="./images/philips_logo.png" alt="Philips" />
+          <img src="./images/microsoft_logo.png" alt="Microsoft" />
+          <img src="./images/zomato_logo.png" alt="Zomato" />
+          <img src="./images/paytm_logo.png" alt="Paytm" />
+
+          <img src="./images/disney_hotstar_logo.png" alt="Disney+ Hotstar" />
+          <img src="./images/snapdeal_logo.png" alt="Snapdeal" />
+          <img src="./images/apna_logo.png" alt="Apna" />
+          <img src="./images/walmart_logo.png" alt="Walmart" />
+          <img src="./images/uber_logo.png" alt="Uber" />
+          <img src="./images/amazon_logo.png" alt="Amazon" />
+          <img src="./images/adobe_logo.png" alt="Adobe" />
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonials  -->
+    <section class="section testimonials-section">
+      <div class="container">
+        <div class="section-header-left">
+          <p class="section-subtitle">HEAR IT FROM THEM</p>
+          <h2 class="section-title">
+            Ambitious People <span>❤️</span> Skill Medha
+          </h2>
+        </div>
+
+        <div class="testimonial-grid-row">
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/goSoial_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
               <p>
-                Learn the exact, in-demand skills co-designed with top
-                employers.
+                ✨ Thrilled to share I've just landed a role as a Digital
+                Marketing Specialist! This wouldn't have been possible without
+                the Digital Marketing Program at Skill Medha. A huge shoutout to
+                my mentor, Kaushik Sen, for guiding me through live campaigns
+                and SEO strategies. We went from theory to real-world ROI in
+                weeks! 🚀
               </p>
+            </div>
+            <div class="card-footer">
+              <img
+                class="avatar"
+                src="./images/test1.jpg"
+                alt="Abhishika K.N"
+              />
+              <div class="user-info">
+                <h4 class="name">Priya Sharma</h4>
+                <p class="title">
+                  Digital Marketing Specialist, <br />
+                  GoSocial Agency
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="advantage-card" style="background-image: url(./images/advantageCard2.jpg)">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <h4>Access Exclusive Hiring Partners</h4>
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/Deloitte_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
               <p>
-                Get direct access to our exclusive network of companies hiring
-                verified talent.
+                Just presented my final capstone project for the Skill Medha
+                Data Analytics course, and I'm amazed at how far I've come. I
+                can now build dynamic dashboards in Power BI that actually tell
+                a story with data. Big thanks to the instructors for their
+                deep-dive sessions on DAX and data modeling. Highly recommend!
+                📊
               </p>
+            </div>
+            <div class="card-footer">
+              <img
+                class="avatar"
+                src="./images/test2.jpg"
+                alt="Rahul Phathani"
+              />
+              <div class="user-info">
+                <h4 class="name">Rohan Gupta</h4>
+                <p class="title">Senior Analyst, <br />Deloitte</p>
+              </div>
             </div>
           </div>
 
-          <div class="advantage-card" style="background-image: url(./images/advantageCard3.jpg)">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <h4>Join a Career-Driven Community</h4>
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/bain_and_company_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
               <p>
-                Connect with peers, mentors, and placement coordinators in our
-                career community.
+                I'm excited to share that I've accepted an offer to join Bain &
+                Company as an Associate Consultant. The Management Consulting
+                program at Skill Medha was instrumental. The case-study-based
+                approach and live projects gave me a practical framework for
+                problem-solving that I used directly in my interviews. A huge
+                thanks to the mentors for the rigorous prep!
               </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test4.jpg" alt="Akash Pandey" />
+              <div class-="user-info">
+                <h4 class="name">Aditya Rao</h4>
+                <p class="title">
+                  Associate Consultant, <br />
+                  Bain & Company
+                </p>
+              </div>
             </div>
           </div>
 
-          <div class="advantage-card" style="background-image: url(./images/advantageCard4.jpg)">
-            <div class="card-overlay"></div>
-            <div class="card-content">
-              <h4>Build a Job-Ready Portfolio</h4>
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/freshworks_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
               <p>
-                Build a portfolio of real-world projects that prove you're
-                job-ready.
+                It's official! I'm making the pivot from engineering to Product
+                Management. 🎉 A massive thank you to the Skill Medha team and
+                my mentor, Tushar Baweja. The program's focus on user stories,
+                PRDs, and market analysis gave me the confidence and portfolio I
+                needed to land my first PM role.
               </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test3.jpg" alt="sumit varma" />
+              <div class="user-info">
+                <h4 class="name">Meera Iyer</h4>
+                <p class="title">
+                  Associate Product Manager, <br />
+                  Freshworks
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-grid-row">
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/vit_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
+              <p>
+                So excited to share that I've accepted an offer as a Full Stack
+                Developer! Being a final-year B.Tech student, I was worried
+                about being 'job-ready'. Skill Medha's MERN stack program
+                bridged that exact gap. Building a full e-commerce site from
+                scratch was tough but 100% worth it.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test1.jpg" alt="Anjali Singh" />
+              <div class="user-info">
+                <h4 class="name">Anjali Singh</h4>
+                <p class="title">
+                  Final Year Student, <br />
+                  VIT
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/wipro_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
+              <p>
+                Officially certified! 🛡️ The Cybersecurity course at Skill Medha
+                was an incredible deep dive into network defense and ethical
+                hacking. The hands-on labs using Kali Linux and Wireshark were
+                my favorite part. This program opened my eyes to a whole new
+                career path.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test5.jpg" alt="David Roy" />
+              <div class="user-info">
+                <h4 class="name">David Roy</h4>
+                <p class="title">
+                  IT Administrator, <br />
+                  Wipro
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/zs_associates_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
+              <p>
+                What sets Skill Medha apart is the connection to employers. It's
+                not just about learning; it's about getting verified. The
+                exclusive hiring drives and portfolio reviews were key. I felt
+                supported by my college, my mentor, and the Skill Medha team
+                right up until I signed my offer letter.
+              </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test4.jpg" alt="Karan Desai" />
+              <div class="user-info">
+                <h4 class="name">Karan Desai</h4>
+                <p class="title">
+                  Business Analyst, <br />
+                  ZS Associates
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="card-header">
+              <img src="./images/stealth_logo.png" alt="" />
+            </div>
+            <div class="card-body-text">
+              <p>
+                Vaibhav Sisinty's LinkedIn workshop at Skill Medha was a
+                game-changer. Just two days, and my profile views are already up
+                300%. Mind blown! 💥
+              </p>
+            </div>
+            <div class="card-footer">
+              <img class="avatar" src="./images/test2.jpg" alt="Sameer Ali" />
+              <div class="user-info">
+                <h4 class="name">Sameer Ali</h4>
+                <p class="title">Founder, <br />Stealth Startup</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- success stories  -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <div class="header-text">
-          <p class="section-subtitle">SUCCESS STORIES</p>
-          <h2 class="section-title">Our Learners at Leading Companies</h2>
+    <!-- FAQs  -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="faq-header">
+          <p class="section-subtitle">GOT QUESTIONS?</p>
+          <h2 class="section-title">Frequently Asked Questions</h2>
         </div>
-        <div class="carousel-nav">
-          <button class="nav-arrow" id="learners-prev-btn" aria-label="Previous slide">
-            <i data-feather="chevron-left"></i>
-          </button>
-          <button class="nav-arrow" id="learners-next-btn" aria-label="Next slide">
-            <i data-feather="chevron-right"></i>
-          </button>
-        </div>
-      </div>
-    </div>
 
-    <div class="container">
-      <div class="advantage-carousel-wrapper" id="learners-carousel-wrapper">
-        <div class="learners-carousel">
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
-              <h4 class="name">Priya Sharma</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Business Analyst</p>
-              <p class="company">HDFC Bank</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">B.Com (Hons) Graduate</p>
-              <p class="company">ABC College</p>
+        <!-- FAQ Accordion Wrapper -->
+        <div class="faq-container">
+          <!-- FAQ Item 1 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is Skill Medha?</span>
+              <i data-feather="chevron-down" class="icon-toggle"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="answer-content">
+                Skill Medha is an integrated ed-tech and placement ecosystem. We
+                help students master industry-ready skills (like Full Stack Dev,
+                Data Science) and connect them directly with hiring partners
+                through our unified placement platform.
+              </div>
             </div>
           </div>
 
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test2.jpg" alt="Teja Vanama" />
-              <h4 class="name">Rohan Gupta</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Product Manager</p>
-              <p class="company">Swiggy</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Software Engineer</p>
-              <p class="company">Tech Solutions</p>
+          <!-- FAQ Item 2 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do you provide placement assistance?</span>
+              <i data-feather="chevron-down" class="icon-toggle"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="answer-content">
+                Yes! Our career services include resume building, mock
+                interviews, and exclusive access to "Day Zero" hiring drives. We
+                have partnered with 50+ top-tier companies to help our certified
+                learners get hired.
+              </div>
             </div>
           </div>
 
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test3.jpg" alt="Sujay Putta" />
-              <h4 class="name">Alisha Khan</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Senior UX Designer</p>
-              <p class="company">Microsoft</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Associate UX Designer</p>
-              <p class="company">Sparkle Innovations</p>
+          <!-- FAQ Item 3 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are the certificates recognized?</span>
+              <i data-feather="chevron-down" class="icon-toggle"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="answer-content">
+                Absolutely. Our certificates are industry-recognized and
+                validate that you have completed hands-on projects. They can be
+                added to your LinkedIn profile and resume to showcase your
+                practical expertise to recruiters.
+              </div>
             </div>
           </div>
 
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test4.jpg" alt="Ravi Shankar" />
-              <h4 class="name">Ravi Shankar</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">VP - Products & Marketing</p>
-              <p class="company">Sterlite Technologies</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Vice President - Products & Marketing</p>
-              <p class="company">Skyvera</p>
+          <!-- FAQ Item 4 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How can colleges partner with Skill Medha?</span>
+              <i data-feather="chevron-down" class="icon-toggle"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="answer-content">
+                Colleges can use our Unified Placement Automation Suite to
+                digitize their placement cells. This includes tools for student
+                filtering, drive notifications, and real-time tracking. Contact
+                us to schedule a free demo for your institution.
+              </div>
             </div>
           </div>
 
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test5.jpg" alt="Aditya Suri" />
-              <h4 class="name">Aditya Suri</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Senior Associate</p>
-              <p class="company">alliantgroup</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Associate Manager</p>
-              <p class="company">Google Operations Center</p>
-            </div>
-          </div>
-
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test5.jpg" alt="Kaustubh P" />
-              <h4 class="name">Kaustubh P</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Account Manager- Client Success</p>
-              <p class="company">CogMat</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Account Manager - Client Success</p>
-              <p class="company">LS Digital Group</p>
-            </div>
-          </div>
-
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test1.jpg" alt="Abhiram" />
-              <h4 class="name">Priya Sharma</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Business Analyst</p>
-              <p class="company">HDFC Bank</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">B.Com (Hons) Graduate</p>
-              <p class="company">ABC College</p>
-            </div>
-          </div>
-
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test2.jpg" alt="Teja Vanama" />
-              <h4 class="name">Rohan Gupta</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Product Manager</p>
-              <p class="company">Swiggy</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Software Engineer</p>
-              <p class="company">Tech Solutions</p>
-            </div>
-          </div>
-
-          <div class="learners-card">
-            <div class="person-block">
-              <img class="avatar" src="./images/test3.jpg" alt="Sujay Putta" />
-              <h4 classZ="name">Alisha Khan</h4>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Senior UX Designer</p>
-              <p class="company">Microsoft</p>
-            </div>
-            <div class="separator-icon">
-              <i data-feather="chevron-down"></i>
-            </div>
-            <div class="job-info-block">
-              <p class="role">Associate UX Designer</p>
-              <p class="company">Sparkle Innovations</p>
+          <!-- FAQ Item 5 -->
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the duration of the courses?</span>
+              <i data-feather="chevron-down" class="icon-toggle"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="answer-content">
+                Course duration varies by specialization. Short-term workshops
+                last 2-3 days, while comprehensive career tracks (like MERN
+                Stack or Data Science) typically range from 4 to 6 months. Check
+                specific course pages for details.
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- our alumni  -->
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Our alumni work at top brands like</h2>
+    <div id="footer-placeholder"></div>
 
-      <div class="logo-grid">
-        <img src="./images/google_logo.png" alt="Google" />
-        <img src="./images/swiggy_logo.png" alt="Swiggy" />
-        <img src="./images/zoho_logo.png" alt="Zoho" />
-        <img src="./images/philips_logo.png" alt="Philips" />
-        <img src="./images/microsoft_logo.png" alt="Microsoft" />
-        <img src="./images/zomato_logo.png" alt="Zomato" />
-        <img src="./images/paytm_logo.png" alt="Paytm" />
+    <!-- javascript files  -->
+    <script src="script.js" defer></script>
+    <script src="./app.js"></script>
+    <script src="./influencer.js"></script>
+    <script src="./dynamicCourse.js"></script>
+    <script src="./homepage-cards.js"></script>
+    <script src="./upSkill.js"></script>
+    <script src="./faq.js"></script>
 
-        <img src="./images/disney_hotstar_logo.png" alt="Disney+ Hotstar" />
-        <img src="./images/snapdeal_logo.png" alt="Snapdeal" />
-        <img src="./images/apna_logo.png" alt="Apna" />
-        <img src="./images/walmart_logo.png" alt="Walmart" />
-        <img src="./images/uber_logo.png" alt="Uber" />
-        <img src="./images/amazon_logo.png" alt="Amazon" />
-        <img src="./images/adobe_logo.png" alt="Adobe" />
-      </div>
-    </div>
-  </section>
-
-  <!-- testimonials  -->
-  <section class="section testimonials-section">
-    <div class="container">
-      <div class="section-header-left">
-        <p class="section-subtitle">HEAR IT FROM THEM</p>
-        <h2 class="section-title">
-          Ambitious People <span>❤️</span> Skill Medha
-        </h2>
-      </div>
-
-      <div class="testimonial-grid-row">
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/goSoial_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              ✨ Thrilled to share I've just landed a role as a Digital
-              Marketing Specialist! This wouldn't have been possible without
-              the Digital Marketing Program at Skill Medha. A huge shoutout to
-              my mentor, Kaushik Sen, for guiding me through live campaigns
-              and SEO strategies. We went from theory to real-world ROI in
-              weeks! 🚀
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test1.jpg" alt="Abhishika K.N" />
-            <div class="user-info">
-              <h4 class="name">Priya Sharma</h4>
-              <p class="title">
-                Digital Marketing Specialist, <br />
-                GoSocial Agency
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/Deloitte_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              Just presented my final capstone project for the Skill Medha
-              Data Analytics course, and I'm amazed at how far I've come. I
-              can now build dynamic dashboards in Power BI that actually tell
-              a story with data. Big thanks to the instructors for their
-              deep-dive sessions on DAX and data modeling. Highly recommend!
-              📊
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test2.jpg" alt="Rahul Phathani" />
-            <div class="user-info">
-              <h4 class="name">Rohan Gupta</h4>
-              <p class="title">Senior Analyst, <br />Deloitte</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/bain_and_company_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              I'm excited to share that I've accepted an offer to join Bain & Company as an Associate Consultant. The
-              Management Consulting program at Skill Medha was instrumental. The case-study-based approach and live
-              projects gave me a practical framework for problem-solving that I used directly in my interviews. A huge
-              thanks to the mentors for the rigorous prep!
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test4.jpg" alt="Akash Pandey" />
-            <div class-="user-info">
-              <h4 class="name">Aditya Rao</h4>
-              <p class="title">
-                Associate Consultant, <br />
-                Bain & Company
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/freshworks_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              It's official! I'm making the pivot from engineering to Product
-              Management. 🎉 A massive thank you to the Skill Medha team and
-              my mentor, Tushar Baweja. The program's focus on user stories,
-              PRDs, and market analysis gave me the confidence and portfolio I
-              needed to land my first PM role.
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test3.jpg" alt="sumit varma" />
-            <div class="user-info">
-              <h4 class="name">Meera Iyer</h4>
-              <p class="title">
-                Associate Product Manager, <br />
-                Freshworks
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial-grid-row">
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/vit_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              So excited to share that I've accepted an offer as a Full Stack
-              Developer! Being a final-year B.Tech student, I was worried
-              about being 'job-ready'. Skill Medha's MERN stack program
-              bridged that exact gap. Building a full e-commerce site from
-              scratch was tough but 100% worth it.
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test1.jpg" alt="Anjali Singh" />
-            <div class="user-info">
-              <h4 class="name">Anjali Singh</h4>
-              <p class="title">
-                Final Year Student, <br />
-                VIT
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/wipro_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              Officially certified! 🛡️ The Cybersecurity course at Skill Medha
-              was an incredible deep dive into network defense and ethical
-              hacking. The hands-on labs using Kali Linux and Wireshark were
-              my favorite part. This program opened my eyes to a whole new
-              career path.
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test5.jpg" alt="David Roy" />
-            <div class="user-info">
-              <h4 class="name">David Roy</h4>
-              <p class="title">
-                IT Administrator, <br />
-                Wipro
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/zs_associates_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              What sets Skill Medha apart is the connection to employers. It's
-              not just about learning; it's about getting verified. The
-              exclusive hiring drives and portfolio reviews were key. I felt
-              supported by my college, my mentor, and the Skill Medha team
-              right up until I signed my offer letter.
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test4.jpg" alt="Karan Desai" />
-            <div class="user-info">
-              <h4 class="name">Karan Desai</h4>
-              <p class="title">
-                Business Analyst, <br />
-                ZS Associates
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="testimonial-card">
-          <div class="card-header">
-            <img src="./images/stealth_logo.png" alt="" />
-          </div>
-          <div class="card-body-text">
-            <p>
-              Vaibhav Sisinty's LinkedIn workshop at Skill Medha was a
-              game-changer. Just two days, and my profile views are already up
-              300%. Mind blown! 💥
-            </p>
-          </div>
-          <div class="card-footer">
-            <img class="avatar" src="./images/test2.jpg" alt="Sameer Ali" />
-            <div class="user-info">
-              <h4 class="name">Sameer Ali</h4>
-              <p class="title">Founder, <br />Stealth Startup</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div id="footer-placeholder"></div>
-
-  <!-- javascript files  -->
-  <script src="script.js" defer></script>
-  <script src="./app.js"></script>
-  <script src="./influencer.js"></script>
-  <script src="./dynamicCourse.js"></script>
-  <script src="./homepage-cards.js"></script>
-  <script src="./upSkill.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

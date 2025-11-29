@@ -4,7 +4,6 @@
     color: var(--text-dark, #333);
     max-width: 900px;
     margin: 32px auto;
-    font-family: sans-serif;
 }
 
 .course-content-section h2 {
