@@ -9,7 +9,7 @@
     display: grid;
     max-width: var(--container-max-width, 1400px);
     margin: 0 auto;
-    padding: 32px;
+    padding: 100px 32px 32px 32px;
     gap: 32px 40px;
     grid-template-columns: 1fr 360px;
     /* 2-column layout */

@@ -26,6 +26,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Attach all general event listeners that target static elements
   attachGeneralListeners();
+
+  // Initialize the instructor modal logic here!
+  initInstructorModal(); 
 });
 
 // ==============================================================================

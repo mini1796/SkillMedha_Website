@@ -75,13 +75,13 @@
             YouTube, Email, Facebook Marketing, Analytics & More!
           </p>
           <!-- <span class="bestseller-tag">Bestseller</span> -->
-          <!-- <div class="ratings-box">
+          <div class="ratings-box">
           <span class="score">4.5</span>
           <span class="stars">★★★★☆</span>
           <span class="reviews">(165,342 ratings)</span>
           <span class="learners">800,120 learners</span>
-        </div> -->
-          <div class="author-info">
+        </div>
+          <div id="instructors-container" class="author-info">
             Cousr Instructors :
             <a href="#">Rob Percival</a>,
             <a href="#">Daragh Walsh</a>
@@ -477,52 +477,49 @@
           </div>
         </div>
       </div>
-    </main>
 
-    <!-- 
-  ========================================
-  --- INSTRUCTOR PREVIEW MODAL ---
-  ======================================== 
--->
-    <div id="instructorModal" class="inst-modal">
-      <div class="inst-modal-content">
-        <span class="inst-close-btn">&times;</span>
+      <!-- INSTRUCTOR PREVIEW MODAL-->
+      <div id="instructorModal" class="inst-modal">
+        <div class="inst-modal-content">
+          <span class="inst-close-btn">&times;</span>
 
-        <div class="inst-profile-header">
-          <div class="inst-image-wrapper">
-            <!-- Placeholder image, JS will replace if data exists -->
-            <img
-              id="modalInstImage"
-              src="https://via.placeholder.com/150"
-              alt="Instructor"
-            />
-          </div>
-          <div class="inst-info">
-            <h3 id="modalInstName">Instructor Name</h3>
-            <p id="modalInstRole" class="inst-role">Senior Instructor</p>
-            <div class="inst-stats">
-              <span><i data-feather="users"></i> 10k+ Students</span>
-              <span><i data-feather="play-circle"></i> 15 Courses</span>
-              <span><i data-feather="star"></i> 4.8 Rating</span>
+          <div class="inst-profile-header">
+            <div class="inst-image-wrapper">
+              <!-- Placeholder image, JS will replace if data exists -->
+              <img
+                id="modalInstImage"
+                src="https://via.placeholder.com/150"
+                alt="Instructor"
+              />
+            </div>
+            <div class="inst-info">
+              <h3 id="modalInstName">Instructor Name</h3>
+              <p id="modalInstRole" class="inst-role">Senior Instructor</p>
+              <div class="inst-stats">
+                <span><i data-feather="users"></i> 10k+ Students</span>
+                <span><i data-feather="play-circle"></i> 15 Courses</span>
+                <span><i data-feather="star"></i> 4.8 Rating</span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="inst-bio-section">
-          <h4>About the Instructor</h4>
-          <p id="modalInstBio">
-            Loading biography... This instructor has extensive industry
-            experience and has mentored thousands of students across the globe.
-          </p>
-        </div>
+          <div class="inst-bio-section">
+            <h4>About the Instructor</h4>
+            <p id="modalInstBio">
+              Loading biography... This instructor has extensive industry
+              experience and has mentored thousands of students across the
+              globe.
+            </p>
+          </div>
 
-        <div class="inst-social-links">
-          <a href="#" class="social-icon"><i data-feather="linkedin"></i></a>
-          <a href="#" class="social-icon"><i data-feather="twitter"></i></a>
-          <a href="#" class="social-icon"><i data-feather="globe"></i></a>
+          <div class="inst-social-links">
+            <a href="#" class="social-icon"><i data-feather="linkedin"></i></a>
+            <a href="#" class="social-icon"><i data-feather="twitter"></i></a>
+            <a href="#" class="social-icon"><i data-feather="globe"></i></a>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <div id="footer-placeholder"></div>
 
@@ -533,6 +530,5 @@
     <script src="./homepage-cards.js"></script>
     <script src="./dynamicCourse.js"></script>
     <script src="./upSkill.js"></script>
-    <script src="./course_Instructor_modal.js"></script>
   </body>
 </html>
