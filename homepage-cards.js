@@ -48,12 +48,18 @@ function renderCards(items, containerId) {
 
   itemsToDisplay.forEach((item) => {
     // 1. Generate Icons
-    let iconsHtml = "";
-    if (item.techIcons && Array.isArray(item.techIcons)) {
-      item.techIcons.forEach((iconPath) => {
-        iconsHtml += `<img src="${iconPath}" alt="Tool icon" />`;
-      });
-    }
+let iconsHtml = '';
+if (item.techIcons) {
+    item.techIcons.forEach(tech => {
+        // We create a container div for the image AND the text
+        iconsHtml += `
+            <div class="tech-item">
+                <img src="${tech.icon}" alt="${tech.name}" />
+                <span class="tech-name">${tech.name}</span>
+            </div>
+        `;
+    });
+}
 
     // 2. Handle Experience/Projects Text
     // Your JSON uses "projects", but we keep fallbacks just in case

@@ -1,616 +1,617 @@
 [
-    {
-        "id": "web-development",
-        "type": "course",
-        "title": "Full Stack Web Development (MERN)",
-        "duration": "6 Months",
-        "projects": "10+ Full-Stack MERN Projects",
-        "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using MongoDB, Express.js, React, and Node.js (MERN).",
-        "techIcons": [
-            "./images/mongodb_logo.png",
-            "./images/expressjs_logo.png",
-            "./images/react_logo.png",
-            "./images/nodejs_logo.png"
-        ],
-        "courseInstructors": [
-            "Instructor 2 Name (Full Stack)",
-            "Instructor 2 Name"
-        ],
-        "learningPoints": [
-            "Build full-stack, data-driven web applications.",
-            "Master essential React concepts and state management.",
-            "Develop robust APIs using Node.js and Express.js.",
-            "Work with MongoDB for database persistence."
-        ],
-        "courseIncludes": {
-            "videoDuration": "22.5 hours",
-            "articles": 35,
-            "downloadableResources": 10,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 499,
-        "originalPrice": 4999,
-        "couponCode": "MEDHA100",
-        "couponDiscount": 100,
-        "videoPreview": "./videos/preview_webdev.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Introduction to MERN Stack",
-                "lectures": [
-                    {
-                        "title": "What is Full-Stack Development and MERN?",
-                        "videoPreview": "./videos/preview_lecture1.mp4",
-                        "time": "04:15"
-                    },
-                    {
-                        "title": "Setting Up Your Development Environment",
-                        "videoPreview": "./videos/preview_lecture2.mp4",
-                        "time": "06:30"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "React Fundamentals",
-                "lectures": [
-                    {
-                        "title": "Components, Props, and State",
-                        "videoPreview": "./videos/preview_lecture3.mp4",
-                        "time": "05:00"
-                    }
-                ]
-            }
-        ]
+  {
+    "id": "web-development",
+    "type": "course",
+    "title": "Full Stack Web Development (MERN)",
+    "duration": "6 Months",
+    "projects": "10+ Full-Stack MERN Projects",
+    "description": "Master front-end and back-end development. Learn to build scalable, data-driven web applications using MongoDB, Express.js, React, and Node.js (MERN).",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Instructor 2 Name (Full Stack)",
+      "Instructor 2 Name"
+    ],
+    "learningPoints": [
+      "Build full-stack, data-driven web applications.",
+      "Master essential React concepts and state management.",
+      "Develop robust APIs using Node.js and Express.js.",
+      "Work with MongoDB for database persistence."
+    ],
+    "courseIncludes": {
+      "videoDuration": "22.5 hours",
+      "articles": 35,
+      "downloadableResources": 10,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "data-science-ml",
-        "type": "course",
-        "title": "Data Science & Machine Learning with Python",
-        "duration": "4 Months",
-        "projects": "8+ Capstone Projects (Classification, NLP, Time Series)",
-        "description": "Become a skilled Data Scientist. Master the full data lifecycle: data wrangling, exploratory analysis, statistical modeling, and deploying powerful Machine Learning and Deep Learning models using Python.",
-        "techIcons": [
-            "./images/python_logo.png",
-            "./images/pandas_logo.png",
-            "./images/scikitlearn_logo.png",
-            "./images/tensorflow_logo.png"
-        ],
-        "courseInstructors": [
-            "Dr. Anya Sharma (Data Scientist)",
-            "Prof. Ben Carter (ML Engineer)"
-        ],
-        "learningPoints": [
-            "Build predictive models using Scikit-learn and TensorFlow.",
-            "Master data analysis and manipulation with Pandas and NumPy.",
-            "Apply Deep Learning techniques for image and text data.",
-            "Perform A/B testing and statistical inference for business decisions."
-        ],
-        "courseIncludes": {
-            "videoDuration": "35 hours",
-            "articles": 50,
-            "downloadableResources": 15,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 699,
-        "originalPrice": 5999,
-        "couponCode": "DATA_PRO200",
-        "couponDiscount": 200,
-        "videoPreview": "./videos/preview_datascience.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Module 1: Python & Data Wrangling",
-                "lectures": [
-                    {
-                        "title": "Introduction to Python for Data Science",
-                        "videoPreview": "./videos/preview_data_m1l1.mp4",
-                        "time": "05:20"
-                    },
-                    {
-                        "title": "Data Manipulation with Pandas",
-                        "videoPreview": "./videos/preview_data_m1l2.mp4",
-                        "time": "07:45"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Module 2: Machine Learning Fundamentals",
-                "lectures": [
-                    {
-                        "title": "Supervised Learning: Regression vs. Classification",
-                        "videoPreview": "./videos/preview_data_m2l1.mp4",
-                        "time": "09:10"
-                    },
-                    {
-                        "title": "Model Evaluation and Hyperparameter Tuning",
-                        "videoPreview": "./videos/preview_data_m2l2.mp4",
-                        "time": "06:55"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Module 3: Deep Learning & Capstone",
-                "lectures": [
-                    {
-                        "title": "Neural Networks with TensorFlow/Keras",
-                        "videoPreview": "./videos/preview_data_m3l1.mp4",
-                        "time": "12:30"
-                    },
-                    {
-                        "title": "Final Project Kickoff: Image Classification",
-                        "videoPreview": "./videos/preview_data_m3l2.mp4",
-                        "time": "04:50"
-                    }
-                ]
-            }
+    "price": 499,
+    "originalPrice": 4999,
+    "couponCode": "MEDHA100",
+    "couponDiscount": 100,
+    "videoPreview": "./videos/preview_webdev.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Introduction to MERN Stack",
+        "lectures": [
+          {
+            "title": "What is Full-Stack Development and MERN?",
+            "videoPreview": "./videos/preview_lecture1.mp4",
+            "time": "04:15"
+          },
+          {
+            "title": "Setting Up Your Development Environment",
+            "videoPreview": "./videos/preview_lecture2.mp4",
+            "time": "06:30"
+          }
         ]
+      },
+      {
+        "sectionTitle": "React Fundamentals",
+        "lectures": [
+          {
+            "title": "Components, Props, and State",
+            "videoPreview": "./videos/preview_lecture3.mp4",
+            "time": "05:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "data-science-ml",
+    "type": "course",
+    "title": "Data Science & Machine Learning with Python",
+    "duration": "4 Months",
+    "projects": "8+ Capstone Projects (Classification, NLP, Time Series)",
+    "description": "Become a skilled Data Scientist. Master the full data lifecycle: data wrangling, exploratory analysis, statistical modeling, and deploying powerful Machine Learning and Deep Learning models using Python.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Dr. Anya Sharma (Data Scientist)",
+      "Prof. Ben Carter (ML Engineer)"
+    ],
+    "learningPoints": [
+      "Build predictive models using Scikit-learn and TensorFlow.",
+      "Master data analysis and manipulation with Pandas and NumPy.",
+      "Apply Deep Learning techniques for image and text data.",
+      "Perform A/B testing and statistical inference for business decisions."
+    ],
+    "courseIncludes": {
+      "videoDuration": "35 hours",
+      "articles": 50,
+      "downloadableResources": 15,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "cloud-aws-architecture",
-        "type": "course",
-        "title": "AWS Certified Solutions Architect - Associate",
-        "duration": "4 Weeks (Intensive)",
-        "projects": "5+ Hands-on AWS Demos & Architecture Blueprints",
-        "description": "Prepare for the industry-leading AWS Solutions Architect Associate exam. Learn to design, deploy, and manage highly scalable, fault-tolerant, and cost-effective applications on Amazon Web Services (AWS).",
-        "techIcons": [
-            "./images/aws_logo.png",
-            "./images/ec2_logo.png",
-            "./images/s3_logo.png",
-            "./images/vpc_logo.png"
-        ],
-        "courseInstructors": [
-            "Sarah Dr. Anya Sharma (Data Scientist)ed SA Pro)",
-            "David Lee (Cloud Consultant)"
-        ],
-        "learningPoints": [
-            "Design and deploy highly available and scalable systems on AWS.",
-            "Master core AWS services: EC2, S3, RDS, VPC, and Lambda.",
-            "Implement security controls using IAM, Security Groups, and KMS.",
-            "Understand cost optimization strategies and billing in the cloud."
-        ],
-        "courseIncludes": {
-            "videoDuration": "28 hours",
-            "articles": 40,
-            "downloadableResources": 20,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 399,
-        "originalPrice": 2499,
-        "couponCode": "CLOUD_SAVE50",
-        "couponDiscount": 50,
-        "videoPreview": "./videos/preview_aws.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Module 1: Cloud Fundamentals & Core Services",
-                "lectures": [
-                    {
-                        "title": "Introduction to Cloud Computing & AWS Global Infrastructure",
-                        "videoPreview": "./videos/preview_aws_m1l1.mp4",
-                        "time": "05:05"
-                    },
-                    {
-                        "title": "EC2, Load Balancing, and Auto Scaling in Depth",
-                        "videoPreview": "./videos/preview_aws_m1l2.mp4",
-                        "time": "08:15"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Module 2: Storage, Database & Networking",
-                "lectures": [
-                    {
-                        "title": "S3, EBS, EFS: Choosing the Right Storage Solution",
-                        "videoPreview": "./videos/preview_aws_m2l1.mp4",
-                        "time": "07:00"
-                    },
-                    {
-                        "title": "VPC: Virtual Private Cloud Networking and Subnets",
-                        "videoPreview": "./videos/preview_aws_m2l2.mp4",
-                        "time": "09:30"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Module 3: Security, Serverless & Review",
-                "lectures": [
-                    {
-                        "title": "Identity & Access Management (IAM) and Policy Creation",
-                        "videoPreview": "./videos/preview_aws_m3l1.mp4",
-                        "time": "06:40"
-                    },
-                    {
-                        "title": "Serverless Computing with Lambda and API Gateway",
-                        "videoPreview": "./videos/preview_aws_m3l2.mp4",
-                        "time": "10:15"
-                    }
-                ]
-            }
+    "price": 699,
+    "originalPrice": 5999,
+    "couponCode": "DATA_PRO200",
+    "couponDiscount": 200,
+    "videoPreview": "./videos/preview_datascience.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Module 1: Python & Data Wrangling",
+        "lectures": [
+          {
+            "title": "Introduction to Python for Data Science",
+            "videoPreview": "./videos/preview_data_m1l1.mp4",
+            "time": "05:20"
+          },
+          {
+            "title": "Data Manipulation with Pandas",
+            "videoPreview": "./videos/preview_data_m1l2.mp4",
+            "time": "07:45"
+          }
         ]
+      },
+      {
+        "sectionTitle": "Module 2: Machine Learning Fundamentals",
+        "lectures": [
+          {
+            "title": "Supervised Learning: Regression vs. Classification",
+            "videoPreview": "./videos/preview_data_m2l1.mp4",
+            "time": "09:10"
+          },
+          {
+            "title": "Model Evaluation and Hyperparameter Tuning",
+            "videoPreview": "./videos/preview_data_m2l2.mp4",
+            "time": "06:55"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Module 3: Deep Learning & Capstone",
+        "lectures": [
+          {
+            "title": "Neural Networks with TensorFlow/Keras",
+            "videoPreview": "./videos/preview_data_m3l1.mp4",
+            "time": "12:30"
+          },
+          {
+            "title": "Final Project Kickoff: Image Classification",
+            "videoPreview": "./videos/preview_data_m3l2.mp4",
+            "time": "04:50"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cloud-aws-architecture",
+    "type": "course",
+    "title": "AWS Certified Solutions Architect - Associate",
+    "duration": "4 Weeks (Intensive)",
+    "projects": "5+ Hands-on AWS Demos & Architecture Blueprints",
+    "description": "Prepare for the industry-leading AWS Solutions Architect Associate exam. Learn to design, deploy, and manage highly scalable, fault-tolerant, and cost-effective applications on Amazon Web Services (AWS).",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Sarah Dr. Anya Sharma (Data Scientist)ed SA Pro)",
+      "David Lee (Cloud Consultant)"
+    ],
+    "learningPoints": [
+      "Design and deploy highly available and scalable systems on AWS.",
+      "Master core AWS services: EC2, S3, RDS, VPC, and Lambda.",
+      "Implement security controls using IAM, Security Groups, and KMS.",
+      "Understand cost optimization strategies and billing in the cloud."
+    ],
+    "courseIncludes": {
+      "videoDuration": "28 hours",
+      "articles": 40,
+      "downloadableResources": 20,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "web3-defi-hackathon",
-        "type": "workshop",
-        "title": "Decentralize the Future: Web3 & DeFi Hackathon",
-        "duration": "48 Hours (Non-Stop)",
-        "projects": "Teams compete to build a functional prototype based on predefined tracks.",
-        "description": "An intensive 48-hour event focused on building innovative solutions using blockchain technology, smart contracts (Solidity), and decentralized finance (DeFi) protocols. Compete for cash prizes and mentorship opportunities.",
-        "techIcons": [
-            "./images/ethereum_logo.png",
-            "./images/solidity_logo.png",
-            "./images/web3js_logo.png",
-            "./images/truffle_logo.png"
-        ],
-        "eventJudges": [
-            "Vitalik B. (Blockchain Architect)",
-            "Cathie Wood (Venture Capitalist)",
-            "Dr. Gavin A. (Protocol Developer)"
-        ],
-        "tracks": [
-            "Decentralized Autonomous Organizations (DAOs)",
-            "Lending & Borrowing Protocols",
-            "NFT Utility & Ticketing Systems",
-            "Cross-Chain Interoperability"
-        ],
-        "eventIncludes": {
-            "mentorshipHours": 10,
-            "workshops": 5,
-            "swagBags": "yes",
-            "foodAndBeverages": "yes",
-            "prizes": "$10,000 USD (Total Pool)"
-        },
-        "price": 259,
-        "originalPrice": 499,
-        "couponCode": "EARLY_BIRD_HACK",
-        "couponDiscount": 10,
-        "videoPreview": "./videos/preview_hackathon_defi.mp4",
-        "schedule": [
-            {
-                "sectionTitle": "Day 1: Kickoff & Ideation",
-                "lectures": [
-                    {
-                        "title": "Opening Ceremony and Keynote Address",
-                        "videoPreview": "./videos/preview_hack_d1l1.mp4",
-                        "time": "09:00 - 10:00"
-                    },
-                    {
-                        "title": "Team Formation and Ideation Session",
-                        "videoPreview": "./videos/preview_hack_d1l2.mp4",
-                        "time": "10:00 - 12:00"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 2: Coding & Mentorship",
-                "lectures": [
-                    {
-                        "title": "Mid-Hack Checkpoint and Refinement Workshop",
-                        "videoPreview": "./videos/preview_hack_d2l1.mp4",
-                        "time": "14:00 - 16:00"
-                    },
-                    {
-                        "title": "24-Hour Coding Continues & Mentor Rotations",
-                        "videoPreview": "./videos/preview_hack_d2l2.mp4",
-                        "time": "All Day/Night"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 3: Judging & Closing",
-                "lectures": [
-                    {
-                        "title": "Project Submission Deadline",
-                        "videoPreview": "./videos/preview_hack_d3l1.mp4",
-                        "time": "09:00 AM"
-                    },
-                    {
-                        "title": "Final Judging, Awards Ceremony, and Networking",
-                        "videoPreview": "./videos/preview_hack_d3l2.mp4",
-                        "time": "14:00 - 18:00"
-                    }
-                ]
-            }
+    "price": 399,
+    "originalPrice": 2499,
+    "couponCode": "CLOUD_SAVE50",
+    "couponDiscount": 50,
+    "videoPreview": "./videos/preview_aws.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Module 1: Cloud Fundamentals & Core Services",
+        "lectures": [
+          {
+            "title": "Introduction to Cloud Computing & AWS Global Infrastructure",
+            "videoPreview": "./videos/preview_aws_m1l1.mp4",
+            "time": "05:05"
+          },
+          {
+            "title": "EC2, Load Balancing, and Auto Scaling in Depth",
+            "videoPreview": "./videos/preview_aws_m1l2.mp4",
+            "time": "08:15"
+          }
         ]
+      },
+      {
+        "sectionTitle": "Module 2: Storage, Database & Networking",
+        "lectures": [
+          {
+            "title": "S3, EBS, EFS: Choosing the Right Storage Solution",
+            "videoPreview": "./videos/preview_aws_m2l1.mp4",
+            "time": "07:00"
+          },
+          {
+            "title": "VPC: Virtual Private Cloud Networking and Subnets",
+            "videoPreview": "./videos/preview_aws_m2l2.mp4",
+            "time": "09:30"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Module 3: Security, Serverless & Review",
+        "lectures": [
+          {
+            "title": "Identity & Access Management (IAM) and Policy Creation",
+            "videoPreview": "./videos/preview_aws_m3l1.mp4",
+            "time": "06:40"
+          },
+          {
+            "title": "Serverless Computing with Lambda and API Gateway",
+            "videoPreview": "./videos/preview_aws_m3l2.mp4",
+            "time": "10:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "web3-defi-hackathon",
+    "type": "workshop",
+    "title": "Decentralize the Future: Web3 & DeFi Hackathon",
+    "duration": "48 Hours (Non-Stop)",
+    "projects": "Teams compete to build a functional prototype based on predefined tracks.",
+    "description": "An intensive 48-hour event focused on building innovative solutions using blockchain technology, smart contracts (Solidity), and decentralized finance (DeFi) protocols. Compete for cash prizes and mentorship opportunities.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "eventJudges": [
+      "Vitalik B. (Blockchain Architect)",
+      "Cathie Wood (Venture Capitalist)",
+      "Dr. Gavin A. (Protocol Developer)"
+    ],
+    "tracks": [
+      "Decentralized Autonomous Organizations (DAOs)",
+      "Lending & Borrowing Protocols",
+      "NFT Utility & Ticketing Systems",
+      "Cross-Chain Interoperability"
+    ],
+    "eventIncludes": {
+      "mentorshipHours": 10,
+      "workshops": 5,
+      "swagBags": "yes",
+      "foodAndBeverages": "yes",
+      "prizes": "$10,000 USD (Total Pool)"
     },
-    {
-        "id": "ux-ui-workshop",
-        "type": "workshop",
-        "title": "Design Thinking & Figma Prototyping Workshop",
-        "duration": "2 Days (Weekend Intensive)",
-        "projects": "1 End-to-End Mobile App Prototype (High-Fidelity)",
-        "description": "Learn the end-to-end Design Thinking process. Go from defining user problems to building high-fidelity, interactive prototypes using Figma. Master essential UX/UI principles for web and mobile applications.",
-        "techIcons": [
-            "./images/figma_logo.png",
-            "./images/ux_icon.png",
-            "./images/invision_logo.png"
-        ],
-        "courseInstructors": [
-            "Emily Ray Dr. Anya Sharma (Data Scientist), TechCo)",
-            "Alex Kim (Product Designer)"
-        ],
-        "learningPoints": [
-            "Conduct effective user research and create empathy maps.",
-            "Translate user needs into wireframes and user flows.",
-            "Apply Gestalt principles and visual hierarchy in UI design.",
-            "Build and share interactive high-fidelity prototypes in Figma."
-        ],
-        "courseIncludes": {
-            "videoDuration": "8 hours (Pre-recorded lectures & Live sessions)",
-            "articles": 5,
-            "downloadableResources": 3,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 199,
-        "originalPrice": 499,
-        "couponCode": "DESIGN_FAST",
-        "couponDiscount": 50,
-        "videoPreview": "./videos/preview_uxui.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Day 1: Design Thinking & Wireframing",
-                "lectures": [
-                    {
-                        "title": "Introduction to the 5 Stages of Design Thinking",
-                        "videoPreview": "./videos/preview_ux_d1l1.mp4",
-                        "time": "01:30"
-                    },
-                    {
-                        "title": "Creating User Personas and Low-Fidelity Wireframes",
-                        "videoPreview": "./videos/preview_ux_d1l2.mp4",
-                        "time": "02:15"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 2: UI Design & High-Fidelity Prototyping",
-                "lectures": [
-                    {
-                        "title": "Figma Crash Course: Components, Auto Layout, and Styles",
-                        "videoPreview": "./videos/preview_ux_d2l1.mp4",
-                        "time": "02:45"
-                    },
-                    {
-                        "title": "Building and Testing the Interactive Prototype",
-                        "videoPreview": "./videos/preview_ux_d2l2.mp4",
-                        "time": "03:00"
-                    }
-                ]
-            }
+    "price": 259,
+    "originalPrice": 499,
+    "couponCode": "EARLY_BIRD_HACK",
+    "couponDiscount": 10,
+    "videoPreview": "./videos/preview_hackathon_defi.mp4",
+    "schedule": [
+      {
+        "sectionTitle": "Day 1: Kickoff & Ideation",
+        "lectures": [
+          {
+            "title": "Opening Ceremony and Keynote Address",
+            "videoPreview": "./videos/preview_hack_d1l1.mp4",
+            "time": "09:00 - 10:00"
+          },
+          {
+            "title": "Team Formation and Ideation Session",
+            "videoPreview": "./videos/preview_hack_d1l2.mp4",
+            "time": "10:00 - 12:00"
+          }
         ]
+      },
+      {
+        "sectionTitle": "Day 2: Coding & Mentorship",
+        "lectures": [
+          {
+            "title": "Mid-Hack Checkpoint and Refinement Workshop",
+            "videoPreview": "./videos/preview_hack_d2l1.mp4",
+            "time": "14:00 - 16:00"
+          },
+          {
+            "title": "24-Hour Coding Continues & Mentor Rotations",
+            "videoPreview": "./videos/preview_hack_d2l2.mp4",
+            "time": "All Day/Night"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Day 3: Judging & Closing",
+        "lectures": [
+          {
+            "title": "Project Submission Deadline",
+            "videoPreview": "./videos/preview_hack_d3l1.mp4",
+            "time": "09:00 AM"
+          },
+          {
+            "title": "Final Judging, Awards Ceremony, and Networking",
+            "videoPreview": "./videos/preview_hack_d3l2.mp4",
+            "time": "14:00 - 18:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ux-ui-workshop",
+    "type": "workshop",
+    "title": "Design Thinking & Figma Prototyping Workshop",
+    "duration": "2 Days (Weekend Intensive)",
+    "projects": "1 End-to-End Mobile App Prototype (High-Fidelity)",
+    "description": "Learn the end-to-end Design Thinking process. Go from defining user problems to building high-fidelity, interactive prototypes using Figma. Master essential UX/UI principles for web and mobile applications.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Emily Ray Dr. Anya Sharma (Data Scientist), TechCo)",
+      "Alex Kim (Product Designer)"
+    ],
+    "learningPoints": [
+      "Conduct effective user research and create empathy maps.",
+      "Translate user needs into wireframes and user flows.",
+      "Apply Gestalt principles and visual hierarchy in UI design.",
+      "Build and share interactive high-fidelity prototypes in Figma."
+    ],
+    "courseIncludes": {
+      "videoDuration": "8 hours (Pre-recorded lectures & Live sessions)",
+      "articles": 5,
+      "downloadableResources": 3,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "cybersecurity-workshop",
-        "type": "workshop",
-        "title": "Practical Cybersecurity: Ethical Hacking Fundamentals",
-        "duration": "3 Days (Intensive Boot Camp)",
-        "projects": "3+ Simulated Hacking Labs (Network Scanning, Web App Exploitation)",
-        "description": "Learn the essentials of ethical hacking and penetration testing. This hands-on workshop covers reconnaissance, vulnerability scanning, and exploitation techniques using industry-standard tools like Kali Linux and Metasploit.",
-        "techIcons": [
-            "./images/kali_linux_logo.png",
-            "./images/metasploit_logo.png",
-            "./images/wireshark_logo.png",
-            "./images/nmap_logo.png"
-        ],
-        "courseInstructors": [
-            "Dr. Anya Sharma (Data Scientist)tified Ethical Hacker)",
-            "Chloe O'Brian (Security Analyst)"
-        ],
-        "learningPoints": [
-            "Set up a secure hacking environment using virtual machines.",
-            "Perform active and passive reconnaissance against targets.",
-            "Identify and analyze network and web application vulnerabilities.",
-            "Understand defensive strategies based on common attack vectors."
-        ],
-        "courseIncludes": {
-            "videoDuration": "12 hours (Lab walkthroughs & Live demos)",
-            "articles": 8,
-            "downloadableResources": 5,
-            "accessOnMobile": "no",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 299,
-        "originalPrice": 899,
-        "couponCode": "HACK_SECURE",
-        "couponDiscount": 100,
-        "videoPreview": "./videos/preview_ethical_hacking.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Day 1: Reconnaissance and Scanning",
-                "lectures": [
-                    {
-                        "title": "Setting up Kali Linux and VPN Fundamentals",
-                        "videoPreview": "./videos/preview_cyb_d1l1.mp4",
-                        "time": "02:00"
-                    },
-                    {
-                        "title": "Nmap Mastery: Network and Port Scanning",
-                        "videoPreview": "./videos/preview_cyb_d1l2.mp4",
-                        "time": "02:30"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 2: Web Application Attacks",
-                "lectures": [
-                    {
-                        "title": "Introduction to OWASP Top 10 Vulnerabilities",
-                        "videoPreview": "./videos/preview_cyb_d2l1.mp4",
-                        "time": "03:00"
-                    },
-                    {
-                        "title": "Hands-on Lab: SQL Injection and XSS Attacks",
-                        "videoPreview": "./videos/preview_cyb_d2l2.mp4",
-                        "time": "04:00"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 3: Exploitation and Defense",
-                "lectures": [
-                    {
-                        "title": "Using Metasploit to Exploit Vulnerabilities",
-                        "videoPreview": "./videos/preview_cyb_d3l1.mp4",
-                        "time": "03:30"
-                    },
-                    {
-                        "title": "Patching and Hardening: The Defense Perspective",
-                        "videoPreview": "./videos/preview_cyb_d3l2.mp4",
-                        "time": "02:00"
-                    }
-                ]
-            }
+    "price": 199,
+    "originalPrice": 499,
+    "couponCode": "DESIGN_FAST",
+    "couponDiscount": 50,
+    "videoPreview": "./videos/preview_uxui.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Day 1: Design Thinking & Wireframing",
+        "lectures": [
+          {
+            "title": "Introduction to the 5 Stages of Design Thinking",
+            "videoPreview": "./videos/preview_ux_d1l1.mp4",
+            "time": "01:30"
+          },
+          {
+            "title": "Creating User Personas and Low-Fidelity Wireframes",
+            "videoPreview": "./videos/preview_ux_d1l2.mp4",
+            "time": "02:15"
+          }
         ]
+      },
+      {
+        "sectionTitle": "Day 2: UI Design & High-Fidelity Prototyping",
+        "lectures": [
+          {
+            "title": "Figma Crash Course: Components, Auto Layout, and Styles",
+            "videoPreview": "./videos/preview_ux_d2l1.mp4",
+            "time": "02:45"
+          },
+          {
+            "title": "Building and Testing the Interactive Prototype",
+            "videoPreview": "./videos/preview_ux_d2l2.mp4",
+            "time": "03:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "cybersecurity-workshop",
+    "type": "workshop",
+    "title": "Practical Cybersecurity: Ethical Hacking Fundamentals",
+    "duration": "3 Days (Intensive Boot Camp)",
+    "projects": "3+ Simulated Hacking Labs (Network Scanning, Web App Exploitation)",
+    "description": "Learn the essentials of ethical hacking and penetration testing. This hands-on workshop covers reconnaissance, vulnerability scanning, and exploitation techniques using industry-standard tools like Kali Linux and Metasploit.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Dr. Anya Sharma (Data Scientist)tified Ethical Hacker)",
+      "Chloe O'Brian (Security Analyst)"
+    ],
+    "learningPoints": [
+      "Set up a secure hacking environment using virtual machines.",
+      "Perform active and passive reconnaissance against targets.",
+      "Identify and analyze network and web application vulnerabilities.",
+      "Understand defensive strategies based on common attack vectors."
+    ],
+    "courseIncludes": {
+      "videoDuration": "12 hours (Lab walkthroughs & Live demos)",
+      "articles": 8,
+      "downloadableResources": 5,
+      "accessOnMobile": "no",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "flutter-workshop",
-        "type": "workshop",
-        "title": "Flutter: Build Cross-Platform Mobile Apps in 5 Days",
-        "duration": "5 Days (Intensive Boot Camp)",
-        "projects": "2 Complete Mobile Apps (A Todo List and a Weather App)",
-        "description": "Master Google's Flutter framework and Dart language to build beautiful, natively compiled applications for mobile (iOS and Android) from a single codebase. Focuses on state management and API integration.",
-        "techIcons": [
-            "./images/flutter_logo.png",
-            "./images/dart_logo.png",
-            "./images/android_logo.png",
-            "./images/ios_logo.png"
-        ],
-        "courseInstructors": [
-            "Dr. Dr. Anya Sharma (Data Scientist)e Development Consultant)",
-            "Ryan Peterson (Senior Software Engineer)"
-        ],
-        "learningPoints": [
-            "Set up the Flutter development environment on Windows/Mac.",
-            "Master the use of Widgets and the 'everything is a widget' concept.",
-            "Implement robust state management using Provider or Riverpod.",
-            "Integrate REST APIs and handle JSON data effectively."
-        ],
-        "courseIncludes": {
-            "videoDuration": "15 hours (Tutorials & Code-alongs)",
-            "articles": 10,
-            "downloadableResources": 7,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 249,
-        "originalPrice": 799,
-        "couponCode": "FLUTTER_GO",
-        "couponDiscount": 150,
-        "videoPreview": "./videos/preview_flutter.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Day 1-2: Flutter Basics and Dart Language",
-                "lectures": [
-                    {
-                        "title": "Introduction to Dart: Variables, Functions, and Classes",
-                        "videoPreview": "./videos/preview_flu_d1l1.mp4",
-                        "time": "03:10"
-                    },
-                    {
-                        "title": "Stateful vs. Stateless Widgets and Layouts",
-                        "videoPreview": "./videos/preview_flu_d1l2.mp4",
-                        "time": "04:50"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 3-4: State Management and Project 1",
-                "lectures": [
-                    {
-                        "title": "Deep Dive into State Management (Provider/Riverpod)",
-                        "videoPreview": "./videos/preview_flu_d2l1.mp4",
-                        "time": "04:30"
-                    },
-                    {
-                        "title": "Building the Todo List App (CRUD Operations)",
-                        "videoPreview": "./videos/preview_flu_d2l2.mp4",
-                        "time": "03:45"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 5: API Integration and Final Project",
-                "lectures": [
-                    {
-                        "title": "Fetching Data from REST APIs and JSON Parsing",
-                        "videoPreview": "./videos/preview_flu_d3l1.mp4",
-                        "time": "03:20"
-                    },
-                    {
-                        "title": "Building the Weather App and Deployment Prep",
-                        "videoPreview": "./videos/preview_flu_d3l2.mp4",
-                        "time": "04:05"
-                    }
-                ]
-            }
+    "price": 299,
+    "originalPrice": 899,
+    "couponCode": "HACK_SECURE",
+    "couponDiscount": 100,
+    "videoPreview": "./videos/preview_ethical_hacking.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Day 1: Reconnaissance and Scanning",
+        "lectures": [
+          {
+            "title": "Setting up Kali Linux and VPN Fundamentals",
+            "videoPreview": "./videos/preview_cyb_d1l1.mp4",
+            "time": "02:00"
+          },
+          {
+            "title": "Nmap Mastery: Network and Port Scanning",
+            "videoPreview": "./videos/preview_cyb_d1l2.mp4",
+            "time": "02:30"
+          }
         ]
+      },
+      {
+        "sectionTitle": "Day 2: Web Application Attacks",
+        "lectures": [
+          {
+            "title": "Introduction to OWASP Top 10 Vulnerabilities",
+            "videoPreview": "./videos/preview_cyb_d2l1.mp4",
+            "time": "03:00"
+          },
+          {
+            "title": "Hands-on Lab: SQL Injection and XSS Attacks",
+            "videoPreview": "./videos/preview_cyb_d2l2.mp4",
+            "time": "04:00"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Day 3: Exploitation and Defense",
+        "lectures": [
+          {
+            "title": "Using Metasploit to Exploit Vulnerabilities",
+            "videoPreview": "./videos/preview_cyb_d3l1.mp4",
+            "time": "03:30"
+          },
+          {
+            "title": "Patching and Hardening: The Defense Perspective",
+            "videoPreview": "./videos/preview_cyb_d3l2.mp4",
+            "time": "02:00"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "flutter-workshop",
+    "type": "workshop",
+    "title": "Flutter: Build Cross-Platform Mobile Apps in 5 Days",
+    "duration": "5 Days (Intensive Boot Camp)",
+    "projects": "2 Complete Mobile Apps (A Todo List and a Weather App)",
+    "description": "Master Google's Flutter framework and Dart language to build beautiful, natively compiled applications for mobile (iOS and Android) from a single codebase. Focuses on state management and API integration.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Dr. Dr. Anya Sharma (Data Scientist)e Development Consultant)",
+      "Ryan Peterson (Senior Software Engineer)"
+    ],
+    "learningPoints": [
+      "Set up the Flutter development environment on Windows/Mac.",
+      "Master the use of Widgets and the 'everything is a widget' concept.",
+      "Implement robust state management using Provider or Riverpod.",
+      "Integrate REST APIs and handle JSON data effectively."
+    ],
+    "courseIncludes": {
+      "videoDuration": "15 hours (Tutorials & Code-alongs)",
+      "articles": 10,
+      "downloadableResources": 7,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
     },
-    {
-        "id": "digital-marketing-seo",
-        "type": "workshop",
-        "title": "SEO & Content Marketing Strategy Boot Camp",
-        "duration": "2 Days (Weekend Intensive)",
-        "projects": "1 Complete SEO Audit and Content Calendar for a Niche",
-        "description": "Learn to drive organic traffic and convert leads using Search Engine Optimization (SEO) and effective content marketing. This workshop covers keyword research, on-page optimization, link building, and performance tracking.",
-        "techIcons": [
-            "./images/google_analytics_logo.png",
-            "./images/semrush_logo.png",
-            "./images/wordpress_logo.png",
-            "./images/seo_icon.png"
-        ],
-        "courseInstructors": [
-            "Dr. Anya Sharma (Data Scientist) of Digital Strategy)",
-            "Sarah Lee (Content Marketing Specialist)"
-        ],
-        "learningPoints": [
-            "Conduct comprehensive keyword research to identify high-value terms.",
-            "Perform technical and on-page SEO audits.",
-            "Develop a strategic content calendar for 6 months.",
-            "Measure and interpret performance data using Google Analytics and Search Console."
-        ],
-        "courseIncludes": {
-            "videoDuration": "10 hours (Recorded sessions and tool demos)",
-            "articles": 6,
-            "downloadableResources": 4,
-            "accessOnMobile": "yes",
-            "certificateOfCompletion": "yes"
-        },
-        "price": 149,
-        "originalPrice": 399,
-        "couponCode": "GROW_ONLINE",
-        "couponDiscount": 75,
-        "videoPreview": "./videos/preview_digital_marketing.mp4",
-        "curriculum": [
-            {
-                "sectionTitle": "Day 1: Keyword Research & On-Page SEO",
-                "lectures": [
-                    {
-                        "title": "Understanding Search Intent and Core SEO Principles",
-                        "videoPreview": "./videos/preview_dm_d1l1.mp4",
-                        "time": "02:10"
-                    },
-                    {
-                        "title": "Keyword Mapping, Title Tags, and Meta Descriptions",
-                        "videoPreview": "./videos/preview_dm_d1l2.mp4",
-                        "time": "03:40"
-                    }
-                ]
-            },
-            {
-                "sectionTitle": "Day 2: Content Strategy & Off-Page SEO",
-                "lectures": [
-                    {
-                        "title": "Creating a High-Value Content Strategy for Traffic",
-                        "videoPreview": "./videos/preview_dm_d2l1.mp4",
-                        "time": "03:15"
-                    },
-                    {
-                        "title": "Link Building, Guest Posting, and Performance Tracking",
-                        "videoPreview": "./videos/preview_dm_d2l2.mp4",
-                        "time": "04:35"
-                    }
-                ]
-            }
+    "price": 249,
+    "originalPrice": 799,
+    "couponCode": "FLUTTER_GO",
+    "couponDiscount": 150,
+    "videoPreview": "./videos/preview_flutter.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Day 1-2: Flutter Basics and Dart Language",
+        "lectures": [
+          {
+            "title": "Introduction to Dart: Variables, Functions, and Classes",
+            "videoPreview": "./videos/preview_flu_d1l1.mp4",
+            "time": "03:10"
+          },
+          {
+            "title": "Stateful vs. Stateless Widgets and Layouts",
+            "videoPreview": "./videos/preview_flu_d1l2.mp4",
+            "time": "04:50"
+          }
         ]
-    }
+      },
+      {
+        "sectionTitle": "Day 3-4: State Management and Project 1",
+        "lectures": [
+          {
+            "title": "Deep Dive into State Management (Provider/Riverpod)",
+            "videoPreview": "./videos/preview_flu_d2l1.mp4",
+            "time": "04:30"
+          },
+          {
+            "title": "Building the Todo List App (CRUD Operations)",
+            "videoPreview": "./videos/preview_flu_d2l2.mp4",
+            "time": "03:45"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Day 5: API Integration and Final Project",
+        "lectures": [
+          {
+            "title": "Fetching Data from REST APIs and JSON Parsing",
+            "videoPreview": "./videos/preview_flu_d3l1.mp4",
+            "time": "03:20"
+          },
+          {
+            "title": "Building the Weather App and Deployment Prep",
+            "videoPreview": "./videos/preview_flu_d3l2.mp4",
+            "time": "04:05"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "digital-marketing-seo",
+    "type": "workshop",
+    "title": "SEO & Content Marketing Strategy Boot Camp",
+    "duration": "2 Days (Weekend Intensive)",
+    "projects": "1 Complete SEO Audit and Content Calendar for a Niche",
+    "description": "Learn to drive organic traffic and convert leads using Search Engine Optimization (SEO) and effective content marketing. This workshop covers keyword research, on-page optimization, link building, and performance tracking.",
+    "techIcons": [
+      { "name": "MongoDB", "icon": "./images/mongodb_logo.png" },
+      { "name": "Express", "icon": "./images/expressjs_logo.png" },
+      { "name": "React", "icon": "./images/react_logo.png" },
+      { "name": "Node.js", "icon": "./images/nodejs_logo.png" }
+    ],
+    "courseInstructors": [
+      "Dr. Anya Sharma (Data Scientist) of Digital Strategy)",
+      "Sarah Lee (Content Marketing Specialist)"
+    ],
+    "learningPoints": [
+      "Conduct comprehensive keyword research to identify high-value terms.",
+      "Perform technical and on-page SEO audits.",
+      "Develop a strategic content calendar for 6 months.",
+      "Measure and interpret performance data using Google Analytics and Search Console."
+    ],
+    "courseIncludes": {
+      "videoDuration": "10 hours (Recorded sessions and tool demos)",
+      "articles": 6,
+      "downloadableResources": 4,
+      "accessOnMobile": "yes",
+      "certificateOfCompletion": "yes"
+    },
+    "price": 149,
+    "originalPrice": 399,
+    "couponCode": "GROW_ONLINE",
+    "couponDiscount": 75,
+    "videoPreview": "./videos/preview_digital_marketing.mp4",
+    "curriculum": [
+      {
+        "sectionTitle": "Day 1: Keyword Research & On-Page SEO",
+        "lectures": [
+          {
+            "title": "Understanding Search Intent and Core SEO Principles",
+            "videoPreview": "./videos/preview_dm_d1l1.mp4",
+            "time": "02:10"
+          },
+          {
+            "title": "Keyword Mapping, Title Tags, and Meta Descriptions",
+            "videoPreview": "./videos/preview_dm_d1l2.mp4",
+            "time": "03:40"
+          }
+        ]
+      },
+      {
+        "sectionTitle": "Day 2: Content Strategy & Off-Page SEO",
+        "lectures": [
+          {
+            "title": "Creating a High-Value Content Strategy for Traffic",
+            "videoPreview": "./videos/preview_dm_d2l1.mp4",
+            "time": "03:15"
+          },
+          {
+            "title": "Link Building, Guest Posting, and Performance Tracking",
+            "videoPreview": "./videos/preview_dm_d2l2.mp4",
+            "time": "04:35"
+          }
+        ]
+      }
+    ]
+  }
 ]

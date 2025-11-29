@@ -1,7 +1,7 @@
 /* --- Banner (Hero) Component (Mobile-First) --- */
 .banner-wrapper {
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 100px 1rem 1rem;
     background-color: var(--bg-dark-green);
 }
 
